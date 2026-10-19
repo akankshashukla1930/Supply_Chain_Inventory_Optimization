@@ -1,0 +1,84 @@
+/// 6 regional distribution hubs with storage capacity (units) and monthly fixed cost (INR).
+table Warehouse
+	lineageTag: bf8df5f0-d317-501a-bf32-99fb3d398362
+
+	column 'Warehouse ID'
+		dataType: string
+		lineageTag: 476e35c4-cb93-5cf9-88d4-2d33f182156c
+		summarizeBy: none
+		sourceColumn: Warehouse ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Warehouse Name'
+		dataType: string
+		lineageTag: 4d0d1841-8145-5355-aa18-e66d3362828f
+		summarizeBy: none
+		sourceColumn: Warehouse Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 2ff3a4da-ebde-573f-aa46-de6ceeaae3f4
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: dd26cd8f-f760-5d10-a4d2-407af391df3c
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: ff23f1be-242a-5cf5-92ef-19962ebb0997
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Capacity Units'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 8a932079-4c80-5841-a2c9-f24ca210111d
+		summarizeBy: none
+		sourceColumn: Capacity Units
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monthly Fixed Cost'
+		dataType: double
+		formatString: ₹#,0
+		lineageTag: f685e8e7-8168-5654-b94a-fe1d845930a8
+		summarizeBy: none
+		sourceColumn: Monthly Fixed Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column Warehouse
+		dataType: string
+		lineageTag: aadc747f-ddb7-547c-ab3e-f7cdce06f5db
+		summarizeBy: none
+		sourceColumn: Warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Warehouse = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "warehouses.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Promoted, {{"Warehouse_ID", type text}, {"Warehouse_Name", type text}, {"City", type text}, {"State", type text}, {"Region", type text}, {"Capacity_Units", Int64.Type}, {"Monthly_Fixed_Cost", type number}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " ")),
+				    AddShort = Table.AddColumn(Renamed, "Warehouse", each Text.BeforeDelimiter([Warehouse Name], " ("), type text)
+				in
+				    AddShort
+
+	annotation PBI_ResultType = Table

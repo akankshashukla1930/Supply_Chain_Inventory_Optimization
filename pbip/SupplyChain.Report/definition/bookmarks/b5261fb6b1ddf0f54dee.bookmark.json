@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Help - hide (Suppliers)",
+  "name": "b5261fb6b1ddf0f54dee",
+  "options": {
+    "targetVisualNames": [
+      "d269b3eaf104d24f622f",
+      "c0fbfc3f7145f4676141"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "653df9534ce75ce09d02",
+    "sections": {
+      "653df9534ce75ce09d02": {
+        "visualContainers": {
+          "d269b3eaf104d24f622f": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "c0fbfc3f7145f4676141": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+supplier_name,quarter_start,avg_lead_time_days,change_vs_prev_qtr
+Everest Exports,2024-01-01,12.8,
+Everest Exports,2024-04-01,14.5,1.8
+Everest Exports,2024-07-01,16.4,1.9
+Everest Exports,2024-10-01,13.0,-3.4
+Everest Exports,2025-01-01,16.2,3.2
+Everest Exports,2025-04-01,15.1,-1.2
+Everest Exports,2025-07-01,13.7,-1.4
+Everest Exports,2025-10-01,15.7,2.0
+Everest Exports,2026-01-01,13.5,-2.1
+Everest Exports,2026-04-01,16.2,2.7
+Everest Exports,2026-07-01,13.3,-2.9
+Ganesh Sourcing Pvt Ltd,2024-01-01,19.8,
+Ganesh Sourcing Pvt Ltd,2024-04-01,18.7,-1.1
+Ganesh Sourcing Pvt Ltd,2024-07-01,19.5,0.8
+Ganesh Sourcing Pvt Ltd,2024-10-01,21.0,1.5
+Ganesh Sourcing Pvt Ltd,2025-01-01,18.9,-2.0
+Ganesh Sourcing Pvt Ltd,2025-04-01,18.5,-0.4
+Ganesh Sourcing Pvt Ltd,2025-07-01,18.7,0.1
+Ganesh Sourcing Pvt Ltd,2025-10-01,18.5,-0.2
+Ganesh Sourcing Pvt Ltd,2026-01-01,17.5,-1.0
+Ganesh Sourcing Pvt Ltd,2026-04-01,17.2,-0.3
+Ganesh Sourcing Pvt Ltd,2026-07-01,15.2,-2.1
+Ganesh Supply Chain LLP,2024-01-01,22.0,
+Ganesh Supply Chain LLP,2024-04-01,23.2,1.3
+Ganesh Supply Chain LLP,2024-07-01,22.1,-1.2
+Ganesh Supply Chain LLP,2024-10-01,21.7,-0.4
+Ganesh Supply Chain LLP,2025-01-01,23.7,2.0
+Ganesh Supply Chain LLP,2025-04-01,23.6,-0.2
+Ganesh Supply Chain LLP,2025-07-01,23.0,-0.6
+Ganesh Supply Chain LLP,2025-10-01,20.5,-2.5
+Ganesh Supply Chain LLP,2026-01-01,23.1,2.6
+Ganesh Supply Chain LLP,2026-04-01,22.2,-0.9
+Ganesh Supply Chain LLP,2026-07-01,19.0,-3.2
+Unity Suppliers,2024-01-01,25.3,
+Unity Suppliers,2024-04-01,27.9,2.6
+Unity Suppliers,2024-07-01,31.3,3.4
+Unity Suppliers,2024-10-01,25.3,-5.9
+Unity Suppliers,2025-01-01,26.1,0.7
+Unity Suppliers,2025-04-01,26.2,0.1
+Unity Suppliers,2025-07-01,26.9,0.8
+Unity Suppliers,2025-10-01,27.6,0.7
+Unity Suppliers,2026-01-01,25.1,-2.5
+Unity Suppliers,2026-04-01,25.5,0.4
+Unity Suppliers,2026-07-01,22.8,-2.7

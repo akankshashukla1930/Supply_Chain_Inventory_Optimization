@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "6cc186fe2a2351e0920d",
+  "displayName": "Product Detail",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "d6385aae14195e09a900",
+    "type": "Drillthrough",
+    "referenceScope": "Default",
+    "parameters": [
+      {
+        "name": "565656d2a41d5fdeba93",
+        "boundFilter": "174bada90bfe5c75a0f8",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Product Label"
+          }
+        }
+      }
+    ]
+  },
+  "type": "Drillthrough",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "174bada90bfe5c75a0f8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Product Label"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode"
+}

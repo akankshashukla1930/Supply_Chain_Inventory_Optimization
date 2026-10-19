@@ -1,0 +1,192 @@
+/// Marked date table (Jan 2024 - Dec 2026) generated in Power Query from DateStart / DateEnd. Auto date/time is off.
+table 'Date'
+	dataCategory: Time
+	lineageTag: dd9c034e-569a-56bc-b2da-458fde8e6cba
+
+	column 'Date'
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		isKey
+		lineageTag: 05b71a1e-6e38-5fad-884e-ed002c127a18
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: c7da050b-ff6e-5dbd-8771-f0a3f54589db
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: ebb8f0d3-c465-5dbe-afa9-aaef63395ab8
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Quarter'
+		dataType: string
+		lineageTag: 4e68e413-26c5-51d5-b844-47bac3687cc3
+		summarizeBy: none
+		sourceColumn: Year Quarter
+		sortByColumn: 'Year Quarter Key'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Quarter Key'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: def77968-2ac6-5e99-8c72-dd23a425a188
+		summarizeBy: none
+		sourceColumn: Year Quarter Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month No'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: f4af6a7b-b388-54b6-af53-94835a5a2841
+		summarizeBy: none
+		sourceColumn: Month No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: bbb7a190-7119-5cb4-989d-6d4ee7af2894
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: 'Month No'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Month'
+		dataType: string
+		lineageTag: b0a0dfec-bbad-5a8d-b9a9-e08873605016
+		summarizeBy: none
+		sourceColumn: Year Month
+		sortByColumn: 'Year Month Key'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Month Key'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 82af1324-c725-5127-994b-ca4669e2fa43
+		summarizeBy: none
+		sourceColumn: Year Month Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Start'
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: f5643809-1d7c-5b66-8412-4d35a9bb87a9
+		summarizeBy: none
+		sourceColumn: Month Start
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Start'
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: 6e88e70c-77cf-5c7d-94a1-8cf2399337a2
+		summarizeBy: none
+		sourceColumn: Week Start
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: bf324705-aca6-5a1a-9e6b-4fd5af40f0c1
+		summarizeBy: none
+		sourceColumn: Day Name
+		sortByColumn: 'Day of Week No'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day of Week No'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: cfb80ab0-ea02-5c0c-92fc-76821a705480
+		summarizeBy: none
+		sourceColumn: Day of Week No
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		dataType: string
+		lineageTag: 17fb2b54-9143-5df3-a3e2-882553b1939b
+		summarizeBy: none
+		sourceColumn: Fiscal Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Season
+		dataType: string
+		lineageTag: 34637703-0376-5eb7-955b-5ff58c4bb0c2
+		summarizeBy: none
+		sourceColumn: Season
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Drill-down hierarchy: Year > Quarter > Month > Date (used by the trend charts)
+	hierarchy 'Date Hierarchy'
+		lineageTag: 9bc56cf3-60f8-4e72-a41d-558e0415298f
+
+		level Year
+			lineageTag: f33b82f0-e93e-4da6-851e-0fe271f33bd7
+			column: Year
+
+		level Quarter
+			lineageTag: 4f309c7f-0273-4aa2-a2c9-ba630c4d4371
+			column: Quarter
+
+		level Month
+			lineageTag: afa3e7b7-61f0-406b-b879-964cc7b4c02e
+			column: Month
+
+		level Date
+			lineageTag: f243054b-fd3e-406a-8ae5-9956331a7c27
+			column: 'Date'
+
+	partition 'Date' = m
+		mode: import
+		source =
+				let
+				    StartDate = DateStart,
+				    EndDate   = DateEnd,
+				    Dates     = List.Dates(StartDate, Duration.Days(EndDate - StartDate) + 1, #duration(1, 0, 0, 0)),
+				    Base      = Table.FromList(Dates, Splitter.SplitByNothing(), type table [Date = date]),
+				    AddYear   = Table.AddColumn(Base, "Year", each Date.Year([Date]), Int64.Type),
+				    AddQNo    = Table.AddColumn(AddYear, "Quarter", each "Q" & Text.From(Date.QuarterOfYear([Date])), type text),
+				    AddYQ     = Table.AddColumn(AddQNo, "Year Quarter", each Text.From([Year]) & " " & [Quarter], type text),
+				    AddYQKey  = Table.AddColumn(AddYQ, "Year Quarter Key", each [Year] * 10 + Date.QuarterOfYear([Date]), Int64.Type),
+				    AddMNo    = Table.AddColumn(AddYQKey, "Month No", each Date.Month([Date]), Int64.Type),
+				    AddMName  = Table.AddColumn(AddMNo, "Month", each Date.ToText([Date], [Format = "MMM", Culture = "en-US"]), type text),
+				    AddYM     = Table.AddColumn(AddMName, "Year Month", each Date.ToText([Date], [Format = "MMM yyyy", Culture = "en-US"]), type text),
+				    AddYMKey  = Table.AddColumn(AddYM, "Year Month Key", each [Year] * 100 + [Month No], Int64.Type),
+				    AddMStart = Table.AddColumn(AddYMKey, "Month Start", each Date.StartOfMonth([Date]), type date),
+				    AddWStart = Table.AddColumn(AddMStart, "Week Start", each Date.StartOfWeek([Date], Day.Monday), type date),
+				    AddDName  = Table.AddColumn(AddWStart, "Day Name", each Date.ToText([Date], [Format = "ddd", Culture = "en-US"]), type text),
+				    AddDNo    = Table.AddColumn(AddDName, "Day of Week No", each Date.DayOfWeek([Date], Day.Monday) + 1, Int64.Type),
+				    // Indian financial year runs April - March
+				    AddFY     = Table.AddColumn(AddDNo, "Fiscal Year", each if [Month No] >= 4
+				                    then "FY" & Text.From([Year]) & "-" & Text.End(Text.From([Year] + 1), 2)
+				                    else "FY" & Text.From([Year] - 1) & "-" & Text.End(Text.From([Year]), 2), type text),
+				    AddSeason = Table.AddColumn(AddFY, "Season", each if [Month No] = 10 or [Month No] = 11 then "Festive (Oct-Nov)"
+				                    else if [Month No] >= 6 and [Month No] <= 8 then "Monsoon (Jun-Aug)" else "Regular", type text)
+				in
+				    AddSeason
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "004d1b30940251b9ae7e",
+  "position": {
+    "x": 1097,
+    "y": 66,
+    "z": 11000,
+    "height": 84,
+    "width": 173,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Sell-Through %"
+                }
+              },
+              "queryRef": "_Measures.Sell-Through %",
+              "nativeQueryRef": "Sell-Through %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

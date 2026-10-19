@@ -1,0 +1,17 @@
+/// Folder that holds the cleaned CSVs (data\processed\). Change via Transform data > Edit parameters. Must end with a backslash.
+expression DataFolder = "C:\PBI\Supply_Chain_Inventory_Optimization\data\processed\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: b3428ed0-9337-51d5-9f59-e1797288b404
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression DateStart = #date(2024, 1, 1) meta [IsParameterQuery=true, Type="Date", IsParameterQueryRequired=true]
+	lineageTag: 51c6540b-8185-51f2-8858-95d9cbe17f81
+
+	annotation PBI_ResultType = Date
+
+expression DateEnd = #date(2026, 12, 31) meta [IsParameterQuery=true, Type="Date", IsParameterQueryRequired=true]
+	lineageTag: ab0c18ff-9c1c-592a-814e-5f6163e94039
+
+	annotation PBI_ResultType = Date

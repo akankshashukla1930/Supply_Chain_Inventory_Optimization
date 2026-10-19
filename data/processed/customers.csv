@@ -1,0 +1,2002 @@
+Customer_ID,Customer_Name,Segment,City,State,Region
+C00000,Unknown Customer,Unknown,Unknown,Unknown,Unknown
+C00001,Jain Online Retail,Online,Thane,Maharashtra,West
+C00002,Agarwal Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00003,Patel Supermart,Retail,Noida,Uttar Pradesh,North
+C00004,Reddy Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C00005,Pillai D2C Store,Online,Surat,Gujarat,West
+C00006,Sharma D2C Store,Online,Ahmedabad,Gujarat,West
+C00007,Nair Online Retail,Online,Ludhiana,Punjab,North
+C00008,Shetty Retail Mart,Retail,Bengaluru,Karnataka,South
+C00009,Menon Supermart,Retail,Mumbai,Maharashtra,West
+C00010,Iyer Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00011,Jain Kirana Store,Retail,Noida,Uttar Pradesh,North
+C00012,Das Retail Mart,Retail,Surat,Gujarat,West
+C00013,Chopra Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00014,Agarwal Wholesale Traders,Wholesale,Surat,Gujarat,West
+C00015,Sharma Online Retail,Online,Gurugram,Haryana,North
+C00016,Joshi D2C Store,Online,Gurugram,Haryana,North
+C00017,Chopra E-Store,Online,Mysuru,Karnataka,South
+C00018,Rao Online Retail,Online,Thane,Maharashtra,West
+C00019,Reddy Online Retail,Online,Jaipur,Rajasthan,North
+C00020,Nair Retail Mart,Retail,Howrah,West Bengal,East
+C00021,Singh Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00022,Bose Supermart,Retail,Mysuru,Karnataka,South
+C00023,Singh Retail Mart,Retail,Kochi,Kerala,South
+C00024,Das Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00025,Kumar E-Store,Online,Indore,Madhya Pradesh,West
+C00026,Menon Online Retail,Online,Jaipur,Rajasthan,North
+C00027,Rao Agencies,Distributor,Mysuru,Karnataka,South
+C00028,Khan Distributors,Distributor,Noida,Uttar Pradesh,North
+C00029,Jain D2C Store,Online,Jaipur,Rajasthan,North
+C00030,Gupta Supermart,Retail,Ahmedabad,Gujarat,West
+C00031,Agarwal E-Store,Online,Ranchi,Jharkhand,East
+C00032,Rao E-Store,Online,Kochi,Kerala,South
+C00033,Singh Online Retail,Online,Kolkata,West Bengal,East
+C00034,Kapoor Supermart,Retail,Kochi,Kerala,South
+C00035,Pillai Retail Mart,Retail,Hyderabad,Telangana,South
+C00036,Menon D2C Store,Online,Pune,Maharashtra,West
+C00037,Sinha Supermart,Retail,Howrah,West Bengal,East
+C00038,Mehta General Store,Retail,Ahmedabad,Gujarat,West
+C00039,Singh Supermart,Retail,Indore,Madhya Pradesh,West
+C00040,Pillai Retail Mart,Retail,Kochi,Kerala,South
+C00041,Menon Retail Mart,Retail,Kochi,Kerala,South
+C00042,Sharma Agencies,Distributor,Ludhiana,Punjab,North
+C00043,Rao Online Retail,Online,Mumbai,Maharashtra,West
+C00044,Kapoor D2C Store,Online,Thane,Maharashtra,West
+C00045,Kapoor Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00046,Patel Kirana Store,Retail,Surat,Gujarat,West
+C00047,Rao General Store,Retail,Mysuru,Karnataka,South
+C00048,Khan Retail Mart,Retail,Nagpur,Maharashtra,West
+C00049,Patel Kirana Store,Retail,Hyderabad,Telangana,South
+C00050,Khan Online Retail,Online,Delhi,Delhi,North
+C00051,Patel Distributors,Distributor,Ranchi,Jharkhand,East
+C00052,Sharma Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00053,Joshi Retail Mart,Retail,Gurugram,Haryana,North
+C00054,Banerjee Supermart,Retail,Gurugram,Haryana,North
+C00055,Sinha Kirana Store,Retail,Nagpur,Maharashtra,West
+C00056,Bose Kirana Store,Retail,Ahmedabad,Gujarat,West
+C00057,Iyer General Store,Retail,Kochi,Kerala,South
+C00058,Verma Retail Mart,Retail,Ranchi,Jharkhand,East
+C00059,Iyer Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C00060,Das E-Store,Online,Coimbatore,Tamil Nadu,South
+C00061,Rao Retail Mart,Retail,Surat,Gujarat,West
+C00062,Joshi Retail Mart,Retail,Bengaluru,Karnataka,South
+C00063,Pillai Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C00064,Rao Supermart,Retail,Pune,Maharashtra,West
+C00065,Agarwal Wholesale Traders,Wholesale,Howrah,West Bengal,East
+C00066,Chopra E-Store,Online,Thane,Maharashtra,West
+C00067,Nair D2C Store,Online,Bengaluru,Karnataka,South
+C00068,Khan Wholesale Traders,Wholesale,Ranchi,Jharkhand,East
+C00069,Jain Supermart,Retail,Bengaluru,Karnataka,South
+C00070,Jain General Store,Retail,Delhi,Delhi,North
+C00071,Khan Kirana Store,Retail,Hyderabad,Telangana,South
+C00072,Bose Kirana Store,Retail,Ludhiana,Punjab,North
+C00073,Reddy Online Retail,Online,Kochi,Kerala,South
+C00074,Sharma General Store,Retail,Nagpur,Maharashtra,West
+C00075,Menon Supermart,Retail,Mysuru,Karnataka,South
+C00076,Bose Supermart,Retail,Kolkata,West Bengal,East
+C00077,Jain Kirana Store,Retail,Ludhiana,Punjab,North
+C00078,Banerjee Online Retail,Online,Surat,Gujarat,West
+C00079,Das General Store,Retail,Chennai,Tamil Nadu,South
+C00080,Kapoor Retail Mart,Retail,Pune,Maharashtra,West
+C00081,Chopra Retail Mart,Retail,Gurugram,Haryana,North
+C00082,Chopra D2C Store,Online,Delhi,Delhi,North
+C00083,Rao Trading Co,Wholesale,Pune,Maharashtra,West
+C00084,Iyer Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C00085,Chopra Supermart,Retail,Hyderabad,Telangana,South
+C00086,Pillai General Store,Retail,Noida,Uttar Pradesh,North
+C00087,Chopra D2C Store,Online,Indore,Madhya Pradesh,West
+C00088,Pillai Retail Mart,Retail,Pune,Maharashtra,West
+C00089,Banerjee Supermart,Retail,Mumbai,Maharashtra,West
+C00090,Bose Trading Co,Wholesale,Hyderabad,Telangana,South
+C00091,Kumar Retail Mart,Retail,Pune,Maharashtra,West
+C00092,Pillai General Store,Retail,Chennai,Tamil Nadu,South
+C00093,Kapoor E-Store,Online,Ranchi,Jharkhand,East
+C00094,Reddy Retail Mart,Retail,Nagpur,Maharashtra,West
+C00095,Nair Kirana Store,Retail,Kochi,Kerala,South
+C00096,Das General Store,Retail,Noida,Uttar Pradesh,North
+C00097,Gupta Online Retail,Online,Delhi,Delhi,North
+C00098,Das Supermart,Retail,Chandigarh,Chandigarh,North
+C00099,Nair Supermart,Retail,Mysuru,Karnataka,South
+C00100,Banerjee Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C00101,Banerjee Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00102,Verma Agencies,Distributor,Jaipur,Rajasthan,North
+C00103,Nair Retail Mart,Retail,Indore,Madhya Pradesh,West
+C00104,Patel Retail Mart,Retail,Mysuru,Karnataka,South
+C00105,Agarwal Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00106,Iyer Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00107,Rao General Store,Retail,Guwahati,Assam,East
+C00108,Iyer Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C00109,Sinha Supermart,Retail,Hyderabad,Telangana,South
+C00110,Verma E-Store,Online,Vijayawada,Andhra Pradesh,South
+C00111,Iyer E-Store,Online,Nagpur,Maharashtra,West
+C00112,Menon Supermart,Retail,Bhubaneswar,Odisha,East
+C00113,Rao Distributors,Distributor,Lucknow,Uttar Pradesh,North
+C00114,Das Distributors,Distributor,Mysuru,Karnataka,South
+C00115,Singh Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C00116,Bose General Store,Retail,Guwahati,Assam,East
+C00117,Sinha Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C00118,Patel Supermart,Retail,Pune,Maharashtra,West
+C00119,Sinha General Store,Retail,Kochi,Kerala,South
+C00120,Iyer General Store,Retail,Coimbatore,Tamil Nadu,South
+C00121,Joshi Distributors,Distributor,Pune,Maharashtra,West
+C00122,Sinha Retail Mart,Retail,Bengaluru,Karnataka,South
+C00123,Verma E-Store,Online,Surat,Gujarat,West
+C00124,Chopra General Store,Retail,Coimbatore,Tamil Nadu,South
+C00125,Singh Retail Mart,Retail,Mysuru,Karnataka,South
+C00126,Sinha D2C Store,Online,Pune,Maharashtra,West
+C00127,Joshi Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00128,Joshi Supermart,Retail,Kolkata,West Bengal,East
+C00129,Pillai Retail Mart,Retail,Bengaluru,Karnataka,South
+C00130,Menon Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C00131,Kumar Supermart,Retail,Ahmedabad,Gujarat,West
+C00132,Reddy General Store,Retail,Guwahati,Assam,East
+C00133,Jain Kirana Store,Retail,Ludhiana,Punjab,North
+C00134,Verma Retail Mart,Retail,Mumbai,Maharashtra,West
+C00135,Kapoor Kirana Store,Retail,Nagpur,Maharashtra,West
+C00136,Chopra Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00137,Iyer Supermart,Retail,Guwahati,Assam,East
+C00138,Pillai Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00139,Sharma Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C00140,Jain E-Store,Online,Indore,Madhya Pradesh,West
+C00141,Kumar Retail Mart,Retail,Surat,Gujarat,West
+C00142,Sinha Supermart,Retail,Thane,Maharashtra,West
+C00143,Singh General Store,Retail,Chandigarh,Chandigarh,North
+C00144,Jain Agencies,Distributor,Thane,Maharashtra,West
+C00145,Sinha General Store,Retail,Hyderabad,Telangana,South
+C00146,Patel Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00147,Menon Retail Mart,Retail,Kochi,Kerala,South
+C00148,Iyer Kirana Store,Retail,Surat,Gujarat,West
+C00149,Gupta General Store,Retail,Mumbai,Maharashtra,West
+C00150,Patel General Store,Retail,Chandigarh,Chandigarh,North
+C00151,Singh Trading Co,Wholesale,Mumbai,Maharashtra,West
+C00152,Pillai Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C00153,Bose Wholesale Traders,Wholesale,Ludhiana,Punjab,North
+C00154,Agarwal D2C Store,Online,Noida,Uttar Pradesh,North
+C00155,Nair Supermart,Retail,Mysuru,Karnataka,South
+C00156,Shetty D2C Store,Online,Mumbai,Maharashtra,West
+C00157,Patel E-Store,Online,Pune,Maharashtra,West
+C00158,Khan Online Retail,Online,Ludhiana,Punjab,North
+C00159,Iyer Online Retail,Online,Pune,Maharashtra,West
+C00160,Kumar Retail Mart,Retail,Pune,Maharashtra,West
+C00161,Kumar Retail Mart,Retail,Thane,Maharashtra,West
+C00162,Sharma Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C00163,Pillai Supermart,Retail,Ludhiana,Punjab,North
+C00164,Rao General Store,Retail,Patna,Bihar,East
+C00165,Banerjee Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00166,Sharma Retail Mart,Retail,Mumbai,Maharashtra,West
+C00167,Sinha E-Store,Online,Gurugram,Haryana,North
+C00168,Sharma Trading Co,Wholesale,Thane,Maharashtra,West
+C00169,Reddy Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C00170,Bose Kirana Store,Retail,Mysuru,Karnataka,South
+C00171,Singh Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C00172,Joshi Online Retail,Online,Bengaluru,Karnataka,South
+C00173,Patel Trading Co,Wholesale,Delhi,Delhi,North
+C00174,Kumar Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C00175,Menon Retail Mart,Retail,Mumbai,Maharashtra,West
+C00176,Joshi Retail Mart,Retail,Pune,Maharashtra,West
+C00177,Iyer Trading Co,Wholesale,Surat,Gujarat,West
+C00178,Sharma Agencies,Distributor,Guwahati,Assam,East
+C00179,Banerjee Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00180,Bose Retail Mart,Retail,Kolkata,West Bengal,East
+C00181,Pillai Retail Mart,Retail,Thane,Maharashtra,West
+C00182,Rao Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00183,Pillai Agencies,Distributor,Coimbatore,Tamil Nadu,South
+C00184,Verma D2C Store,Online,Mysuru,Karnataka,South
+C00185,Banerjee Retail Mart,Retail,Guwahati,Assam,East
+C00186,Singh Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00187,Sinha General Store,Retail,Hyderabad,Telangana,South
+C00188,Kapoor Supermart,Retail,Kochi,Kerala,South
+C00189,Banerjee Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00190,Jain D2C Store,Online,Hyderabad,Telangana,South
+C00191,Pillai Trading Co,Wholesale,Nagpur,Maharashtra,West
+C00192,Joshi Supermart,Retail,Howrah,West Bengal,East
+C00193,Kumar Online Retail,Online,Bengaluru,Karnataka,South
+C00194,Agarwal Online Retail,Online,Noida,Uttar Pradesh,North
+C00195,Agarwal General Store,Retail,Jaipur,Rajasthan,North
+C00196,Patel Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C00197,Kapoor Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C00198,Chopra E-Store,Online,Noida,Uttar Pradesh,North
+C00199,Chopra Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C00200,Agarwal Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C00201,Sharma Supermart,Retail,Kochi,Kerala,South
+C00202,Shetty Supermart,Retail,Surat,Gujarat,West
+C00203,Menon Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00204,Pillai E-Store,Online,Gurugram,Haryana,North
+C00205,Banerjee Retail Mart,Retail,Bengaluru,Karnataka,South
+C00206,Patel Supermart,Retail,Jaipur,Rajasthan,North
+C00207,Iyer Agencies,Distributor,Ludhiana,Punjab,North
+C00208,Bose Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C00209,Agarwal Supermart,Retail,Kochi,Kerala,South
+C00210,Khan Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00211,Banerjee Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00212,Shetty Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C00213,Das Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C00214,Reddy Supermart,Retail,Delhi,Delhi,North
+C00215,Reddy General Store,Retail,Ludhiana,Punjab,North
+C00216,Banerjee Retail Mart,Retail,Ahmedabad,Gujarat,West
+C00217,Jain D2C Store,Online,Delhi,Delhi,North
+C00218,Bose Supermart,Retail,Hyderabad,Telangana,South
+C00219,Sharma E-Store,Online,Indore,Madhya Pradesh,West
+C00220,Pillai Kirana Store,Retail,Ahmedabad,Gujarat,West
+C00221,Pillai Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C00222,Bose Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C00223,Menon Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00224,Verma Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00225,Mehta Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C00226,Agarwal General Store,Retail,Howrah,West Bengal,East
+C00227,Gupta General Store,Retail,Vijayawada,Andhra Pradesh,South
+C00228,Reddy Kirana Store,Retail,Jaipur,Rajasthan,North
+C00229,Menon Supermart,Retail,Gurugram,Haryana,North
+C00230,Banerjee Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C00231,Singh Supermart,Retail,Delhi,Delhi,North
+C00232,Mehta Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00233,Rao Supermart,Retail,Mysuru,Karnataka,South
+C00234,Pillai Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00235,Shetty Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00236,Das General Store,Retail,Chennai,Tamil Nadu,South
+C00237,Patel Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00238,Sharma E-Store,Online,Kolkata,West Bengal,East
+C00239,Kapoor Supermart,Retail,Jaipur,Rajasthan,North
+C00240,Chopra D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00241,Reddy General Store,Retail,Kochi,Kerala,South
+C00242,Verma Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C00243,Menon Retail Mart,Retail,Delhi,Delhi,North
+C00244,Singh Retail Mart,Retail,Mumbai,Maharashtra,West
+C00245,Patel Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00246,Menon D2C Store,Online,Pune,Maharashtra,West
+C00247,Mehta Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C00248,Singh Trading Co,Wholesale,Hyderabad,Telangana,South
+C00249,Sinha Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C00250,Das Retail Mart,Retail,Mumbai,Maharashtra,West
+C00251,Banerjee E-Store,Online,Ahmedabad,Gujarat,West
+C00252,Das Supermart,Retail,Bengaluru,Karnataka,South
+C00253,Rao Supermart,Retail,Thane,Maharashtra,West
+C00254,Kapoor Online Retail,Online,Mysuru,Karnataka,South
+C00255,Verma Agencies,Distributor,Gurugram,Haryana,North
+C00256,Iyer Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00257,Jain Supermart,Retail,Mysuru,Karnataka,South
+C00258,Singh Online Retail,Online,Thane,Maharashtra,West
+C00259,Mehta Kirana Store,Retail,Jaipur,Rajasthan,North
+C00260,Nair Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00261,Das General Store,Retail,Nagpur,Maharashtra,West
+C00262,Banerjee Online Retail,Online,Mysuru,Karnataka,South
+C00263,Sinha E-Store,Online,Delhi,Delhi,North
+C00264,Rao Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C00265,Rao Kirana Store,Retail,Surat,Gujarat,West
+C00266,Agarwal Supermart,Retail,Guwahati,Assam,East
+C00267,Khan Kirana Store,Retail,Thane,Maharashtra,West
+C00268,Khan E-Store,Online,Guwahati,Assam,East
+C00269,Joshi General Store,Retail,Bengaluru,Karnataka,South
+C00270,Chopra Retail Mart,Retail,Ahmedabad,Gujarat,West
+C00271,Sinha D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00272,Khan General Store,Retail,Kochi,Kerala,South
+C00273,Reddy D2C Store,Online,Surat,Gujarat,West
+C00274,Joshi Retail Mart,Retail,Surat,Gujarat,West
+C00275,Pillai D2C Store,Online,Coimbatore,Tamil Nadu,South
+C00276,Das Kirana Store,Retail,Kochi,Kerala,South
+C00277,Chopra Retail Mart,Retail,Hyderabad,Telangana,South
+C00278,Menon General Store,Retail,Ranchi,Jharkhand,East
+C00279,Menon Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00280,Banerjee Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00281,Das Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00282,Das Retail Mart,Retail,Delhi,Delhi,North
+C00283,Pillai D2C Store,Online,Jaipur,Rajasthan,North
+C00284,Reddy Supermart,Retail,Nagpur,Maharashtra,West
+C00285,Agarwal Wholesale Traders,Wholesale,Bengaluru,Karnataka,South
+C00286,Sharma D2C Store,Online,Pune,Maharashtra,West
+C00287,Verma General Store,Retail,Chennai,Tamil Nadu,South
+C00288,Patel Online Retail,Online,Ludhiana,Punjab,North
+C00289,Rao General Store,Retail,Thane,Maharashtra,West
+C00290,Rao Kirana Store,Retail,Kochi,Kerala,South
+C00291,Sinha General Store,Retail,Lucknow,Uttar Pradesh,North
+C00292,Reddy E-Store,Online,Coimbatore,Tamil Nadu,South
+C00293,Sharma Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C00294,Khan General Store,Retail,Ranchi,Jharkhand,East
+C00295,Bose Agencies,Distributor,Chandigarh,Chandigarh,North
+C00296,Nair Supermart,Retail,Guwahati,Assam,East
+C00297,Shetty Online Retail,Online,Hyderabad,Telangana,South
+C00298,Reddy E-Store,Online,Ludhiana,Punjab,North
+C00299,Bose D2C Store,Online,Chandigarh,Chandigarh,North
+C00300,Sharma E-Store,Online,Noida,Uttar Pradesh,North
+C00301,Singh Agencies,Distributor,Chennai,Tamil Nadu,South
+C00302,Bose Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C00303,Khan Online Retail,Online,Mumbai,Maharashtra,West
+C00304,Das E-Store,Online,Surat,Gujarat,West
+C00305,Shetty Trading Co,Wholesale,Hyderabad,Telangana,South
+C00306,Kumar Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00307,Patel Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C00308,Joshi Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00309,Gupta Supermart,Retail,Chennai,Tamil Nadu,South
+C00310,Das Trading Co,Wholesale,Ranchi,Jharkhand,East
+C00311,Verma General Store,Retail,Ahmedabad,Gujarat,West
+C00312,Sharma D2C Store,Online,Lucknow,Uttar Pradesh,North
+C00313,Verma General Store,Retail,Lucknow,Uttar Pradesh,North
+C00314,Banerjee Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C00315,Verma Online Retail,Online,Pune,Maharashtra,West
+C00316,Sharma Supermart,Retail,Patna,Bihar,East
+C00317,Joshi D2C Store,Online,Bengaluru,Karnataka,South
+C00318,Bose Supermart,Retail,Ahmedabad,Gujarat,West
+C00319,Khan E-Store,Online,Hyderabad,Telangana,South
+C00320,Shetty Distributors,Distributor,Chandigarh,Chandigarh,North
+C00321,Sharma Kirana Store,Retail,Kochi,Kerala,South
+C00322,Singh Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C00323,Shetty Supermart,Retail,Chennai,Tamil Nadu,South
+C00324,Gupta Wholesale Traders,Wholesale,Bhubaneswar,Odisha,East
+C00325,Shetty E-Store,Online,Kochi,Kerala,South
+C00326,Shetty Kirana Store,Retail,Bengaluru,Karnataka,South
+C00327,Shetty Trading Co,Wholesale,Surat,Gujarat,West
+C00328,Singh Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00329,Jain General Store,Retail,Coimbatore,Tamil Nadu,South
+C00330,Bose E-Store,Online,Vijayawada,Andhra Pradesh,South
+C00331,Shetty Kirana Store,Retail,Noida,Uttar Pradesh,North
+C00332,Banerjee Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C00333,Pillai Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00334,Sharma D2C Store,Online,Noida,Uttar Pradesh,North
+C00335,Kumar Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00336,Sharma Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00337,Kapoor Kirana Store,Retail,Kolkata,West Bengal,East
+C00338,Banerjee Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00339,Sharma Agencies,Distributor,Ranchi,Jharkhand,East
+C00340,Shetty Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00341,Kumar Supermart,Retail,Indore,Madhya Pradesh,West
+C00342,Banerjee E-Store,Online,Coimbatore,Tamil Nadu,South
+C00343,Rao General Store,Retail,Noida,Uttar Pradesh,North
+C00344,Iyer Retail Mart,Retail,Gurugram,Haryana,North
+C00345,Jain Supermart,Retail,Lucknow,Uttar Pradesh,North
+C00346,Nair General Store,Retail,Thane,Maharashtra,West
+C00347,Joshi E-Store,Online,Kochi,Kerala,South
+C00348,Rao Online Retail,Online,Ludhiana,Punjab,North
+C00349,Rao Online Retail,Online,Delhi,Delhi,North
+C00350,Iyer E-Store,Online,Vijayawada,Andhra Pradesh,South
+C00351,Rao Kirana Store,Retail,Ludhiana,Punjab,North
+C00352,Mehta General Store,Retail,Bengaluru,Karnataka,South
+C00353,Banerjee Trading Co,Wholesale,Howrah,West Bengal,East
+C00354,Mehta Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C00355,Patel E-Store,Online,Hyderabad,Telangana,South
+C00356,Sharma Retail Mart,Retail,Nagpur,Maharashtra,West
+C00357,Menon Trading Co,Wholesale,Mysuru,Karnataka,South
+C00358,Chopra E-Store,Online,Chandigarh,Chandigarh,North
+C00359,Verma Online Retail,Online,Jaipur,Rajasthan,North
+C00360,Kapoor E-Store,Online,Bengaluru,Karnataka,South
+C00361,Pillai Kirana Store,Retail,Ludhiana,Punjab,North
+C00362,Verma Kirana Store,Retail,Kochi,Kerala,South
+C00363,Agarwal Kirana Store,Retail,Kochi,Kerala,South
+C00364,Chopra Kirana Store,Retail,Ranchi,Jharkhand,East
+C00365,Nair Distributors,Distributor,Pune,Maharashtra,West
+C00366,Rao Kirana Store,Retail,Pune,Maharashtra,West
+C00367,Das Retail Mart,Retail,Hyderabad,Telangana,South
+C00368,Jain Supermart,Retail,Ludhiana,Punjab,North
+C00369,Joshi Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00370,Kapoor Trading Co,Wholesale,Kochi,Kerala,South
+C00371,Chopra General Store,Retail,Ranchi,Jharkhand,East
+C00372,Banerjee Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00373,Verma Supermart,Retail,Noida,Uttar Pradesh,North
+C00374,Rao General Store,Retail,Nagpur,Maharashtra,West
+C00375,Shetty Retail Mart,Retail,Mysuru,Karnataka,South
+C00376,Banerjee Trading Co,Wholesale,Gurugram,Haryana,North
+C00377,Chopra Online Retail,Online,Indore,Madhya Pradesh,West
+C00378,Kapoor D2C Store,Online,Thane,Maharashtra,West
+C00379,Das Supermart,Retail,Ludhiana,Punjab,North
+C00380,Pillai Agencies,Distributor,Pune,Maharashtra,West
+C00381,Iyer Online Retail,Online,Gurugram,Haryana,North
+C00382,Mehta Supermart,Retail,Hyderabad,Telangana,South
+C00383,Kapoor Retail Mart,Retail,Jaipur,Rajasthan,North
+C00384,Shetty General Store,Retail,Chennai,Tamil Nadu,South
+C00385,Shetty Online Retail,Online,Gurugram,Haryana,North
+C00386,Chopra Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00387,Shetty General Store,Retail,Ludhiana,Punjab,North
+C00388,Khan D2C Store,Online,Thane,Maharashtra,West
+C00389,Joshi D2C Store,Online,Pune,Maharashtra,West
+C00390,Verma Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00391,Kumar E-Store,Online,Pune,Maharashtra,West
+C00392,Khan General Store,Retail,Mysuru,Karnataka,South
+C00393,Banerjee E-Store,Online,Kolkata,West Bengal,East
+C00394,Das Kirana Store,Retail,Ahmedabad,Gujarat,West
+C00395,Jain General Store,Retail,Lucknow,Uttar Pradesh,North
+C00396,Mehta Distributors,Distributor,Hyderabad,Telangana,South
+C00397,Khan General Store,Retail,Mysuru,Karnataka,South
+C00398,Sinha General Store,Retail,Lucknow,Uttar Pradesh,North
+C00399,Joshi Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00400,Singh Retail Mart,Retail,Mumbai,Maharashtra,West
+C00401,Khan Kirana Store,Retail,Hyderabad,Telangana,South
+C00402,Das Trading Co,Wholesale,Mumbai,Maharashtra,West
+C00403,Verma D2C Store,Online,Indore,Madhya Pradesh,West
+C00404,Verma Online Retail,Online,Jaipur,Rajasthan,North
+C00405,Singh Retail Mart,Retail,Bengaluru,Karnataka,South
+C00406,Bose Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C00407,Das Online Retail,Online,Mysuru,Karnataka,South
+C00408,Mehta General Store,Retail,Vijayawada,Andhra Pradesh,South
+C00409,Khan Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00410,Sharma General Store,Retail,Gurugram,Haryana,North
+C00411,Nair Trading Co,Wholesale,Surat,Gujarat,West
+C00412,Nair Kirana Store,Retail,Pune,Maharashtra,West
+C00413,Chopra D2C Store,Online,Mysuru,Karnataka,South
+C00414,Jain Distributors,Distributor,Patna,Bihar,East
+C00415,Agarwal Retail Mart,Retail,Surat,Gujarat,West
+C00416,Bose Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C00417,Menon Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00418,Jain General Store,Retail,Pune,Maharashtra,West
+C00419,Pillai E-Store,Online,Delhi,Delhi,North
+C00420,Patel Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00421,Menon Agencies,Distributor,Jaipur,Rajasthan,North
+C00422,Shetty Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C00423,Das General Store,Retail,Kochi,Kerala,South
+C00424,Nair Supermart,Retail,Indore,Madhya Pradesh,West
+C00425,Jain Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00426,Das Online Retail,Online,Lucknow,Uttar Pradesh,North
+C00427,Sharma Trading Co,Wholesale,Thane,Maharashtra,West
+C00428,Mehta Kirana Store,Retail,Surat,Gujarat,West
+C00429,Mehta Trading Co,Wholesale,Delhi,Delhi,North
+C00430,Chopra Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C00431,Joshi E-Store,Online,Delhi,Delhi,North
+C00432,Patel Supermart,Retail,Bengaluru,Karnataka,South
+C00433,Sinha Kirana Store,Retail,Ahmedabad,Gujarat,West
+C00434,Reddy Supermart,Retail,Delhi,Delhi,North
+C00435,Das Retail Mart,Retail,Gurugram,Haryana,North
+C00436,Verma General Store,Retail,Noida,Uttar Pradesh,North
+C00437,Iyer Supermart,Retail,Delhi,Delhi,North
+C00438,Sharma General Store,Retail,Ahmedabad,Gujarat,West
+C00439,Das General Store,Retail,Howrah,West Bengal,East
+C00440,Jain Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C00441,Agarwal E-Store,Online,Thane,Maharashtra,West
+C00442,Das Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C00443,Reddy General Store,Retail,Mysuru,Karnataka,South
+C00444,Sharma General Store,Retail,Chennai,Tamil Nadu,South
+C00445,Khan Supermart,Retail,Chandigarh,Chandigarh,North
+C00446,Singh E-Store,Online,Pune,Maharashtra,West
+C00447,Sinha Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00448,Jain Kirana Store,Retail,Ludhiana,Punjab,North
+C00449,Verma Online Retail,Online,Ahmedabad,Gujarat,West
+C00450,Mehta D2C Store,Online,Chennai,Tamil Nadu,South
+C00451,Kumar E-Store,Online,Howrah,West Bengal,East
+C00452,Agarwal Kirana Store,Retail,Ludhiana,Punjab,North
+C00453,Banerjee General Store,Retail,Mumbai,Maharashtra,West
+C00454,Khan Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00455,Patel Supermart,Retail,Thane,Maharashtra,West
+C00456,Sharma Trading Co,Wholesale,Kochi,Kerala,South
+C00457,Menon D2C Store,Online,Gurugram,Haryana,North
+C00458,Menon General Store,Retail,Kochi,Kerala,South
+C00459,Patel Supermart,Retail,Howrah,West Bengal,East
+C00460,Kumar Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00461,Jain Supermart,Retail,Hyderabad,Telangana,South
+C00462,Chopra Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C00463,Bose D2C Store,Online,Thane,Maharashtra,West
+C00464,Patel Kirana Store,Retail,Gurugram,Haryana,North
+C00465,Shetty D2C Store,Online,Bengaluru,Karnataka,South
+C00466,Rao Supermart,Retail,Lucknow,Uttar Pradesh,North
+C00467,Sharma D2C Store,Online,Mysuru,Karnataka,South
+C00468,Agarwal Retail Mart,Retail,Mumbai,Maharashtra,West
+C00469,Mehta E-Store,Online,Surat,Gujarat,West
+C00470,Mehta Online Retail,Online,Pune,Maharashtra,West
+C00471,Patel Kirana Store,Retail,Patna,Bihar,East
+C00472,Khan Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00473,Rao Online Retail,Online,Gurugram,Haryana,North
+C00474,Menon Supermart,Retail,Gurugram,Haryana,North
+C00475,Mehta E-Store,Online,Hyderabad,Telangana,South
+C00476,Rao Distributors,Distributor,Bhubaneswar,Odisha,East
+C00477,Sharma Online Retail,Online,Lucknow,Uttar Pradesh,North
+C00478,Reddy Supermart,Retail,Kolkata,West Bengal,East
+C00479,Chopra Wholesale Traders,Wholesale,Surat,Gujarat,West
+C00480,Singh Agencies,Distributor,Bengaluru,Karnataka,South
+C00481,Chopra Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00482,Menon Kirana Store,Retail,Mumbai,Maharashtra,West
+C00483,Reddy General Store,Retail,Hyderabad,Telangana,South
+C00484,Agarwal Online Retail,Online,Mumbai,Maharashtra,West
+C00485,Sharma Supermart,Retail,Ludhiana,Punjab,North
+C00486,Nair Supermart,Retail,Kochi,Kerala,South
+C00487,Chopra Supermart,Retail,Ranchi,Jharkhand,East
+C00488,Menon Online Retail,Online,Nagpur,Maharashtra,West
+C00489,Pillai Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00490,Menon Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C00491,Patel D2C Store,Online,Delhi,Delhi,North
+C00492,Agarwal Distributors,Distributor,Hyderabad,Telangana,South
+C00493,Joshi Online Retail,Online,Mumbai,Maharashtra,West
+C00494,Chopra Supermart,Retail,Hyderabad,Telangana,South
+C00495,Bose Wholesale Traders,Wholesale,Ludhiana,Punjab,North
+C00496,Bose General Store,Retail,Pune,Maharashtra,West
+C00497,Banerjee Distributors,Distributor,Nagpur,Maharashtra,West
+C00498,Bose General Store,Retail,Nagpur,Maharashtra,West
+C00499,Sharma Trading Co,Wholesale,Hyderabad,Telangana,South
+C00500,Menon E-Store,Online,Patna,Bihar,East
+C00501,Chopra Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00502,Chopra Online Retail,Online,Ahmedabad,Gujarat,West
+C00503,Menon Retail Mart,Retail,Surat,Gujarat,West
+C00504,Sharma Retail Mart,Retail,Nagpur,Maharashtra,West
+C00505,Rao General Store,Retail,Nagpur,Maharashtra,West
+C00506,Khan Supermart,Retail,Kochi,Kerala,South
+C00507,Bose Wholesale Traders,Wholesale,Kochi,Kerala,South
+C00508,Das E-Store,Online,Chandigarh,Chandigarh,North
+C00509,Iyer Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00510,Mehta Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C00511,Singh E-Store,Online,Pune,Maharashtra,West
+C00512,Kapoor Online Retail,Online,Gurugram,Haryana,North
+C00513,Agarwal Retail Mart,Retail,Mumbai,Maharashtra,West
+C00514,Patel Agencies,Distributor,Pune,Maharashtra,West
+C00515,Singh General Store,Retail,Chandigarh,Chandigarh,North
+C00516,Agarwal Trading Co,Wholesale,Hyderabad,Telangana,South
+C00517,Sinha Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00518,Kumar E-Store,Online,Chennai,Tamil Nadu,South
+C00519,Agarwal Supermart,Retail,Indore,Madhya Pradesh,West
+C00520,Rao General Store,Retail,Vijayawada,Andhra Pradesh,South
+C00521,Bose E-Store,Online,Lucknow,Uttar Pradesh,North
+C00522,Gupta Kirana Store,Retail,Jaipur,Rajasthan,North
+C00523,Khan Kirana Store,Retail,Ahmedabad,Gujarat,West
+C00524,Das D2C Store,Online,Nagpur,Maharashtra,West
+C00525,Iyer Wholesale Traders,Wholesale,Mumbai,Maharashtra,West
+C00526,Singh Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00527,Pillai Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00528,Mehta Agencies,Distributor,Gurugram,Haryana,North
+C00529,Iyer Kirana Store,Retail,Mumbai,Maharashtra,West
+C00530,Gupta General Store,Retail,Coimbatore,Tamil Nadu,South
+C00531,Das Retail Mart,Retail,Hyderabad,Telangana,South
+C00532,Shetty Retail Mart,Retail,Kochi,Kerala,South
+C00533,Jain Distributors,Distributor,Mysuru,Karnataka,South
+C00534,Rao General Store,Retail,Hyderabad,Telangana,South
+C00535,Rao Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00536,Mehta Supermart,Retail,Jaipur,Rajasthan,North
+C00537,Kumar Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00538,Das Supermart,Retail,Bengaluru,Karnataka,South
+C00539,Reddy Agencies,Distributor,Pune,Maharashtra,West
+C00540,Chopra E-Store,Online,Mysuru,Karnataka,South
+C00541,Iyer Supermart,Retail,Indore,Madhya Pradesh,West
+C00542,Reddy General Store,Retail,Nagpur,Maharashtra,West
+C00543,Sharma Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00544,Nair Retail Mart,Retail,Kochi,Kerala,South
+C00545,Kapoor Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00546,Singh Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00547,Kumar E-Store,Online,Thane,Maharashtra,West
+C00548,Kumar D2C Store,Online,Ludhiana,Punjab,North
+C00549,Das General Store,Retail,Noida,Uttar Pradesh,North
+C00550,Rao D2C Store,Online,Ranchi,Jharkhand,East
+C00551,Bose General Store,Retail,Pune,Maharashtra,West
+C00552,Gupta Supermart,Retail,Indore,Madhya Pradesh,West
+C00553,Singh D2C Store,Online,Mumbai,Maharashtra,West
+C00554,Bose General Store,Retail,Patna,Bihar,East
+C00555,Kapoor Trading Co,Wholesale,Ludhiana,Punjab,North
+C00556,Gupta D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00557,Pillai General Store,Retail,Ahmedabad,Gujarat,West
+C00558,Chopra D2C Store,Online,Gurugram,Haryana,North
+C00559,Gupta General Store,Retail,Bengaluru,Karnataka,South
+C00560,Rao E-Store,Online,Lucknow,Uttar Pradesh,North
+C00561,Rao Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00562,Banerjee Kirana Store,Retail,Noida,Uttar Pradesh,North
+C00563,Verma Supermart,Retail,Chennai,Tamil Nadu,South
+C00564,Pillai E-Store,Online,Kochi,Kerala,South
+C00565,Menon Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00566,Singh E-Store,Online,Gurugram,Haryana,North
+C00567,Patel Retail Mart,Retail,Hyderabad,Telangana,South
+C00568,Das Retail Mart,Retail,Patna,Bihar,East
+C00569,Kumar General Store,Retail,Delhi,Delhi,North
+C00570,Iyer General Store,Retail,Nagpur,Maharashtra,West
+C00571,Shetty Distributors,Distributor,Kochi,Kerala,South
+C00572,Nair Supermart,Retail,Ludhiana,Punjab,North
+C00573,Patel Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C00574,Chopra Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00575,Rao General Store,Retail,Noida,Uttar Pradesh,North
+C00576,Das Trading Co,Wholesale,Mysuru,Karnataka,South
+C00577,Pillai D2C Store,Online,Bengaluru,Karnataka,South
+C00578,Das Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C00579,Iyer Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00580,Sinha Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C00581,Kumar Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C00582,Joshi Supermart,Retail,Bengaluru,Karnataka,South
+C00583,Agarwal Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C00584,Mehta Supermart,Retail,Hyderabad,Telangana,South
+C00585,Verma D2C Store,Online,Lucknow,Uttar Pradesh,North
+C00586,Patel Agencies,Distributor,Ahmedabad,Gujarat,West
+C00587,Sharma Distributors,Distributor,Gurugram,Haryana,North
+C00588,Singh E-Store,Online,Kochi,Kerala,South
+C00589,Das Trading Co,Wholesale,Kochi,Kerala,South
+C00590,Gupta D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00591,Reddy Supermart,Retail,Patna,Bihar,East
+C00592,Patel General Store,Retail,Chennai,Tamil Nadu,South
+C00593,Pillai Retail Mart,Retail,Mysuru,Karnataka,South
+C00594,Agarwal Kirana Store,Retail,Surat,Gujarat,West
+C00595,Mehta Agencies,Distributor,Kolkata,West Bengal,East
+C00596,Menon E-Store,Online,Mysuru,Karnataka,South
+C00597,Kumar Retail Mart,Retail,Mysuru,Karnataka,South
+C00598,Joshi Kirana Store,Retail,Chandigarh,Chandigarh,North
+C00599,Bose Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C00600,Menon Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00601,Iyer E-Store,Online,Gurugram,Haryana,North
+C00602,Joshi Distributors,Distributor,Noida,Uttar Pradesh,North
+C00603,Iyer General Store,Retail,Patna,Bihar,East
+C00604,Pillai Supermart,Retail,Thane,Maharashtra,West
+C00605,Reddy Kirana Store,Retail,Ludhiana,Punjab,North
+C00606,Khan Retail Mart,Retail,Pune,Maharashtra,West
+C00607,Bose General Store,Retail,Pune,Maharashtra,West
+C00608,Banerjee Retail Mart,Retail,Hyderabad,Telangana,South
+C00609,Iyer Retail Mart,Retail,Guwahati,Assam,East
+C00610,Gupta Retail Mart,Retail,Bhubaneswar,Odisha,East
+C00611,Khan General Store,Retail,Vijayawada,Andhra Pradesh,South
+C00612,Jain Online Retail,Online,Mysuru,Karnataka,South
+C00613,Joshi Supermart,Retail,Pune,Maharashtra,West
+C00614,Chopra Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00615,Khan Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00616,Menon General Store,Retail,Gurugram,Haryana,North
+C00617,Iyer Kirana Store,Retail,Ranchi,Jharkhand,East
+C00618,Kapoor D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00619,Singh General Store,Retail,Ahmedabad,Gujarat,West
+C00620,Nair Kirana Store,Retail,Kochi,Kerala,South
+C00621,Banerjee General Store,Retail,Mumbai,Maharashtra,West
+C00622,Kumar Distributors,Distributor,Ahmedabad,Gujarat,West
+C00623,Chopra General Store,Retail,Pune,Maharashtra,West
+C00624,Shetty Supermart,Retail,Ludhiana,Punjab,North
+C00625,Banerjee D2C Store,Online,Coimbatore,Tamil Nadu,South
+C00626,Jain Supermart,Retail,Surat,Gujarat,West
+C00627,Patel General Store,Retail,Mumbai,Maharashtra,West
+C00628,Verma D2C Store,Online,Ludhiana,Punjab,North
+C00629,Sinha Retail Mart,Retail,Bhubaneswar,Odisha,East
+C00630,Jain Kirana Store,Retail,Mysuru,Karnataka,South
+C00631,Khan Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00632,Verma Kirana Store,Retail,Ludhiana,Punjab,North
+C00633,Agarwal E-Store,Online,Bengaluru,Karnataka,South
+C00634,Nair Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00635,Bose Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00636,Pillai Kirana Store,Retail,Jaipur,Rajasthan,North
+C00637,Chopra Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00638,Khan Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C00639,Das Kirana Store,Retail,Pune,Maharashtra,West
+C00640,Mehta E-Store,Online,Ahmedabad,Gujarat,West
+C00641,Sinha Trading Co,Wholesale,Pune,Maharashtra,West
+C00642,Chopra Online Retail,Online,Chennai,Tamil Nadu,South
+C00643,Menon Retail Mart,Retail,Gurugram,Haryana,North
+C00644,Rao Kirana Store,Retail,Surat,Gujarat,West
+C00645,Kumar Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00646,Sinha Online Retail,Online,Gurugram,Haryana,North
+C00647,Menon Supermart,Retail,Gurugram,Haryana,North
+C00648,Verma Supermart,Retail,Lucknow,Uttar Pradesh,North
+C00649,Reddy D2C Store,Online,Gurugram,Haryana,North
+C00650,Khan Supermart,Retail,Ahmedabad,Gujarat,West
+C00651,Kapoor Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00652,Mehta Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C00653,Singh Retail Mart,Retail,Ranchi,Jharkhand,East
+C00654,Jain Kirana Store,Retail,Guwahati,Assam,East
+C00655,Das Retail Mart,Retail,Delhi,Delhi,North
+C00656,Gupta E-Store,Online,Mumbai,Maharashtra,West
+C00657,Pillai General Store,Retail,Pune,Maharashtra,West
+C00658,Das Trading Co,Wholesale,Kochi,Kerala,South
+C00659,Joshi Agencies,Distributor,Kochi,Kerala,South
+C00660,Das Trading Co,Wholesale,Lucknow,Uttar Pradesh,North
+C00661,Shetty Wholesale Traders,Wholesale,Ludhiana,Punjab,North
+C00662,Sinha Trading Co,Wholesale,Surat,Gujarat,West
+C00663,Nair Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00664,Gupta Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C00665,Singh Distributors,Distributor,Delhi,Delhi,North
+C00666,Kapoor E-Store,Online,Vijayawada,Andhra Pradesh,South
+C00667,Patel Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00668,Sharma Supermart,Retail,Hyderabad,Telangana,South
+C00669,Pillai E-Store,Online,Guwahati,Assam,East
+C00670,Das Supermart,Retail,Nagpur,Maharashtra,West
+C00671,Sinha D2C Store,Online,Delhi,Delhi,North
+C00672,Chopra Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00673,Iyer E-Store,Online,Pune,Maharashtra,West
+C00674,Mehta E-Store,Online,Chennai,Tamil Nadu,South
+C00675,Sharma Retail Mart,Retail,Surat,Gujarat,West
+C00676,Shetty Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00677,Rao D2C Store,Online,Indore,Madhya Pradesh,West
+C00678,Verma Kirana Store,Retail,Jaipur,Rajasthan,North
+C00679,Khan Retail Mart,Retail,Surat,Gujarat,West
+C00680,Gupta Retail Mart,Retail,Jaipur,Rajasthan,North
+C00681,Das Kirana Store,Retail,Mumbai,Maharashtra,West
+C00682,Patel Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00683,Verma Kirana Store,Retail,Gurugram,Haryana,North
+C00684,Kumar General Store,Retail,Noida,Uttar Pradesh,North
+C00685,Shetty Online Retail,Online,Ludhiana,Punjab,North
+C00686,Nair Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00687,Kapoor Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00688,Shetty Trading Co,Wholesale,Bhubaneswar,Odisha,East
+C00689,Joshi E-Store,Online,Gurugram,Haryana,North
+C00690,Sharma Trading Co,Wholesale,Kochi,Kerala,South
+C00691,Sharma Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C00692,Banerjee Supermart,Retail,Kolkata,West Bengal,East
+C00693,Pillai Supermart,Retail,Ahmedabad,Gujarat,West
+C00694,Agarwal Agencies,Distributor,Thane,Maharashtra,West
+C00695,Mehta E-Store,Online,Thane,Maharashtra,West
+C00696,Rao Trading Co,Wholesale,Hyderabad,Telangana,South
+C00697,Rao Retail Mart,Retail,Hyderabad,Telangana,South
+C00698,Das Kirana Store,Retail,Thane,Maharashtra,West
+C00699,Agarwal Kirana Store,Retail,Ludhiana,Punjab,North
+C00700,Menon Online Retail,Online,Bengaluru,Karnataka,South
+C00701,Kumar E-Store,Online,Coimbatore,Tamil Nadu,South
+C00702,Sharma Kirana Store,Retail,Thane,Maharashtra,West
+C00703,Nair Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00704,Khan Retail Mart,Retail,Thane,Maharashtra,West
+C00705,Singh Supermart,Retail,Surat,Gujarat,West
+C00706,Singh Online Retail,Online,Mumbai,Maharashtra,West
+C00707,Pillai Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00708,Nair Retail Mart,Retail,Guwahati,Assam,East
+C00709,Pillai Trading Co,Wholesale,Thane,Maharashtra,West
+C00710,Reddy Agencies,Distributor,Surat,Gujarat,West
+C00711,Sharma Supermart,Retail,Pune,Maharashtra,West
+C00712,Pillai Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00713,Pillai Supermart,Retail,Ahmedabad,Gujarat,West
+C00714,Reddy Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C00715,Reddy Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C00716,Nair Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C00717,Kumar General Store,Retail,Thane,Maharashtra,West
+C00718,Patel Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00719,Iyer E-Store,Online,Jaipur,Rajasthan,North
+C00720,Menon General Store,Retail,Hyderabad,Telangana,South
+C00721,Menon Wholesale Traders,Wholesale,Kolkata,West Bengal,East
+C00722,Rao Wholesale Traders,Wholesale,Kochi,Kerala,South
+C00723,Shetty Online Retail,Online,Noida,Uttar Pradesh,North
+C00724,Chopra E-Store,Online,Surat,Gujarat,West
+C00725,Banerjee D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00726,Rao Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C00727,Agarwal Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00728,Kapoor Kirana Store,Retail,Pune,Maharashtra,West
+C00729,Agarwal General Store,Retail,Bengaluru,Karnataka,South
+C00730,Kumar Retail Mart,Retail,Pune,Maharashtra,West
+C00731,Joshi General Store,Retail,Bengaluru,Karnataka,South
+C00732,Pillai General Store,Retail,Noida,Uttar Pradesh,North
+C00733,Joshi Supermart,Retail,Mumbai,Maharashtra,West
+C00734,Pillai Kirana Store,Retail,Bengaluru,Karnataka,South
+C00735,Iyer Retail Mart,Retail,Delhi,Delhi,North
+C00736,Shetty Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00737,Singh Wholesale Traders,Wholesale,Mumbai,Maharashtra,West
+C00738,Nair D2C Store,Online,Ahmedabad,Gujarat,West
+C00739,Das Trading Co,Wholesale,Bhubaneswar,Odisha,East
+C00740,Reddy Online Retail,Online,Ahmedabad,Gujarat,West
+C00741,Chopra Online Retail,Online,Gurugram,Haryana,North
+C00742,Pillai General Store,Retail,Guwahati,Assam,East
+C00743,Reddy Agencies,Distributor,Hyderabad,Telangana,South
+C00744,Das Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00745,Singh Trading Co,Wholesale,Ludhiana,Punjab,North
+C00746,Sharma Online Retail,Online,Ludhiana,Punjab,North
+C00747,Mehta Retail Mart,Retail,Kochi,Kerala,South
+C00748,Gupta Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C00749,Jain Kirana Store,Retail,Noida,Uttar Pradesh,North
+C00750,Patel General Store,Retail,Mysuru,Karnataka,South
+C00751,Kumar Retail Mart,Retail,Indore,Madhya Pradesh,West
+C00752,Kumar General Store,Retail,Chandigarh,Chandigarh,North
+C00753,Sinha Retail Mart,Retail,Gurugram,Haryana,North
+C00754,Sinha Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00755,Jain Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C00756,Menon Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C00757,Kumar Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C00758,Iyer General Store,Retail,Gurugram,Haryana,North
+C00759,Agarwal Kirana Store,Retail,Mumbai,Maharashtra,West
+C00760,Sharma Online Retail,Online,Nagpur,Maharashtra,West
+C00761,Kumar E-Store,Online,Mumbai,Maharashtra,West
+C00762,Singh General Store,Retail,Kolkata,West Bengal,East
+C00763,Mehta Retail Mart,Retail,Bengaluru,Karnataka,South
+C00764,Bose E-Store,Online,Surat,Gujarat,West
+C00765,Patel Online Retail,Online,Ranchi,Jharkhand,East
+C00766,Sharma Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C00767,Iyer Kirana Store,Retail,Guwahati,Assam,East
+C00768,Rao Kirana Store,Retail,Surat,Gujarat,West
+C00769,Chopra Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00770,Nair Online Retail,Online,Howrah,West Bengal,East
+C00771,Banerjee Wholesale Traders,Wholesale,Mumbai,Maharashtra,West
+C00772,Patel Supermart,Retail,Mumbai,Maharashtra,West
+C00773,Banerjee Trading Co,Wholesale,Thane,Maharashtra,West
+C00774,Reddy D2C Store,Online,Chennai,Tamil Nadu,South
+C00775,Mehta Kirana Store,Retail,Kochi,Kerala,South
+C00776,Chopra Online Retail,Online,Ludhiana,Punjab,North
+C00777,Agarwal Supermart,Retail,Mysuru,Karnataka,South
+C00778,Iyer Supermart,Retail,Mysuru,Karnataka,South
+C00779,Das Trading Co,Wholesale,Mumbai,Maharashtra,West
+C00780,Sharma General Store,Retail,Ludhiana,Punjab,North
+C00781,Rao Distributors,Distributor,Indore,Madhya Pradesh,West
+C00782,Iyer Supermart,Retail,Lucknow,Uttar Pradesh,North
+C00783,Kumar Supermart,Retail,Ludhiana,Punjab,North
+C00784,Kapoor Kirana Store,Retail,Mumbai,Maharashtra,West
+C00785,Das Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C00786,Singh General Store,Retail,Pune,Maharashtra,West
+C00787,Sharma E-Store,Online,Hyderabad,Telangana,South
+C00788,Singh Retail Mart,Retail,Pune,Maharashtra,West
+C00789,Sinha Kirana Store,Retail,Ranchi,Jharkhand,East
+C00790,Gupta Wholesale Traders,Wholesale,Bhubaneswar,Odisha,East
+C00791,Bose Supermart,Retail,Coimbatore,Tamil Nadu,South
+C00792,Khan Wholesale Traders,Wholesale,Kolkata,West Bengal,East
+C00793,Agarwal General Store,Retail,Coimbatore,Tamil Nadu,South
+C00794,Chopra Retail Mart,Retail,Thane,Maharashtra,West
+C00795,Bose E-Store,Online,Mysuru,Karnataka,South
+C00796,Mehta D2C Store,Online,Ludhiana,Punjab,North
+C00797,Kumar Online Retail,Online,Kochi,Kerala,South
+C00798,Mehta General Store,Retail,Nagpur,Maharashtra,West
+C00799,Mehta Kirana Store,Retail,Jaipur,Rajasthan,North
+C00800,Pillai Online Retail,Online,Thane,Maharashtra,West
+C00801,Nair Trading Co,Wholesale,Patna,Bihar,East
+C00802,Iyer Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C00803,Rao Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C00804,Nair E-Store,Online,Gurugram,Haryana,North
+C00805,Mehta Supermart,Retail,Nagpur,Maharashtra,West
+C00806,Rao Trading Co,Wholesale,Mysuru,Karnataka,South
+C00807,Khan Supermart,Retail,Kochi,Kerala,South
+C00808,Sharma Kirana Store,Retail,Thane,Maharashtra,West
+C00809,Jain Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C00810,Pillai Supermart,Retail,Jaipur,Rajasthan,North
+C00811,Iyer Kirana Store,Retail,Pune,Maharashtra,West
+C00812,Sharma D2C Store,Online,Kochi,Kerala,South
+C00813,Singh D2C Store,Online,Kochi,Kerala,South
+C00814,Khan Wholesale Traders,Wholesale,Mumbai,Maharashtra,West
+C00815,Sharma Agencies,Distributor,Bengaluru,Karnataka,South
+C00816,Kapoor Retail Mart,Retail,Nagpur,Maharashtra,West
+C00817,Sinha E-Store,Online,Vijayawada,Andhra Pradesh,South
+C00818,Chopra Kirana Store,Retail,Nagpur,Maharashtra,West
+C00819,Sinha Retail Mart,Retail,Bengaluru,Karnataka,South
+C00820,Gupta Supermart,Retail,Thane,Maharashtra,West
+C00821,Menon Supermart,Retail,Kolkata,West Bengal,East
+C00822,Sinha Retail Mart,Retail,Mumbai,Maharashtra,West
+C00823,Sinha Kirana Store,Retail,Ludhiana,Punjab,North
+C00824,Bose Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C00825,Singh Retail Mart,Retail,Pune,Maharashtra,West
+C00826,Verma Retail Mart,Retail,Bengaluru,Karnataka,South
+C00827,Kumar Agencies,Distributor,Kochi,Kerala,South
+C00828,Bose Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C00829,Das Online Retail,Online,Pune,Maharashtra,West
+C00830,Iyer General Store,Retail,Hyderabad,Telangana,South
+C00831,Bose General Store,Retail,Bengaluru,Karnataka,South
+C00832,Sharma Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00833,Mehta Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C00834,Bose Supermart,Retail,Delhi,Delhi,North
+C00835,Banerjee E-Store,Online,Indore,Madhya Pradesh,West
+C00836,Mehta Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C00837,Banerjee Online Retail,Online,Ranchi,Jharkhand,East
+C00838,Reddy Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C00839,Iyer Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C00840,Rao General Store,Retail,Hyderabad,Telangana,South
+C00841,Bose Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C00842,Reddy Kirana Store,Retail,Nagpur,Maharashtra,West
+C00843,Joshi Kirana Store,Retail,Hyderabad,Telangana,South
+C00844,Nair Supermart,Retail,Ludhiana,Punjab,North
+C00845,Khan Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C00846,Khan Distributors,Distributor,Ludhiana,Punjab,North
+C00847,Menon E-Store,Online,Chandigarh,Chandigarh,North
+C00848,Singh E-Store,Online,Kochi,Kerala,South
+C00849,Chopra Distributors,Distributor,Pune,Maharashtra,West
+C00850,Chopra D2C Store,Online,Ahmedabad,Gujarat,West
+C00851,Kapoor Supermart,Retail,Ahmedabad,Gujarat,West
+C00852,Nair Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00853,Bose Retail Mart,Retail,Nagpur,Maharashtra,West
+C00854,Agarwal General Store,Retail,Ludhiana,Punjab,North
+C00855,Kumar Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C00856,Menon Retail Mart,Retail,Delhi,Delhi,North
+C00857,Gupta Distributors,Distributor,Mysuru,Karnataka,South
+C00858,Sinha Agencies,Distributor,Noida,Uttar Pradesh,North
+C00859,Pillai Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00860,Khan Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C00861,Reddy Kirana Store,Retail,Delhi,Delhi,North
+C00862,Reddy Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00863,Jain Kirana Store,Retail,Patna,Bihar,East
+C00864,Sinha Supermart,Retail,Ahmedabad,Gujarat,West
+C00865,Gupta Retail Mart,Retail,Mysuru,Karnataka,South
+C00866,Agarwal Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00867,Menon Kirana Store,Retail,Nagpur,Maharashtra,West
+C00868,Iyer Kirana Store,Retail,Mumbai,Maharashtra,West
+C00869,Singh D2C Store,Online,Chennai,Tamil Nadu,South
+C00870,Chopra Retail Mart,Retail,Mumbai,Maharashtra,West
+C00871,Verma General Store,Retail,Bengaluru,Karnataka,South
+C00872,Das Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00873,Banerjee Kirana Store,Retail,Ludhiana,Punjab,North
+C00874,Jain General Store,Retail,Pune,Maharashtra,West
+C00875,Sharma Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C00876,Rao Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C00877,Pillai Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C00878,Pillai Trading Co,Wholesale,Thane,Maharashtra,West
+C00879,Iyer Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C00880,Agarwal Supermart,Retail,Chennai,Tamil Nadu,South
+C00881,Rao Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C00882,Iyer Retail Mart,Retail,Pune,Maharashtra,West
+C00883,Kapoor Retail Mart,Retail,Hyderabad,Telangana,South
+C00884,Pillai Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00885,Agarwal Kirana Store,Retail,Bengaluru,Karnataka,South
+C00886,Patel Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C00887,Patel Supermart,Retail,Ahmedabad,Gujarat,West
+C00888,Sinha Supermart,Retail,Jaipur,Rajasthan,North
+C00889,Joshi Wholesale Traders,Wholesale,Kochi,Kerala,South
+C00890,Sinha Kirana Store,Retail,Chennai,Tamil Nadu,South
+C00891,Gupta D2C Store,Online,Ahmedabad,Gujarat,West
+C00892,Gupta Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00893,Gupta Agencies,Distributor,Chennai,Tamil Nadu,South
+C00894,Sharma General Store,Retail,Noida,Uttar Pradesh,North
+C00895,Verma Kirana Store,Retail,Hyderabad,Telangana,South
+C00896,Khan Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C00897,Rao Wholesale Traders,Wholesale,Guwahati,Assam,East
+C00898,Verma Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C00899,Gupta Retail Mart,Retail,Pune,Maharashtra,West
+C00900,Kumar Retail Mart,Retail,Mumbai,Maharashtra,West
+C00901,Reddy General Store,Retail,Thane,Maharashtra,West
+C00902,Sharma General Store,Retail,Coimbatore,Tamil Nadu,South
+C00903,Singh Supermart,Retail,Mumbai,Maharashtra,West
+C00904,Sinha D2C Store,Online,Chandigarh,Chandigarh,North
+C00905,Sharma Kirana Store,Retail,Nagpur,Maharashtra,West
+C00906,Khan Trading Co,Wholesale,Kochi,Kerala,South
+C00907,Banerjee Agencies,Distributor,Coimbatore,Tamil Nadu,South
+C00908,Iyer General Store,Retail,Nagpur,Maharashtra,West
+C00909,Das Trading Co,Wholesale,Pune,Maharashtra,West
+C00910,Gupta Trading Co,Wholesale,Ludhiana,Punjab,North
+C00911,Kumar Retail Mart,Retail,Chennai,Tamil Nadu,South
+C00912,Chopra Supermart,Retail,Bengaluru,Karnataka,South
+C00913,Khan E-Store,Online,Mysuru,Karnataka,South
+C00914,Rao Online Retail,Online,Coimbatore,Tamil Nadu,South
+C00915,Bose E-Store,Online,Delhi,Delhi,North
+C00916,Singh Agencies,Distributor,Mysuru,Karnataka,South
+C00917,Shetty Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00918,Sharma D2C Store,Online,Chandigarh,Chandigarh,North
+C00919,Kapoor Trading Co,Wholesale,Pune,Maharashtra,West
+C00920,Agarwal Trading Co,Wholesale,Mumbai,Maharashtra,West
+C00921,Sinha Online Retail,Online,Kolkata,West Bengal,East
+C00922,Jain E-Store,Online,Surat,Gujarat,West
+C00923,Sinha E-Store,Online,Chennai,Tamil Nadu,South
+C00924,Patel Supermart,Retail,Mysuru,Karnataka,South
+C00925,Reddy Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00926,Banerjee Supermart,Retail,Bhubaneswar,Odisha,East
+C00927,Mehta Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C00928,Sharma Online Retail,Online,Indore,Madhya Pradesh,West
+C00929,Joshi D2C Store,Online,Chandigarh,Chandigarh,North
+C00930,Banerjee Retail Mart,Retail,Indore,Madhya Pradesh,West
+C00931,Iyer Retail Mart,Retail,Mysuru,Karnataka,South
+C00932,Banerjee General Store,Retail,Mumbai,Maharashtra,West
+C00933,Jain Supermart,Retail,Thane,Maharashtra,West
+C00934,Patel Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C00935,Chopra E-Store,Online,Pune,Maharashtra,West
+C00936,Banerjee General Store,Retail,Coimbatore,Tamil Nadu,South
+C00937,Jain Distributors,Distributor,Indore,Madhya Pradesh,West
+C00938,Pillai General Store,Retail,Kochi,Kerala,South
+C00939,Verma Online Retail,Online,Mysuru,Karnataka,South
+C00940,Khan Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C00941,Mehta Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00942,Das Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C00943,Mehta D2C Store,Online,Chandigarh,Chandigarh,North
+C00944,Singh D2C Store,Online,Mumbai,Maharashtra,West
+C00945,Verma Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00946,Menon Supermart,Retail,Hyderabad,Telangana,South
+C00947,Iyer General Store,Retail,Delhi,Delhi,North
+C00948,Mehta D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C00949,Rao Retail Mart,Retail,Chandigarh,Chandigarh,North
+C00950,Khan Trading Co,Wholesale,Hyderabad,Telangana,South
+C00951,Joshi Wholesale Traders,Wholesale,Patna,Bihar,East
+C00952,Gupta Kirana Store,Retail,Indore,Madhya Pradesh,West
+C00953,Sharma Online Retail,Online,Chennai,Tamil Nadu,South
+C00954,Singh E-Store,Online,Chennai,Tamil Nadu,South
+C00955,Kumar D2C Store,Online,Mysuru,Karnataka,South
+C00956,Rao E-Store,Online,Kochi,Kerala,South
+C00957,Khan E-Store,Online,Mysuru,Karnataka,South
+C00958,Banerjee Trading Co,Wholesale,Jaipur,Rajasthan,North
+C00959,Mehta Agencies,Distributor,Mysuru,Karnataka,South
+C00960,Bose General Store,Retail,Gurugram,Haryana,North
+C00961,Khan Trading Co,Wholesale,Patna,Bihar,East
+C00962,Reddy Online Retail,Online,Chandigarh,Chandigarh,North
+C00963,Nair General Store,Retail,Ludhiana,Punjab,North
+C00964,Nair General Store,Retail,Kochi,Kerala,South
+C00965,Reddy Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C00966,Reddy Retail Mart,Retail,Ahmedabad,Gujarat,West
+C00967,Menon Online Retail,Online,Chennai,Tamil Nadu,South
+C00968,Mehta General Store,Retail,Noida,Uttar Pradesh,North
+C00969,Nair Kirana Store,Retail,Noida,Uttar Pradesh,North
+C00970,Menon Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C00971,Iyer Supermart,Retail,Gurugram,Haryana,North
+C00972,Reddy Retail Mart,Retail,Noida,Uttar Pradesh,North
+C00973,Nair Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C00974,Mehta Trading Co,Wholesale,Nagpur,Maharashtra,West
+C00975,Joshi Kirana Store,Retail,Mumbai,Maharashtra,West
+C00976,Kumar Wholesale Traders,Wholesale,Delhi,Delhi,North
+C00977,Reddy Trading Co,Wholesale,Bengaluru,Karnataka,South
+C00978,Singh D2C Store,Online,Coimbatore,Tamil Nadu,South
+C00979,Kapoor Supermart,Retail,Noida,Uttar Pradesh,North
+C00980,Agarwal Supermart,Retail,Mumbai,Maharashtra,West
+C00981,Patel Distributors,Distributor,Mysuru,Karnataka,South
+C00982,Reddy Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C00983,Reddy Retail Mart,Retail,Indore,Madhya Pradesh,West
+C00984,Pillai Online Retail,Online,Surat,Gujarat,West
+C00985,Iyer General Store,Retail,Jaipur,Rajasthan,North
+C00986,Sinha E-Store,Online,Coimbatore,Tamil Nadu,South
+C00987,Sharma D2C Store,Online,Kolkata,West Bengal,East
+C00988,Kapoor Distributors,Distributor,Kolkata,West Bengal,East
+C00989,Sinha Agencies,Distributor,Noida,Uttar Pradesh,North
+C00990,Kapoor Retail Mart,Retail,Ahmedabad,Gujarat,West
+C00991,Das D2C Store,Online,Jaipur,Rajasthan,North
+C00992,Pillai Retail Mart,Retail,Nagpur,Maharashtra,West
+C00993,Banerjee Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C00994,Agarwal Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C00995,Chopra Retail Mart,Retail,Jaipur,Rajasthan,North
+C00996,Sinha General Store,Retail,Howrah,West Bengal,East
+C00997,Joshi Kirana Store,Retail,Delhi,Delhi,North
+C00998,Bose Retail Mart,Retail,Ludhiana,Punjab,North
+C00999,Singh Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01000,Patel D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01001,Kumar General Store,Retail,Thane,Maharashtra,West
+C01002,Patel E-Store,Online,Bengaluru,Karnataka,South
+C01003,Gupta Online Retail,Online,Chandigarh,Chandigarh,North
+C01004,Bose D2C Store,Online,Delhi,Delhi,North
+C01005,Iyer Supermart,Retail,Thane,Maharashtra,West
+C01006,Chopra Online Retail,Online,Surat,Gujarat,West
+C01007,Verma E-Store,Online,Coimbatore,Tamil Nadu,South
+C01008,Pillai Online Retail,Online,Gurugram,Haryana,North
+C01009,Verma Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01010,Menon Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C01011,Chopra Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C01012,Patel Online Retail,Online,Delhi,Delhi,North
+C01013,Khan Kirana Store,Retail,Pune,Maharashtra,West
+C01014,Sharma D2C Store,Online,Mysuru,Karnataka,South
+C01015,Reddy General Store,Retail,Chennai,Tamil Nadu,South
+C01016,Shetty Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C01017,Banerjee Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C01018,Pillai Kirana Store,Retail,Noida,Uttar Pradesh,North
+C01019,Kapoor Agencies,Distributor,Nagpur,Maharashtra,West
+C01020,Jain Kirana Store,Retail,Jaipur,Rajasthan,North
+C01021,Joshi D2C Store,Online,Kochi,Kerala,South
+C01022,Pillai General Store,Retail,Delhi,Delhi,North
+C01023,Joshi Distributors,Distributor,Mumbai,Maharashtra,West
+C01024,Joshi Retail Mart,Retail,Mumbai,Maharashtra,West
+C01025,Nair Supermart,Retail,Mumbai,Maharashtra,West
+C01026,Sharma General Store,Retail,Chennai,Tamil Nadu,South
+C01027,Sinha Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C01028,Gupta Agencies,Distributor,Bhubaneswar,Odisha,East
+C01029,Banerjee Distributors,Distributor,Kochi,Kerala,South
+C01030,Das Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01031,Menon Kirana Store,Retail,Mysuru,Karnataka,South
+C01032,Patel Retail Mart,Retail,Bengaluru,Karnataka,South
+C01033,Pillai Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01034,Mehta Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C01035,Kumar Kirana Store,Retail,Mumbai,Maharashtra,West
+C01036,Das Trading Co,Wholesale,Mysuru,Karnataka,South
+C01037,Menon Online Retail,Online,Ludhiana,Punjab,North
+C01038,Joshi Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01039,Pillai Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01040,Patel General Store,Retail,Delhi,Delhi,North
+C01041,Agarwal General Store,Retail,Mumbai,Maharashtra,West
+C01042,Gupta Kirana Store,Retail,Mysuru,Karnataka,South
+C01043,Banerjee Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01044,Reddy General Store,Retail,Coimbatore,Tamil Nadu,South
+C01045,Menon Online Retail,Online,Lucknow,Uttar Pradesh,North
+C01046,Iyer E-Store,Online,Coimbatore,Tamil Nadu,South
+C01047,Gupta Online Retail,Online,Chennai,Tamil Nadu,South
+C01048,Shetty Trading Co,Wholesale,Jaipur,Rajasthan,North
+C01049,Rao Supermart,Retail,Ludhiana,Punjab,North
+C01050,Menon Retail Mart,Retail,Pune,Maharashtra,West
+C01051,Gupta Kirana Store,Retail,Thane,Maharashtra,West
+C01052,Verma Distributors,Distributor,Jaipur,Rajasthan,North
+C01053,Verma Distributors,Distributor,Kolkata,West Bengal,East
+C01054,Nair General Store,Retail,Noida,Uttar Pradesh,North
+C01055,Gupta Kirana Store,Retail,Kochi,Kerala,South
+C01056,Kumar Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01057,Menon Supermart,Retail,Kolkata,West Bengal,East
+C01058,Kumar Distributors,Distributor,Delhi,Delhi,North
+C01059,Chopra Kirana Store,Retail,Pune,Maharashtra,West
+C01060,Sinha Kirana Store,Retail,Bengaluru,Karnataka,South
+C01061,Shetty Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01062,Banerjee Retail Mart,Retail,Kochi,Kerala,South
+C01063,Das Kirana Store,Retail,Mumbai,Maharashtra,West
+C01064,Kapoor D2C Store,Online,Chennai,Tamil Nadu,South
+C01065,Patel Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C01066,Khan Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01067,Kapoor Supermart,Retail,Delhi,Delhi,North
+C01068,Pillai Supermart,Retail,Jaipur,Rajasthan,North
+C01069,Mehta Kirana Store,Retail,Gurugram,Haryana,North
+C01070,Shetty Supermart,Retail,Pune,Maharashtra,West
+C01071,Chopra General Store,Retail,Jaipur,Rajasthan,North
+C01072,Reddy General Store,Retail,Patna,Bihar,East
+C01073,Reddy E-Store,Online,Nagpur,Maharashtra,West
+C01074,Sinha Online Retail,Online,Coimbatore,Tamil Nadu,South
+C01075,Reddy Agencies,Distributor,Nagpur,Maharashtra,West
+C01076,Khan General Store,Retail,Indore,Madhya Pradesh,West
+C01077,Joshi Online Retail,Online,Pune,Maharashtra,West
+C01078,Reddy Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C01079,Pillai Kirana Store,Retail,Surat,Gujarat,West
+C01080,Kapoor General Store,Retail,Surat,Gujarat,West
+C01081,Iyer Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C01082,Patel Online Retail,Online,Kolkata,West Bengal,East
+C01083,Sharma General Store,Retail,Delhi,Delhi,North
+C01084,Patel General Store,Retail,Mumbai,Maharashtra,West
+C01085,Chopra Distributors,Distributor,Ludhiana,Punjab,North
+C01086,Chopra General Store,Retail,Pune,Maharashtra,West
+C01087,Pillai Agencies,Distributor,Hyderabad,Telangana,South
+C01088,Chopra D2C Store,Online,Chandigarh,Chandigarh,North
+C01089,Menon D2C Store,Online,Mysuru,Karnataka,South
+C01090,Sharma Online Retail,Online,Pune,Maharashtra,West
+C01091,Pillai Supermart,Retail,Gurugram,Haryana,North
+C01092,Sinha Trading Co,Wholesale,Patna,Bihar,East
+C01093,Sinha D2C Store,Online,Nagpur,Maharashtra,West
+C01094,Chopra E-Store,Online,Mysuru,Karnataka,South
+C01095,Verma Supermart,Retail,Thane,Maharashtra,West
+C01096,Sinha General Store,Retail,Kolkata,West Bengal,East
+C01097,Shetty General Store,Retail,Surat,Gujarat,West
+C01098,Shetty Supermart,Retail,Surat,Gujarat,West
+C01099,Chopra Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01100,Kapoor D2C Store,Online,Pune,Maharashtra,West
+C01101,Agarwal D2C Store,Online,Indore,Madhya Pradesh,West
+C01102,Bose Wholesale Traders,Wholesale,Ranchi,Jharkhand,East
+C01103,Khan Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01104,Iyer Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01105,Khan Kirana Store,Retail,Bengaluru,Karnataka,South
+C01106,Kapoor Retail Mart,Retail,Kochi,Kerala,South
+C01107,Patel General Store,Retail,Hyderabad,Telangana,South
+C01108,Sharma Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01109,Shetty Kirana Store,Retail,Ahmedabad,Gujarat,West
+C01110,Khan Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01111,Pillai General Store,Retail,Coimbatore,Tamil Nadu,South
+C01112,Verma Supermart,Retail,Hyderabad,Telangana,South
+C01113,Bose General Store,Retail,Thane,Maharashtra,West
+C01114,Singh Trading Co,Wholesale,Gurugram,Haryana,North
+C01115,Gupta Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C01116,Nair Retail Mart,Retail,Nagpur,Maharashtra,West
+C01117,Sinha Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01118,Shetty Agencies,Distributor,Ludhiana,Punjab,North
+C01119,Nair Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C01120,Joshi Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C01121,Joshi Wholesale Traders,Wholesale,Patna,Bihar,East
+C01122,Rao E-Store,Online,Noida,Uttar Pradesh,North
+C01123,Kumar E-Store,Online,Kolkata,West Bengal,East
+C01124,Mehta Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01125,Singh Trading Co,Wholesale,Bengaluru,Karnataka,South
+C01126,Nair Kirana Store,Retail,Jaipur,Rajasthan,North
+C01127,Pillai Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01128,Kumar Kirana Store,Retail,Hyderabad,Telangana,South
+C01129,Sharma Supermart,Retail,Indore,Madhya Pradesh,West
+C01130,Chopra Agencies,Distributor,Nagpur,Maharashtra,West
+C01131,Agarwal E-Store,Online,Chennai,Tamil Nadu,South
+C01132,Gupta Supermart,Retail,Mysuru,Karnataka,South
+C01133,Reddy Distributors,Distributor,Delhi,Delhi,North
+C01134,Menon Kirana Store,Retail,Nagpur,Maharashtra,West
+C01135,Rao Supermart,Retail,Ludhiana,Punjab,North
+C01136,Jain Online Retail,Online,Bhubaneswar,Odisha,East
+C01137,Khan Kirana Store,Retail,Howrah,West Bengal,East
+C01138,Das Kirana Store,Retail,Pune,Maharashtra,West
+C01139,Gupta Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C01140,Iyer Retail Mart,Retail,Delhi,Delhi,North
+C01141,Nair General Store,Retail,Mumbai,Maharashtra,West
+C01142,Das Kirana Store,Retail,Hyderabad,Telangana,South
+C01143,Bose Trading Co,Wholesale,Thane,Maharashtra,West
+C01144,Menon Retail Mart,Retail,Ludhiana,Punjab,North
+C01145,Kumar General Store,Retail,Lucknow,Uttar Pradesh,North
+C01146,Joshi Online Retail,Online,Chandigarh,Chandigarh,North
+C01147,Jain Supermart,Retail,Bengaluru,Karnataka,South
+C01148,Menon Kirana Store,Retail,Kochi,Kerala,South
+C01149,Mehta E-Store,Online,Coimbatore,Tamil Nadu,South
+C01150,Verma E-Store,Online,Pune,Maharashtra,West
+C01151,Jain Kirana Store,Retail,Patna,Bihar,East
+C01152,Gupta D2C Store,Online,Mumbai,Maharashtra,West
+C01153,Sinha E-Store,Online,Kochi,Kerala,South
+C01154,Gupta Supermart,Retail,Chennai,Tamil Nadu,South
+C01155,Kumar D2C Store,Online,Thane,Maharashtra,West
+C01156,Gupta E-Store,Online,Kochi,Kerala,South
+C01157,Nair Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C01158,Chopra Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C01159,Das E-Store,Online,Jaipur,Rajasthan,North
+C01160,Shetty Agencies,Distributor,Thane,Maharashtra,West
+C01161,Reddy Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01162,Verma Online Retail,Online,Delhi,Delhi,North
+C01163,Sharma Online Retail,Online,Jaipur,Rajasthan,North
+C01164,Banerjee Online Retail,Online,Pune,Maharashtra,West
+C01165,Verma Distributors,Distributor,Mysuru,Karnataka,South
+C01166,Mehta Supermart,Retail,Ahmedabad,Gujarat,West
+C01167,Rao Retail Mart,Retail,Mumbai,Maharashtra,West
+C01168,Chopra Trading Co,Wholesale,Patna,Bihar,East
+C01169,Shetty Kirana Store,Retail,Kolkata,West Bengal,East
+C01170,Sinha Trading Co,Wholesale,Jaipur,Rajasthan,North
+C01171,Jain Online Retail,Online,Thane,Maharashtra,West
+C01172,Iyer D2C Store,Online,Bengaluru,Karnataka,South
+C01173,Kapoor Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01174,Shetty E-Store,Online,Thane,Maharashtra,West
+C01175,Kumar General Store,Retail,Vijayawada,Andhra Pradesh,South
+C01176,Sinha Trading Co,Wholesale,Lucknow,Uttar Pradesh,North
+C01177,Joshi Retail Mart,Retail,Mumbai,Maharashtra,West
+C01178,Chopra Kirana Store,Retail,Bengaluru,Karnataka,South
+C01179,Kapoor Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C01180,Sharma D2C Store,Online,Bengaluru,Karnataka,South
+C01181,Das Trading Co,Wholesale,Ludhiana,Punjab,North
+C01182,Gupta General Store,Retail,Lucknow,Uttar Pradesh,North
+C01183,Nair Retail Mart,Retail,Ludhiana,Punjab,North
+C01184,Singh General Store,Retail,Jaipur,Rajasthan,North
+C01185,Agarwal Agencies,Distributor,Noida,Uttar Pradesh,North
+C01186,Rao D2C Store,Online,Thane,Maharashtra,West
+C01187,Chopra Supermart,Retail,Mumbai,Maharashtra,West
+C01188,Khan Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01189,Agarwal Supermart,Retail,Pune,Maharashtra,West
+C01190,Iyer Trading Co,Wholesale,Delhi,Delhi,North
+C01191,Menon Supermart,Retail,Kochi,Kerala,South
+C01192,Singh Kirana Store,Retail,Chandigarh,Chandigarh,North
+C01193,Joshi Supermart,Retail,Kochi,Kerala,South
+C01194,Chopra Kirana Store,Retail,Jaipur,Rajasthan,North
+C01195,Joshi Kirana Store,Retail,Mumbai,Maharashtra,West
+C01196,Khan Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01197,Singh Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01198,Menon Trading Co,Wholesale,Mysuru,Karnataka,South
+C01199,Iyer Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01200,Nair Wholesale Traders,Wholesale,Delhi,Delhi,North
+C01201,Gupta General Store,Retail,Kochi,Kerala,South
+C01202,Iyer Online Retail,Online,Mysuru,Karnataka,South
+C01203,Sharma Distributors,Distributor,Guwahati,Assam,East
+C01204,Pillai Kirana Store,Retail,Thane,Maharashtra,West
+C01205,Singh E-Store,Online,Pune,Maharashtra,West
+C01206,Joshi Online Retail,Online,Bengaluru,Karnataka,South
+C01207,Menon Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C01208,Nair Kirana Store,Retail,Chandigarh,Chandigarh,North
+C01209,Jain General Store,Retail,Gurugram,Haryana,North
+C01210,Reddy Kirana Store,Retail,Jaipur,Rajasthan,North
+C01211,Khan Distributors,Distributor,Mumbai,Maharashtra,West
+C01212,Bose Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C01213,Singh General Store,Retail,Lucknow,Uttar Pradesh,North
+C01214,Verma Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01215,Sinha Supermart,Retail,Bhubaneswar,Odisha,East
+C01216,Reddy Kirana Store,Retail,Gurugram,Haryana,North
+C01217,Sharma Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C01218,Agarwal Retail Mart,Retail,Thane,Maharashtra,West
+C01219,Shetty D2C Store,Online,Chandigarh,Chandigarh,North
+C01220,Menon Trading Co,Wholesale,Ranchi,Jharkhand,East
+C01221,Khan Wholesale Traders,Wholesale,Guwahati,Assam,East
+C01222,Mehta E-Store,Online,Thane,Maharashtra,West
+C01223,Kapoor Supermart,Retail,Nagpur,Maharashtra,West
+C01224,Jain Wholesale Traders,Wholesale,Ahmedabad,Gujarat,West
+C01225,Joshi E-Store,Online,Jaipur,Rajasthan,North
+C01226,Reddy Kirana Store,Retail,Nagpur,Maharashtra,West
+C01227,Chopra Retail Mart,Retail,Jaipur,Rajasthan,North
+C01228,Sharma Retail Mart,Retail,Jaipur,Rajasthan,North
+C01229,Sharma General Store,Retail,Hyderabad,Telangana,South
+C01230,Singh Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C01231,Jain General Store,Retail,Delhi,Delhi,North
+C01232,Mehta Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01233,Iyer Retail Mart,Retail,Nagpur,Maharashtra,West
+C01234,Sinha General Store,Retail,Gurugram,Haryana,North
+C01235,Iyer General Store,Retail,Lucknow,Uttar Pradesh,North
+C01236,Sinha Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01237,Singh Distributors,Distributor,Lucknow,Uttar Pradesh,North
+C01238,Sharma Kirana Store,Retail,Hyderabad,Telangana,South
+C01239,Nair Supermart,Retail,Guwahati,Assam,East
+C01240,Kumar Supermart,Retail,Surat,Gujarat,West
+C01241,Patel Supermart,Retail,Nagpur,Maharashtra,West
+C01242,Joshi Wholesale Traders,Wholesale,Bengaluru,Karnataka,South
+C01243,Verma E-Store,Online,Vijayawada,Andhra Pradesh,South
+C01244,Banerjee General Store,Retail,Jaipur,Rajasthan,North
+C01245,Joshi Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C01246,Kumar General Store,Retail,Pune,Maharashtra,West
+C01247,Gupta Online Retail,Online,Hyderabad,Telangana,South
+C01248,Menon Wholesale Traders,Wholesale,Ludhiana,Punjab,North
+C01249,Khan General Store,Retail,Indore,Madhya Pradesh,West
+C01250,Das D2C Store,Online,Mumbai,Maharashtra,West
+C01251,Patel E-Store,Online,Thane,Maharashtra,West
+C01252,Shetty Kirana Store,Retail,Indore,Madhya Pradesh,West
+C01253,Shetty Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C01254,Nair E-Store,Online,Surat,Gujarat,West
+C01255,Reddy Supermart,Retail,Chandigarh,Chandigarh,North
+C01256,Patel D2C Store,Online,Noida,Uttar Pradesh,North
+C01257,Jain Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C01258,Nair Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C01259,Iyer General Store,Retail,Ludhiana,Punjab,North
+C01260,Pillai Online Retail,Online,Delhi,Delhi,North
+C01261,Banerjee Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C01262,Kumar Trading Co,Wholesale,Mysuru,Karnataka,South
+C01263,Chopra General Store,Retail,Mysuru,Karnataka,South
+C01264,Bose Kirana Store,Retail,Kochi,Kerala,South
+C01265,Kapoor E-Store,Online,Mumbai,Maharashtra,West
+C01266,Bose Online Retail,Online,Surat,Gujarat,West
+C01267,Sharma General Store,Retail,Delhi,Delhi,North
+C01268,Banerjee Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01269,Shetty Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01270,Sinha Trading Co,Wholesale,Jaipur,Rajasthan,North
+C01271,Menon Supermart,Retail,Hyderabad,Telangana,South
+C01272,Agarwal Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C01273,Reddy General Store,Retail,Noida,Uttar Pradesh,North
+C01274,Kapoor General Store,Retail,Surat,Gujarat,West
+C01275,Kumar Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01276,Sharma Online Retail,Online,Guwahati,Assam,East
+C01277,Bose General Store,Retail,Indore,Madhya Pradesh,West
+C01278,Jain D2C Store,Online,Howrah,West Bengal,East
+C01279,Agarwal Online Retail,Online,Hyderabad,Telangana,South
+C01280,Pillai Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01281,Nair Retail Mart,Retail,Mysuru,Karnataka,South
+C01282,Mehta E-Store,Online,Thane,Maharashtra,West
+C01283,Rao E-Store,Online,Hyderabad,Telangana,South
+C01284,Banerjee Kirana Store,Retail,Hyderabad,Telangana,South
+C01285,Kapoor Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01286,Verma Trading Co,Wholesale,Gurugram,Haryana,North
+C01287,Kumar D2C Store,Online,Chennai,Tamil Nadu,South
+C01288,Agarwal E-Store,Online,Kolkata,West Bengal,East
+C01289,Sinha General Store,Retail,Pune,Maharashtra,West
+C01290,Menon Kirana Store,Retail,Patna,Bihar,East
+C01291,Shetty Supermart,Retail,Pune,Maharashtra,West
+C01292,Bose E-Store,Online,Lucknow,Uttar Pradesh,North
+C01293,Menon Online Retail,Online,Chandigarh,Chandigarh,North
+C01294,Gupta E-Store,Online,Chennai,Tamil Nadu,South
+C01295,Kapoor Kirana Store,Retail,Mysuru,Karnataka,South
+C01296,Patel Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C01297,Nair General Store,Retail,Bengaluru,Karnataka,South
+C01298,Singh General Store,Retail,Nagpur,Maharashtra,West
+C01299,Kapoor Retail Mart,Retail,Surat,Gujarat,West
+C01300,Kumar D2C Store,Online,Mysuru,Karnataka,South
+C01301,Rao Supermart,Retail,Hyderabad,Telangana,South
+C01302,Reddy Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01303,Shetty Agencies,Distributor,Kochi,Kerala,South
+C01304,Sharma Trading Co,Wholesale,Howrah,West Bengal,East
+C01305,Rao Retail Mart,Retail,Gurugram,Haryana,North
+C01306,Rao D2C Store,Online,Mumbai,Maharashtra,West
+C01307,Shetty Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C01308,Das General Store,Retail,Chennai,Tamil Nadu,South
+C01309,Mehta Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01310,Iyer E-Store,Online,Kochi,Kerala,South
+C01311,Khan Kirana Store,Retail,Mumbai,Maharashtra,West
+C01312,Iyer Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01313,Khan General Store,Retail,Kochi,Kerala,South
+C01314,Agarwal Retail Mart,Retail,Kolkata,West Bengal,East
+C01315,Sharma Online Retail,Online,Surat,Gujarat,West
+C01316,Gupta Supermart,Retail,Delhi,Delhi,North
+C01317,Kumar Retail Mart,Retail,Surat,Gujarat,West
+C01318,Reddy General Store,Retail,Pune,Maharashtra,West
+C01319,Chopra General Store,Retail,Ludhiana,Punjab,North
+C01320,Kapoor Retail Mart,Retail,Mumbai,Maharashtra,West
+C01321,Banerjee Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C01322,Pillai Kirana Store,Retail,Surat,Gujarat,West
+C01323,Chopra Supermart,Retail,Ahmedabad,Gujarat,West
+C01324,Gupta E-Store,Online,Chandigarh,Chandigarh,North
+C01325,Patel Distributors,Distributor,Guwahati,Assam,East
+C01326,Menon Kirana Store,Retail,Pune,Maharashtra,West
+C01327,Sinha Supermart,Retail,Thane,Maharashtra,West
+C01328,Sinha General Store,Retail,Jaipur,Rajasthan,North
+C01329,Sinha General Store,Retail,Kochi,Kerala,South
+C01330,Joshi Retail Mart,Retail,Kochi,Kerala,South
+C01331,Banerjee Online Retail,Online,Jaipur,Rajasthan,North
+C01332,Singh E-Store,Online,Noida,Uttar Pradesh,North
+C01333,Banerjee General Store,Retail,Lucknow,Uttar Pradesh,North
+C01334,Mehta Distributors,Distributor,Hyderabad,Telangana,South
+C01335,Banerjee Retail Mart,Retail,Bhubaneswar,Odisha,East
+C01336,Sharma Supermart,Retail,Ahmedabad,Gujarat,West
+C01337,Patel Kirana Store,Retail,Nagpur,Maharashtra,West
+C01338,Banerjee Supermart,Retail,Hyderabad,Telangana,South
+C01339,Chopra E-Store,Online,Bengaluru,Karnataka,South
+C01340,Rao Kirana Store,Retail,Jaipur,Rajasthan,North
+C01341,Sharma Trading Co,Wholesale,Lucknow,Uttar Pradesh,North
+C01342,Singh Kirana Store,Retail,Thane,Maharashtra,West
+C01343,Singh E-Store,Online,Hyderabad,Telangana,South
+C01344,Nair Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01345,Das Supermart,Retail,Chennai,Tamil Nadu,South
+C01346,Gupta General Store,Retail,Kochi,Kerala,South
+C01347,Gupta E-Store,Online,Mumbai,Maharashtra,West
+C01348,Banerjee Trading Co,Wholesale,Pune,Maharashtra,West
+C01349,Agarwal Retail Mart,Retail,Ludhiana,Punjab,North
+C01350,Rao D2C Store,Online,Coimbatore,Tamil Nadu,South
+C01351,Nair General Store,Retail,Chennai,Tamil Nadu,South
+C01352,Menon Kirana Store,Retail,Nagpur,Maharashtra,West
+C01353,Nair Trading Co,Wholesale,Ludhiana,Punjab,North
+C01354,Gupta Retail Mart,Retail,Hyderabad,Telangana,South
+C01355,Iyer Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01356,Reddy Retail Mart,Retail,Bengaluru,Karnataka,South
+C01357,Patel Retail Mart,Retail,Gurugram,Haryana,North
+C01358,Iyer General Store,Retail,Ranchi,Jharkhand,East
+C01359,Rao Supermart,Retail,Chennai,Tamil Nadu,South
+C01360,Kapoor Agencies,Distributor,Kochi,Kerala,South
+C01361,Agarwal Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C01362,Joshi Retail Mart,Retail,Ranchi,Jharkhand,East
+C01363,Kapoor Retail Mart,Retail,Bhubaneswar,Odisha,East
+C01364,Menon Online Retail,Online,Coimbatore,Tamil Nadu,South
+C01365,Joshi Retail Mart,Retail,Thane,Maharashtra,West
+C01366,Reddy Supermart,Retail,Mumbai,Maharashtra,West
+C01367,Kumar Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01368,Agarwal Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01369,Mehta D2C Store,Online,Jaipur,Rajasthan,North
+C01370,Das Online Retail,Online,Jaipur,Rajasthan,North
+C01371,Sinha E-Store,Online,Ranchi,Jharkhand,East
+C01372,Mehta Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01373,Sharma Supermart,Retail,Patna,Bihar,East
+C01374,Shetty Supermart,Retail,Surat,Gujarat,West
+C01375,Jain Online Retail,Online,Kochi,Kerala,South
+C01376,Verma E-Store,Online,Mysuru,Karnataka,South
+C01377,Singh D2C Store,Online,Indore,Madhya Pradesh,West
+C01378,Mehta Retail Mart,Retail,Chandigarh,Chandigarh,North
+C01379,Kapoor E-Store,Online,Guwahati,Assam,East
+C01380,Pillai Trading Co,Wholesale,Lucknow,Uttar Pradesh,North
+C01381,Gupta E-Store,Online,Chennai,Tamil Nadu,South
+C01382,Verma Trading Co,Wholesale,Coimbatore,Tamil Nadu,South
+C01383,Singh Supermart,Retail,Bengaluru,Karnataka,South
+C01384,Patel Kirana Store,Retail,Ludhiana,Punjab,North
+C01385,Agarwal Agencies,Distributor,Hyderabad,Telangana,South
+C01386,Rao Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01387,Das Supermart,Retail,Chennai,Tamil Nadu,South
+C01388,Joshi Kirana Store,Retail,Chandigarh,Chandigarh,North
+C01389,Chopra Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01390,Rao Distributors,Distributor,Chennai,Tamil Nadu,South
+C01391,Chopra General Store,Retail,Delhi,Delhi,North
+C01392,Singh General Store,Retail,Jaipur,Rajasthan,North
+C01393,Iyer Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01394,Gupta Trading Co,Wholesale,Delhi,Delhi,North
+C01395,Verma General Store,Retail,Delhi,Delhi,North
+C01396,Rao General Store,Retail,Nagpur,Maharashtra,West
+C01397,Shetty General Store,Retail,Ranchi,Jharkhand,East
+C01398,Reddy Supermart,Retail,Mysuru,Karnataka,South
+C01399,Menon Retail Mart,Retail,Surat,Gujarat,West
+C01400,Reddy Kirana Store,Retail,Kolkata,West Bengal,East
+C01401,Verma E-Store,Online,Ahmedabad,Gujarat,West
+C01402,Das Online Retail,Online,Indore,Madhya Pradesh,West
+C01403,Sharma D2C Store,Online,Nagpur,Maharashtra,West
+C01404,Sinha Kirana Store,Retail,Indore,Madhya Pradesh,West
+C01405,Iyer Supermart,Retail,Thane,Maharashtra,West
+C01406,Bose Agencies,Distributor,Vijayawada,Andhra Pradesh,South
+C01407,Pillai D2C Store,Online,Noida,Uttar Pradesh,North
+C01408,Shetty Trading Co,Wholesale,Kochi,Kerala,South
+C01409,Nair Retail Mart,Retail,Delhi,Delhi,North
+C01410,Reddy Retail Mart,Retail,Thane,Maharashtra,West
+C01411,Jain Supermart,Retail,Lucknow,Uttar Pradesh,North
+C01412,Banerjee Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01413,Das Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01414,Khan Agencies,Distributor,Thane,Maharashtra,West
+C01415,Sharma Wholesale Traders,Wholesale,Lucknow,Uttar Pradesh,North
+C01416,Verma Trading Co,Wholesale,Lucknow,Uttar Pradesh,North
+C01417,Rao Supermart,Retail,Bengaluru,Karnataka,South
+C01418,Khan E-Store,Online,Ahmedabad,Gujarat,West
+C01419,Gupta Online Retail,Online,Bengaluru,Karnataka,South
+C01420,Das Kirana Store,Retail,Pune,Maharashtra,West
+C01421,Patel Wholesale Traders,Wholesale,Delhi,Delhi,North
+C01422,Iyer Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C01423,Sharma E-Store,Online,Thane,Maharashtra,West
+C01424,Menon Kirana Store,Retail,Ludhiana,Punjab,North
+C01425,Singh D2C Store,Online,Howrah,West Bengal,East
+C01426,Bose Kirana Store,Retail,Ludhiana,Punjab,North
+C01427,Mehta General Store,Retail,Ahmedabad,Gujarat,West
+C01428,Das General Store,Retail,Nagpur,Maharashtra,West
+C01429,Iyer Supermart,Retail,Pune,Maharashtra,West
+C01430,Khan General Store,Retail,Kochi,Kerala,South
+C01431,Banerjee Retail Mart,Retail,Jaipur,Rajasthan,North
+C01432,Kapoor E-Store,Online,Kolkata,West Bengal,East
+C01433,Shetty General Store,Retail,Hyderabad,Telangana,South
+C01434,Kapoor Distributors,Distributor,Howrah,West Bengal,East
+C01435,Joshi Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01436,Bose Wholesale Traders,Wholesale,Ranchi,Jharkhand,East
+C01437,Gupta Online Retail,Online,Bengaluru,Karnataka,South
+C01438,Chopra D2C Store,Online,Thane,Maharashtra,West
+C01439,Mehta Trading Co,Wholesale,Mumbai,Maharashtra,West
+C01440,Das E-Store,Online,Vijayawada,Andhra Pradesh,South
+C01441,Banerjee Supermart,Retail,Pune,Maharashtra,West
+C01442,Agarwal Supermart,Retail,Hyderabad,Telangana,South
+C01443,Mehta Kirana Store,Retail,Noida,Uttar Pradesh,North
+C01444,Khan Supermart,Retail,Kochi,Kerala,South
+C01445,Chopra Kirana Store,Retail,Ludhiana,Punjab,North
+C01446,Sharma General Store,Retail,Kolkata,West Bengal,East
+C01447,Singh Online Retail,Online,Noida,Uttar Pradesh,North
+C01448,Sharma E-Store,Online,Lucknow,Uttar Pradesh,North
+C01449,Pillai D2C Store,Online,Kochi,Kerala,South
+C01450,Mehta D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01451,Kapoor Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01452,Singh General Store,Retail,Kolkata,West Bengal,East
+C01453,Das Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01454,Sinha Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01455,Iyer General Store,Retail,Pune,Maharashtra,West
+C01456,Singh Kirana Store,Retail,Surat,Gujarat,West
+C01457,Chopra Supermart,Retail,Ahmedabad,Gujarat,West
+C01458,Kumar General Store,Retail,Gurugram,Haryana,North
+C01459,Jain Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01460,Jain Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01461,Gupta Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C01462,Chopra Distributors,Distributor,Kolkata,West Bengal,East
+C01463,Rao Trading Co,Wholesale,Surat,Gujarat,West
+C01464,Banerjee E-Store,Online,Noida,Uttar Pradesh,North
+C01465,Iyer E-Store,Online,Chennai,Tamil Nadu,South
+C01466,Menon Kirana Store,Retail,Ludhiana,Punjab,North
+C01467,Das Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01468,Bose Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01469,Pillai Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01470,Khan General Store,Retail,Delhi,Delhi,North
+C01471,Verma E-Store,Online,Vijayawada,Andhra Pradesh,South
+C01472,Bose Agencies,Distributor,Chandigarh,Chandigarh,North
+C01473,Bose Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01474,Joshi Supermart,Retail,Hyderabad,Telangana,South
+C01475,Menon Kirana Store,Retail,Jaipur,Rajasthan,North
+C01476,Sharma Online Retail,Online,Ahmedabad,Gujarat,West
+C01477,Reddy Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C01478,Gupta Supermart,Retail,Mysuru,Karnataka,South
+C01479,Sharma Online Retail,Online,Chandigarh,Chandigarh,North
+C01480,Jain Kirana Store,Retail,Bhubaneswar,Odisha,East
+C01481,Rao Kirana Store,Retail,Delhi,Delhi,North
+C01482,Nair General Store,Retail,Coimbatore,Tamil Nadu,South
+C01483,Menon Trading Co,Wholesale,Delhi,Delhi,North
+C01484,Nair Kirana Store,Retail,Delhi,Delhi,North
+C01485,Menon Supermart,Retail,Mumbai,Maharashtra,West
+C01486,Nair General Store,Retail,Kochi,Kerala,South
+C01487,Verma D2C Store,Online,Patna,Bihar,East
+C01488,Chopra General Store,Retail,Jaipur,Rajasthan,North
+C01489,Chopra D2C Store,Online,Lucknow,Uttar Pradesh,North
+C01490,Kumar Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C01491,Gupta E-Store,Online,Ahmedabad,Gujarat,West
+C01492,Mehta General Store,Retail,Hyderabad,Telangana,South
+C01493,Bose Online Retail,Online,Ranchi,Jharkhand,East
+C01494,Chopra Supermart,Retail,Hyderabad,Telangana,South
+C01495,Bose General Store,Retail,Ludhiana,Punjab,North
+C01496,Kumar Retail Mart,Retail,Pune,Maharashtra,West
+C01497,Reddy General Store,Retail,Bengaluru,Karnataka,South
+C01498,Chopra Distributors,Distributor,Thane,Maharashtra,West
+C01499,Das Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C01500,Iyer E-Store,Online,Delhi,Delhi,North
+C01501,Banerjee Kirana Store,Retail,Nagpur,Maharashtra,West
+C01502,Rao D2C Store,Online,Hyderabad,Telangana,South
+C01503,Gupta D2C Store,Online,Ludhiana,Punjab,North
+C01504,Shetty Kirana Store,Retail,Bhubaneswar,Odisha,East
+C01505,Pillai Kirana Store,Retail,Surat,Gujarat,West
+C01506,Agarwal Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C01507,Kapoor Retail Mart,Retail,Chandigarh,Chandigarh,North
+C01508,Singh General Store,Retail,Noida,Uttar Pradesh,North
+C01509,Das E-Store,Online,Pune,Maharashtra,West
+C01510,Iyer Supermart,Retail,Ludhiana,Punjab,North
+C01511,Singh Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01512,Rao Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C01513,Sinha E-Store,Online,Mumbai,Maharashtra,West
+C01514,Sharma Distributors,Distributor,Delhi,Delhi,North
+C01515,Das D2C Store,Online,Nagpur,Maharashtra,West
+C01516,Agarwal Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01517,Nair Trading Co,Wholesale,Mysuru,Karnataka,South
+C01518,Kumar Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C01519,Menon Wholesale Traders,Wholesale,Nagpur,Maharashtra,West
+C01520,Jain General Store,Retail,Nagpur,Maharashtra,West
+C01521,Banerjee Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C01522,Das E-Store,Online,Gurugram,Haryana,North
+C01523,Chopra Kirana Store,Retail,Kolkata,West Bengal,East
+C01524,Khan E-Store,Online,Lucknow,Uttar Pradesh,North
+C01525,Sinha Trading Co,Wholesale,Chandigarh,Chandigarh,North
+C01526,Iyer Retail Mart,Retail,Jaipur,Rajasthan,North
+C01527,Khan General Store,Retail,Kochi,Kerala,South
+C01528,Kumar Kirana Store,Retail,Indore,Madhya Pradesh,West
+C01529,Reddy Supermart,Retail,Noida,Uttar Pradesh,North
+C01530,Reddy Retail Mart,Retail,Indore,Madhya Pradesh,West
+C01531,Mehta General Store,Retail,Mysuru,Karnataka,South
+C01532,Reddy Supermart,Retail,Mumbai,Maharashtra,West
+C01533,Bose General Store,Retail,Kolkata,West Bengal,East
+C01534,Jain Online Retail,Online,Nagpur,Maharashtra,West
+C01535,Gupta Online Retail,Online,Chandigarh,Chandigarh,North
+C01536,Mehta General Store,Retail,Patna,Bihar,East
+C01537,Khan Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01538,Jain Retail Mart,Retail,Surat,Gujarat,West
+C01539,Iyer Kirana Store,Retail,Kochi,Kerala,South
+C01540,Singh General Store,Retail,Surat,Gujarat,West
+C01541,Rao Supermart,Retail,Indore,Madhya Pradesh,West
+C01542,Khan General Store,Retail,Vijayawada,Andhra Pradesh,South
+C01543,Joshi Distributors,Distributor,Bengaluru,Karnataka,South
+C01544,Iyer General Store,Retail,Mumbai,Maharashtra,West
+C01545,Patel E-Store,Online,Mysuru,Karnataka,South
+C01546,Khan Supermart,Retail,Mumbai,Maharashtra,West
+C01547,Rao General Store,Retail,Jaipur,Rajasthan,North
+C01548,Iyer Agencies,Distributor,Ranchi,Jharkhand,East
+C01549,Jain Supermart,Retail,Bengaluru,Karnataka,South
+C01550,Patel Trading Co,Wholesale,Hyderabad,Telangana,South
+C01551,Sinha Distributors,Distributor,Hyderabad,Telangana,South
+C01552,Kapoor Trading Co,Wholesale,Hyderabad,Telangana,South
+C01553,Joshi Retail Mart,Retail,Nagpur,Maharashtra,West
+C01554,Shetty Trading Co,Wholesale,Howrah,West Bengal,East
+C01555,Iyer General Store,Retail,Hyderabad,Telangana,South
+C01556,Chopra Kirana Store,Retail,Bengaluru,Karnataka,South
+C01557,Reddy Supermart,Retail,Thane,Maharashtra,West
+C01558,Reddy D2C Store,Online,Thane,Maharashtra,West
+C01559,Singh Wholesale Traders,Wholesale,Chandigarh,Chandigarh,North
+C01560,Menon General Store,Retail,Nagpur,Maharashtra,West
+C01561,Sharma Supermart,Retail,Jaipur,Rajasthan,North
+C01562,Verma Trading Co,Wholesale,Mysuru,Karnataka,South
+C01563,Kumar D2C Store,Online,Chennai,Tamil Nadu,South
+C01564,Sharma Supermart,Retail,Indore,Madhya Pradesh,West
+C01565,Chopra Supermart,Retail,Pune,Maharashtra,West
+C01566,Mehta D2C Store,Online,Kochi,Kerala,South
+C01567,Sharma D2C Store,Online,Chandigarh,Chandigarh,North
+C01568,Gupta Online Retail,Online,Ranchi,Jharkhand,East
+C01569,Jain Supermart,Retail,Indore,Madhya Pradesh,West
+C01570,Sharma General Store,Retail,Lucknow,Uttar Pradesh,North
+C01571,Banerjee Supermart,Retail,Jaipur,Rajasthan,North
+C01572,Khan Supermart,Retail,Guwahati,Assam,East
+C01573,Mehta E-Store,Online,Noida,Uttar Pradesh,North
+C01574,Jain General Store,Retail,Chennai,Tamil Nadu,South
+C01575,Mehta Trading Co,Wholesale,Gurugram,Haryana,North
+C01576,Bose Online Retail,Online,Jaipur,Rajasthan,North
+C01577,Verma Distributors,Distributor,Hyderabad,Telangana,South
+C01578,Kapoor Trading Co,Wholesale,Jaipur,Rajasthan,North
+C01579,Shetty Agencies,Distributor,Lucknow,Uttar Pradesh,North
+C01580,Jain Kirana Store,Retail,Ahmedabad,Gujarat,West
+C01581,Menon General Store,Retail,Kochi,Kerala,South
+C01582,Bose Kirana Store,Retail,Mumbai,Maharashtra,West
+C01583,Shetty Distributors,Distributor,Ludhiana,Punjab,North
+C01584,Sharma Online Retail,Online,Bhubaneswar,Odisha,East
+C01585,Sinha General Store,Retail,Bengaluru,Karnataka,South
+C01586,Shetty Kirana Store,Retail,Mysuru,Karnataka,South
+C01587,Agarwal Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01588,Das General Store,Retail,Mysuru,Karnataka,South
+C01589,Bose D2C Store,Online,Indore,Madhya Pradesh,West
+C01590,Banerjee Supermart,Retail,Ahmedabad,Gujarat,West
+C01591,Joshi Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01592,Khan Trading Co,Wholesale,Bengaluru,Karnataka,South
+C01593,Kumar Retail Mart,Retail,Bhubaneswar,Odisha,East
+C01594,Kapoor Retail Mart,Retail,Bengaluru,Karnataka,South
+C01595,Bose Distributors,Distributor,Thane,Maharashtra,West
+C01596,Agarwal Trading Co,Wholesale,Thane,Maharashtra,West
+C01597,Kumar General Store,Retail,Kochi,Kerala,South
+C01598,Pillai Kirana Store,Retail,Pune,Maharashtra,West
+C01599,Menon D2C Store,Online,Chennai,Tamil Nadu,South
+C01600,Kumar Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01601,Rao D2C Store,Online,Noida,Uttar Pradesh,North
+C01602,Kumar Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01603,Gupta Online Retail,Online,Mysuru,Karnataka,South
+C01604,Kumar Retail Mart,Retail,Bhubaneswar,Odisha,East
+C01605,Shetty Online Retail,Online,Surat,Gujarat,West
+C01606,Pillai Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01607,Joshi Trading Co,Wholesale,Surat,Gujarat,West
+C01608,Sharma Distributors,Distributor,Surat,Gujarat,West
+C01609,Reddy Distributors,Distributor,Delhi,Delhi,North
+C01610,Mehta General Store,Retail,Kochi,Kerala,South
+C01611,Verma Wholesale Traders,Wholesale,Ranchi,Jharkhand,East
+C01612,Bose Online Retail,Online,Mysuru,Karnataka,South
+C01613,Sharma Distributors,Distributor,Kochi,Kerala,South
+C01614,Menon Online Retail,Online,Delhi,Delhi,North
+C01615,Das General Store,Retail,Hyderabad,Telangana,South
+C01616,Sinha Supermart,Retail,Indore,Madhya Pradesh,West
+C01617,Agarwal D2C Store,Online,Coimbatore,Tamil Nadu,South
+C01618,Banerjee D2C Store,Online,Delhi,Delhi,North
+C01619,Reddy Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01620,Gupta Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C01621,Nair Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01622,Khan Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01623,Agarwal Online Retail,Online,Lucknow,Uttar Pradesh,North
+C01624,Khan Supermart,Retail,Nagpur,Maharashtra,West
+C01625,Kumar Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01626,Shetty Online Retail,Online,Bengaluru,Karnataka,South
+C01627,Nair E-Store,Online,Jaipur,Rajasthan,North
+C01628,Bose Supermart,Retail,Ahmedabad,Gujarat,West
+C01629,Sinha E-Store,Online,Ahmedabad,Gujarat,West
+C01630,Iyer Retail Mart,Retail,Mysuru,Karnataka,South
+C01631,Pillai Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01632,Gupta Supermart,Retail,Noida,Uttar Pradesh,North
+C01633,Singh Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01634,Das Agencies,Distributor,Vijayawada,Andhra Pradesh,South
+C01635,Rao D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01636,Menon Retail Mart,Retail,Delhi,Delhi,North
+C01637,Agarwal E-Store,Online,Indore,Madhya Pradesh,West
+C01638,Pillai Supermart,Retail,Mumbai,Maharashtra,West
+C01639,Mehta D2C Store,Online,Lucknow,Uttar Pradesh,North
+C01640,Das D2C Store,Online,Indore,Madhya Pradesh,West
+C01641,Reddy Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01642,Rao Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01643,Joshi Supermart,Retail,Kochi,Kerala,South
+C01644,Kapoor Supermart,Retail,Pune,Maharashtra,West
+C01645,Verma Agencies,Distributor,Kochi,Kerala,South
+C01646,Menon Trading Co,Wholesale,Ludhiana,Punjab,North
+C01647,Sharma General Store,Retail,Bengaluru,Karnataka,South
+C01648,Chopra Supermart,Retail,Surat,Gujarat,West
+C01649,Jain E-Store,Online,Chennai,Tamil Nadu,South
+C01650,Pillai Kirana Store,Retail,Hyderabad,Telangana,South
+C01651,Mehta D2C Store,Online,Thane,Maharashtra,West
+C01652,Shetty Wholesale Traders,Wholesale,Mysuru,Karnataka,South
+C01653,Rao Kirana Store,Retail,Noida,Uttar Pradesh,North
+C01654,Menon Retail Mart,Retail,Kochi,Kerala,South
+C01655,Singh Retail Mart,Retail,Gurugram,Haryana,North
+C01656,Mehta Supermart,Retail,Mumbai,Maharashtra,West
+C01657,Khan D2C Store,Online,Lucknow,Uttar Pradesh,North
+C01658,Kapoor D2C Store,Online,Mysuru,Karnataka,South
+C01659,Sinha Supermart,Retail,Pune,Maharashtra,West
+C01660,Singh Trading Co,Wholesale,Bengaluru,Karnataka,South
+C01661,Verma Retail Mart,Retail,Nagpur,Maharashtra,West
+C01662,Kapoor General Store,Retail,Pune,Maharashtra,West
+C01663,Patel E-Store,Online,Delhi,Delhi,North
+C01664,Nair D2C Store,Online,Kolkata,West Bengal,East
+C01665,Verma D2C Store,Online,Mysuru,Karnataka,South
+C01666,Menon Supermart,Retail,Gurugram,Haryana,North
+C01667,Pillai Trading Co,Wholesale,Mysuru,Karnataka,South
+C01668,Shetty Retail Mart,Retail,Ahmedabad,Gujarat,West
+C01669,Jain Distributors,Distributor,Chandigarh,Chandigarh,North
+C01670,Iyer Trading Co,Wholesale,Thane,Maharashtra,West
+C01671,Verma Online Retail,Online,Chandigarh,Chandigarh,North
+C01672,Reddy Supermart,Retail,Chandigarh,Chandigarh,North
+C01673,Gupta Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01674,Bose Online Retail,Online,Gurugram,Haryana,North
+C01675,Bose General Store,Retail,Kochi,Kerala,South
+C01676,Banerjee Trading Co,Wholesale,Kochi,Kerala,South
+C01677,Agarwal Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01678,Joshi Agencies,Distributor,Bengaluru,Karnataka,South
+C01679,Rao Supermart,Retail,Bengaluru,Karnataka,South
+C01680,Iyer E-Store,Online,Nagpur,Maharashtra,West
+C01681,Singh Supermart,Retail,Bengaluru,Karnataka,South
+C01682,Mehta Kirana Store,Retail,Indore,Madhya Pradesh,West
+C01683,Gupta Wholesale Traders,Wholesale,Guwahati,Assam,East
+C01684,Nair General Store,Retail,Jaipur,Rajasthan,North
+C01685,Pillai Distributors,Distributor,Chennai,Tamil Nadu,South
+C01686,Verma D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01687,Sharma Agencies,Distributor,Pune,Maharashtra,West
+C01688,Das Agencies,Distributor,Chennai,Tamil Nadu,South
+C01689,Khan Trading Co,Wholesale,Thane,Maharashtra,West
+C01690,Kapoor General Store,Retail,Ludhiana,Punjab,North
+C01691,Agarwal D2C Store,Online,Bengaluru,Karnataka,South
+C01692,Patel General Store,Retail,Ahmedabad,Gujarat,West
+C01693,Gupta D2C Store,Online,Ludhiana,Punjab,North
+C01694,Singh General Store,Retail,Noida,Uttar Pradesh,North
+C01695,Patel Trading Co,Wholesale,Gurugram,Haryana,North
+C01696,Reddy General Store,Retail,Hyderabad,Telangana,South
+C01697,Bose Kirana Store,Retail,Mysuru,Karnataka,South
+C01698,Singh Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01699,Pillai Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01700,Shetty Kirana Store,Retail,Ahmedabad,Gujarat,West
+C01701,Bose General Store,Retail,Vijayawada,Andhra Pradesh,South
+C01702,Shetty Retail Mart,Retail,Mysuru,Karnataka,South
+C01703,Kumar Wholesale Traders,Wholesale,Thane,Maharashtra,West
+C01704,Patel General Store,Retail,Noida,Uttar Pradesh,North
+C01705,Joshi D2C Store,Online,Patna,Bihar,East
+C01706,Reddy Kirana Store,Retail,Vijayawada,Andhra Pradesh,South
+C01707,Pillai Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C01708,Patel Retail Mart,Retail,Bengaluru,Karnataka,South
+C01709,Pillai Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01710,Rao Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01711,Shetty Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01712,Khan Supermart,Retail,Nagpur,Maharashtra,West
+C01713,Joshi Kirana Store,Retail,Indore,Madhya Pradesh,West
+C01714,Chopra Kirana Store,Retail,Guwahati,Assam,East
+C01715,Verma Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01716,Jain Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01717,Shetty Trading Co,Wholesale,Kochi,Kerala,South
+C01718,Nair Retail Mart,Retail,Hyderabad,Telangana,South
+C01719,Rao Online Retail,Online,Chennai,Tamil Nadu,South
+C01720,Kumar Supermart,Retail,Patna,Bihar,East
+C01721,Singh General Store,Retail,Hyderabad,Telangana,South
+C01722,Rao General Store,Retail,Chandigarh,Chandigarh,North
+C01723,Bose Supermart,Retail,Noida,Uttar Pradesh,North
+C01724,Gupta Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01725,Agarwal E-Store,Online,Guwahati,Assam,East
+C01726,Jain Online Retail,Online,Chandigarh,Chandigarh,North
+C01727,Joshi Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01728,Reddy Supermart,Retail,Chennai,Tamil Nadu,South
+C01729,Menon E-Store,Online,Gurugram,Haryana,North
+C01730,Patel Retail Mart,Retail,Jaipur,Rajasthan,North
+C01731,Patel Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01732,Kumar E-Store,Online,Coimbatore,Tamil Nadu,South
+C01733,Shetty Supermart,Retail,Mysuru,Karnataka,South
+C01734,Sinha Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01735,Shetty Kirana Store,Retail,Thane,Maharashtra,West
+C01736,Jain Wholesale Traders,Wholesale,Bhubaneswar,Odisha,East
+C01737,Mehta Kirana Store,Retail,Thane,Maharashtra,West
+C01738,Nair Trading Co,Wholesale,Mumbai,Maharashtra,West
+C01739,Chopra Supermart,Retail,Mysuru,Karnataka,South
+C01740,Das Retail Mart,Retail,Kochi,Kerala,South
+C01741,Bose Retail Mart,Retail,Hyderabad,Telangana,South
+C01742,Menon E-Store,Online,Lucknow,Uttar Pradesh,North
+C01743,Banerjee Retail Mart,Retail,Bhubaneswar,Odisha,East
+C01744,Bose D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01745,Bose General Store,Retail,Vijayawada,Andhra Pradesh,South
+C01746,Shetty Kirana Store,Retail,Howrah,West Bengal,East
+C01747,Kapoor Kirana Store,Retail,Pune,Maharashtra,West
+C01748,Joshi General Store,Retail,Bengaluru,Karnataka,South
+C01749,Singh Kirana Store,Retail,Bengaluru,Karnataka,South
+C01750,Reddy D2C Store,Online,Hyderabad,Telangana,South
+C01751,Sinha E-Store,Online,Chennai,Tamil Nadu,South
+C01752,Kapoor Online Retail,Online,Kochi,Kerala,South
+C01753,Khan Trading Co,Wholesale,Jaipur,Rajasthan,North
+C01754,Joshi Trading Co,Wholesale,Ludhiana,Punjab,North
+C01755,Mehta Wholesale Traders,Wholesale,Ranchi,Jharkhand,East
+C01756,Menon Kirana Store,Retail,Guwahati,Assam,East
+C01757,Gupta E-Store,Online,Guwahati,Assam,East
+C01758,Kumar Online Retail,Online,Chandigarh,Chandigarh,North
+C01759,Patel Retail Mart,Retail,Surat,Gujarat,West
+C01760,Bose D2C Store,Online,Hyderabad,Telangana,South
+C01761,Verma E-Store,Online,Mysuru,Karnataka,South
+C01762,Khan Kirana Store,Retail,Jaipur,Rajasthan,North
+C01763,Sinha E-Store,Online,Coimbatore,Tamil Nadu,South
+C01764,Jain General Store,Retail,Ludhiana,Punjab,North
+C01765,Das General Store,Retail,Indore,Madhya Pradesh,West
+C01766,Rao Retail Mart,Retail,Jaipur,Rajasthan,North
+C01767,Bose Trading Co,Wholesale,Ludhiana,Punjab,North
+C01768,Rao General Store,Retail,Ludhiana,Punjab,North
+C01769,Das Agencies,Distributor,Howrah,West Bengal,East
+C01770,Joshi Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01771,Nair Kirana Store,Retail,Howrah,West Bengal,East
+C01772,Joshi Trading Co,Wholesale,Pune,Maharashtra,West
+C01773,Khan Kirana Store,Retail,Thane,Maharashtra,West
+C01774,Joshi E-Store,Online,Nagpur,Maharashtra,West
+C01775,Banerjee Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01776,Jain Agencies,Distributor,Pune,Maharashtra,West
+C01777,Bose Trading Co,Wholesale,Bengaluru,Karnataka,South
+C01778,Patel Supermart,Retail,Chennai,Tamil Nadu,South
+C01779,Patel Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01780,Rao Retail Mart,Retail,Jaipur,Rajasthan,North
+C01781,Bose Distributors,Distributor,Pune,Maharashtra,West
+C01782,Pillai Trading Co,Wholesale,Gurugram,Haryana,North
+C01783,Das Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01784,Agarwal Kirana Store,Retail,Bengaluru,Karnataka,South
+C01785,Agarwal D2C Store,Online,Coimbatore,Tamil Nadu,South
+C01786,Menon Retail Mart,Retail,Mysuru,Karnataka,South
+C01787,Das E-Store,Online,Ludhiana,Punjab,North
+C01788,Khan D2C Store,Online,Guwahati,Assam,East
+C01789,Rao Kirana Store,Retail,Howrah,West Bengal,East
+C01790,Sharma Retail Mart,Retail,Ahmedabad,Gujarat,West
+C01791,Agarwal Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01792,Menon Supermart,Retail,Noida,Uttar Pradesh,North
+C01793,Shetty Agencies,Distributor,Chennai,Tamil Nadu,South
+C01794,Kapoor Trading Co,Wholesale,Kochi,Kerala,South
+C01795,Menon Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01796,Reddy Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C01797,Jain General Store,Retail,Surat,Gujarat,West
+C01798,Das D2C Store,Online,Chennai,Tamil Nadu,South
+C01799,Jain General Store,Retail,Kochi,Kerala,South
+C01800,Sharma Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01801,Iyer Kirana Store,Retail,Jaipur,Rajasthan,North
+C01802,Kumar Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01803,Mehta E-Store,Online,Chennai,Tamil Nadu,South
+C01804,Singh Retail Mart,Retail,Surat,Gujarat,West
+C01805,Jain E-Store,Online,Kolkata,West Bengal,East
+C01806,Bose Supermart,Retail,Kochi,Kerala,South
+C01807,Patel Supermart,Retail,Pune,Maharashtra,West
+C01808,Chopra Kirana Store,Retail,Surat,Gujarat,West
+C01809,Rao Online Retail,Online,Bengaluru,Karnataka,South
+C01810,Bose General Store,Retail,Vijayawada,Andhra Pradesh,South
+C01811,Verma Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01812,Reddy Retail Mart,Retail,Surat,Gujarat,West
+C01813,Khan Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01814,Shetty E-Store,Online,Chennai,Tamil Nadu,South
+C01815,Kumar General Store,Retail,Hyderabad,Telangana,South
+C01816,Agarwal Agencies,Distributor,Noida,Uttar Pradesh,North
+C01817,Bose Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01818,Singh General Store,Retail,Mumbai,Maharashtra,West
+C01819,Reddy Wholesale Traders,Wholesale,Delhi,Delhi,North
+C01820,Chopra E-Store,Online,Mysuru,Karnataka,South
+C01821,Reddy Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01822,Verma Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01823,Chopra Kirana Store,Retail,Bengaluru,Karnataka,South
+C01824,Das Trading Co,Wholesale,Surat,Gujarat,West
+C01825,Kapoor Wholesale Traders,Wholesale,Delhi,Delhi,North
+C01826,Rao Distributors,Distributor,Ahmedabad,Gujarat,West
+C01827,Chopra Retail Mart,Retail,Thane,Maharashtra,West
+C01828,Joshi Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01829,Mehta Wholesale Traders,Wholesale,Chennai,Tamil Nadu,South
+C01830,Jain Supermart,Retail,Hyderabad,Telangana,South
+C01831,Chopra General Store,Retail,Delhi,Delhi,North
+C01832,Verma Agencies,Distributor,Thane,Maharashtra,West
+C01833,Bose General Store,Retail,Ludhiana,Punjab,North
+C01834,Joshi D2C Store,Online,Bengaluru,Karnataka,South
+C01835,Bose Retail Mart,Retail,Chandigarh,Chandigarh,North
+C01836,Agarwal Online Retail,Online,Ahmedabad,Gujarat,West
+C01837,Jain Retail Mart,Retail,Hyderabad,Telangana,South
+C01838,Singh Distributors,Distributor,Hyderabad,Telangana,South
+C01839,Das Wholesale Traders,Wholesale,Mumbai,Maharashtra,West
+C01840,Sinha General Store,Retail,Pune,Maharashtra,West
+C01841,Reddy Trading Co,Wholesale,Chennai,Tamil Nadu,South
+C01842,Joshi Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01843,Jain General Store,Retail,Lucknow,Uttar Pradesh,North
+C01844,Menon Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01845,Kapoor Online Retail,Online,Thane,Maharashtra,West
+C01846,Sinha D2C Store,Online,Pune,Maharashtra,West
+C01847,Iyer Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01848,Gupta Online Retail,Online,Nagpur,Maharashtra,West
+C01849,Das General Store,Retail,Mumbai,Maharashtra,West
+C01850,Joshi Supermart,Retail,Pune,Maharashtra,West
+C01851,Shetty Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01852,Iyer Kirana Store,Retail,Nagpur,Maharashtra,West
+C01853,Das Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01854,Jain General Store,Retail,Bhubaneswar,Odisha,East
+C01855,Patel Kirana Store,Retail,Chandigarh,Chandigarh,North
+C01856,Bose Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01857,Mehta Online Retail,Online,Bengaluru,Karnataka,South
+C01858,Reddy Wholesale Traders,Wholesale,Guwahati,Assam,East
+C01859,Mehta D2C Store,Online,Kochi,Kerala,South
+C01860,Kumar Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01861,Iyer Retail Mart,Retail,Ludhiana,Punjab,North
+C01862,Joshi Retail Mart,Retail,Ludhiana,Punjab,North
+C01863,Chopra E-Store,Online,Kochi,Kerala,South
+C01864,Gupta Kirana Store,Retail,Bengaluru,Karnataka,South
+C01865,Reddy Kirana Store,Retail,Nagpur,Maharashtra,West
+C01866,Nair D2C Store,Online,Vijayawada,Andhra Pradesh,South
+C01867,Joshi D2C Store,Online,Ludhiana,Punjab,North
+C01868,Patel Wholesale Traders,Wholesale,Vijayawada,Andhra Pradesh,South
+C01869,Rao Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01870,Reddy Supermart,Retail,Mysuru,Karnataka,South
+C01871,Pillai Supermart,Retail,Mysuru,Karnataka,South
+C01872,Gupta E-Store,Online,Vijayawada,Andhra Pradesh,South
+C01873,Iyer Kirana Store,Retail,Nagpur,Maharashtra,West
+C01874,Patel Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01875,Rao General Store,Retail,Hyderabad,Telangana,South
+C01876,Sharma Wholesale Traders,Wholesale,Jaipur,Rajasthan,North
+C01877,Das Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C01878,Verma Retail Mart,Retail,Mysuru,Karnataka,South
+C01879,Singh Supermart,Retail,Surat,Gujarat,West
+C01880,Chopra Supermart,Retail,Jaipur,Rajasthan,North
+C01881,Menon General Store,Retail,Delhi,Delhi,North
+C01882,Verma Wholesale Traders,Wholesale,Delhi,Delhi,North
+C01883,Chopra Kirana Store,Retail,Surat,Gujarat,West
+C01884,Agarwal Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01885,Banerjee D2C Store,Online,Jaipur,Rajasthan,North
+C01886,Sinha Distributors,Distributor,Vijayawada,Andhra Pradesh,South
+C01887,Reddy Agencies,Distributor,Pune,Maharashtra,West
+C01888,Chopra Supermart,Retail,Ahmedabad,Gujarat,West
+C01889,Verma General Store,Retail,Gurugram,Haryana,North
+C01890,Das General Store,Retail,Coimbatore,Tamil Nadu,South
+C01891,Kumar D2C Store,Online,Ranchi,Jharkhand,East
+C01892,Gupta Retail Mart,Retail,Ahmedabad,Gujarat,West
+C01893,Gupta Kirana Store,Retail,Lucknow,Uttar Pradesh,North
+C01894,Reddy General Store,Retail,Thane,Maharashtra,West
+C01895,Das Kirana Store,Retail,Jaipur,Rajasthan,North
+C01896,Pillai Online Retail,Online,Bengaluru,Karnataka,South
+C01897,Chopra Trading Co,Wholesale,Delhi,Delhi,North
+C01898,Pillai Trading Co,Wholesale,Kolkata,West Bengal,East
+C01899,Bose Online Retail,Online,Mysuru,Karnataka,South
+C01900,Patel Kirana Store,Retail,Surat,Gujarat,West
+C01901,Shetty Kirana Store,Retail,Kochi,Kerala,South
+C01902,Kumar Retail Mart,Retail,Gurugram,Haryana,North
+C01903,Menon Wholesale Traders,Wholesale,Coimbatore,Tamil Nadu,South
+C01904,Bose Trading Co,Wholesale,Delhi,Delhi,North
+C01905,Joshi Kirana Store,Retail,Chennai,Tamil Nadu,South
+C01906,Iyer Distributors,Distributor,Ahmedabad,Gujarat,West
+C01907,Kumar Kirana Store,Retail,Delhi,Delhi,North
+C01908,Joshi Retail Mart,Retail,Kochi,Kerala,South
+C01909,Nair Wholesale Traders,Wholesale,Gurugram,Haryana,North
+C01910,Agarwal Agencies,Distributor,Jaipur,Rajasthan,North
+C01911,Menon Wholesale Traders,Wholesale,Kochi,Kerala,South
+C01912,Joshi Distributors,Distributor,Ahmedabad,Gujarat,West
+C01913,Bose Retail Mart,Retail,Chennai,Tamil Nadu,South
+C01914,Das Wholesale Traders,Wholesale,Hyderabad,Telangana,South
+C01915,Rao D2C Store,Online,Hyderabad,Telangana,South
+C01916,Iyer Kirana Store,Retail,Pune,Maharashtra,West
+C01917,Gupta Kirana Store,Retail,Delhi,Delhi,North
+C01918,Bose Agencies,Distributor,Guwahati,Assam,East
+C01919,Khan Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01920,Verma Retail Mart,Retail,Pune,Maharashtra,West
+C01921,Nair Online Retail,Online,Ahmedabad,Gujarat,West
+C01922,Iyer Online Retail,Online,Indore,Madhya Pradesh,West
+C01923,Iyer Agencies,Distributor,Bengaluru,Karnataka,South
+C01924,Reddy Online Retail,Online,Chennai,Tamil Nadu,South
+C01925,Bose Retail Mart,Retail,Bengaluru,Karnataka,South
+C01926,Iyer D2C Store,Online,Bengaluru,Karnataka,South
+C01927,Bose General Store,Retail,Indore,Madhya Pradesh,West
+C01928,Banerjee Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01929,Iyer Kirana Store,Retail,Ludhiana,Punjab,North
+C01930,Bose D2C Store,Online,Chennai,Tamil Nadu,South
+C01931,Singh Trading Co,Wholesale,Mumbai,Maharashtra,West
+C01932,Chopra E-Store,Online,Bengaluru,Karnataka,South
+C01933,Iyer General Store,Retail,Delhi,Delhi,North
+C01934,Gupta Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01935,Menon Retail Mart,Retail,Mysuru,Karnataka,South
+C01936,Banerjee Supermart,Retail,Vijayawada,Andhra Pradesh,South
+C01937,Bose Wholesale Traders,Wholesale,Noida,Uttar Pradesh,North
+C01938,Pillai Kirana Store,Retail,Kolkata,West Bengal,East
+C01939,Patel Trading Co,Wholesale,Ludhiana,Punjab,North
+C01940,Menon Supermart,Retail,Thane,Maharashtra,West
+C01941,Mehta Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01942,Iyer Wholesale Traders,Wholesale,Pune,Maharashtra,West
+C01943,Menon General Store,Retail,Kochi,Kerala,South
+C01944,Bose Retail Mart,Retail,Delhi,Delhi,North
+C01945,Pillai Supermart,Retail,Indore,Madhya Pradesh,West
+C01946,Singh General Store,Retail,Coimbatore,Tamil Nadu,South
+C01947,Verma Trading Co,Wholesale,Hyderabad,Telangana,South
+C01948,Pillai Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01949,Sinha Retail Mart,Retail,Bengaluru,Karnataka,South
+C01950,Kumar Trading Co,Wholesale,Noida,Uttar Pradesh,North
+C01951,Shetty Kirana Store,Retail,Kochi,Kerala,South
+C01952,Iyer Trading Co,Wholesale,Delhi,Delhi,North
+C01953,Verma Kirana Store,Retail,Nagpur,Maharashtra,West
+C01954,Mehta Online Retail,Online,Chandigarh,Chandigarh,North
+C01955,Das General Store,Retail,Kochi,Kerala,South
+C01956,Singh General Store,Retail,Pune,Maharashtra,West
+C01957,Pillai E-Store,Online,Coimbatore,Tamil Nadu,South
+C01958,Shetty Wholesale Traders,Wholesale,Indore,Madhya Pradesh,West
+C01959,Nair Trading Co,Wholesale,Mumbai,Maharashtra,West
+C01960,Kumar D2C Store,Online,Nagpur,Maharashtra,West
+C01961,Joshi Retail Mart,Retail,Delhi,Delhi,North
+C01962,Kapoor E-Store,Online,Thane,Maharashtra,West
+C01963,Bose Trading Co,Wholesale,Vijayawada,Andhra Pradesh,South
+C01964,Pillai Supermart,Retail,Coimbatore,Tamil Nadu,South
+C01965,Pillai Kirana Store,Retail,Gurugram,Haryana,North
+C01966,Nair Retail Mart,Retail,Coimbatore,Tamil Nadu,South
+C01967,Mehta Agencies,Distributor,Indore,Madhya Pradesh,West
+C01968,Khan Retail Mart,Retail,Lucknow,Uttar Pradesh,North
+C01969,Sinha General Store,Retail,Noida,Uttar Pradesh,North
+C01970,Kumar Trading Co,Wholesale,Indore,Madhya Pradesh,West
+C01971,Mehta E-Store,Online,Ahmedabad,Gujarat,West
+C01972,Sharma Supermart,Retail,Mysuru,Karnataka,South
+C01973,Pillai D2C Store,Online,Ludhiana,Punjab,North
+C01974,Joshi Retail Mart,Retail,Hyderabad,Telangana,South
+C01975,Pillai D2C Store,Online,Mumbai,Maharashtra,West
+C01976,Agarwal Retail Mart,Retail,Vijayawada,Andhra Pradesh,South
+C01977,Rao Kirana Store,Retail,Coimbatore,Tamil Nadu,South
+C01978,Banerjee Trading Co,Wholesale,Ahmedabad,Gujarat,West
+C01979,Iyer Retail Mart,Retail,Noida,Uttar Pradesh,North
+C01980,Kapoor Trading Co,Wholesale,Pune,Maharashtra,West
+C01981,Menon Retail Mart,Retail,Howrah,West Bengal,East
+C01982,Menon E-Store,Online,Patna,Bihar,East
+C01983,Joshi Online Retail,Online,Lucknow,Uttar Pradesh,North
+C01984,Shetty Online Retail,Online,Vijayawada,Andhra Pradesh,South
+C01985,Singh Distributors,Distributor,Thane,Maharashtra,West
+C01986,Nair D2C Store,Online,Lucknow,Uttar Pradesh,North
+C01987,Kapoor Retail Mart,Retail,Kochi,Kerala,South
+C01988,Khan General Store,Retail,Thane,Maharashtra,West
+C01989,Nair D2C Store,Online,Ahmedabad,Gujarat,West
+C01990,Pillai E-Store,Online,Chennai,Tamil Nadu,South
+C01991,Joshi Agencies,Distributor,Ahmedabad,Gujarat,West
+C01992,Gupta Online Retail,Online,Coimbatore,Tamil Nadu,South
+C01993,Nair Supermart,Retail,Indore,Madhya Pradesh,West
+C01994,Chopra Distributors,Distributor,Gurugram,Haryana,North
+C01995,Chopra Agencies,Distributor,Thane,Maharashtra,West
+C01996,Das Wholesale Traders,Wholesale,Howrah,West Bengal,East
+C01997,Sinha E-Store,Online,Ahmedabad,Gujarat,West
+C01998,Singh Trading Co,Wholesale,Gurugram,Haryana,North
+C01999,Kumar Agencies,Distributor,Chennai,Tamil Nadu,South
+C02000,Kumar General Store,Retail,Guwahati,Assam,East

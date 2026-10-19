@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Reset view - Sales & Purchases",
+  "name": "29ae2c2251818d438e0e",
+  "options": {
+    "targetVisualNames": [
+      "4f8ff4838864336a6dd3",
+      "3716d22c05338f010488",
+      "e1a31da470ad06d01629",
+      "5666409ffde441716e52",
+      "5e1e2c6622c88def3465",
+      "bf39de7c74f9e050aa07",
+      "f03171f592ecc0e0b058"
+    ],
+    "applyOnlyToTargetVisuals": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "bfc9ec87ec1d5c0aa6e1",
+    "sections": {
+      "bfc9ec87ec1d5c0aa6e1": {
+        "visualContainers": {
+          "4f8ff4838864336a6dd3": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "3716d22c05338f010488": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "e1a31da470ad06d01629": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "5666409ffde441716e52": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "5e1e2c6622c88def3465": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "bf39de7c74f9e050aa07": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "f03171f592ecc0e0b058": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

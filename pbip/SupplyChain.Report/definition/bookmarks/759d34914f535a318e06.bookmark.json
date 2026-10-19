@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Help - hide (Inventory Overview)",
+  "name": "759d34914f535a318e06",
+  "options": {
+    "targetVisualNames": [
+      "cff8a83e8949561e52bb",
+      "96148e80a73e773b569c"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "f8381aebe89e5a5f8481",
+    "sections": {
+      "f8381aebe89e5a5f8481": {
+        "visualContainers": {
+          "cff8a83e8949561e52bb": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "96148e80a73e773b569c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

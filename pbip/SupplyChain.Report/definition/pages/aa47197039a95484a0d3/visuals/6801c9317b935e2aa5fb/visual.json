@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "6801c9317b935e2aa5fb",
+  "position": {
+    "x": 505,
+    "y": 66,
+    "z": 7000,
+    "height": 84,
+    "width": 147,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Lost Sales Value"
+                }
+              },
+              "queryRef": "_Measures.Lost Sales Value",
+              "nativeQueryRef": "Lost Sales Value"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

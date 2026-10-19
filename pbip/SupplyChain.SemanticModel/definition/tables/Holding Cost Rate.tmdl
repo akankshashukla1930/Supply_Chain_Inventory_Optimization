@@ -1,0 +1,28 @@
+/// What-if parameter (Modeling > New parameter > Numeric range): annual holding cost rate 10%-35%, default 20%.
+/// Drives _Measures[Holding Cost %] and therefore every holding-cost measure.
+table 'Holding Cost Rate'
+	lineageTag: f842e622-541d-475b-8422-d08ceb531b7e
+
+	measure 'Holding Cost Rate Value' = SELECTEDVALUE ( 'Holding Cost Rate'[Holding Cost Rate], 0.20 )
+		formatString: 0%
+		lineageTag: 510f41ea-d6d1-42fa-bb5c-00457d28cf43
+
+	column 'Holding Cost Rate'
+		dataType: double
+		formatString: 0%
+		lineageTag: 0cba76bb-c474-47f5-8310-65f967c47710
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Holding Cost Rate' = calculated
+		mode: import
+		source = GENERATESERIES ( 0.10, 0.35, 0.01 )
+
+	annotation PBI_Id = 765d689935d14f13b62f9b3d6d84efef

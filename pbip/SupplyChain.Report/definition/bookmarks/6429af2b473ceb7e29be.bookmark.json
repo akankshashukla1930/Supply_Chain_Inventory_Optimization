@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Reset view - Shortage & Overstock",
+  "name": "6429af2b473ceb7e29be",
+  "options": {
+    "targetVisualNames": [
+      "d71ca7ce7d514e0e2ab3",
+      "4f446f75d62471eab68a",
+      "92745a1e39d0810f0d1b",
+      "a782a9d3d8a54bd0fff8",
+      "41395d26445da6a64fc6",
+      "5c174409befc1ca1e379",
+      "5727ce0d5775f17316d4"
+    ],
+    "applyOnlyToTargetVisuals": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "aa47197039a95484a0d3",
+    "sections": {
+      "aa47197039a95484a0d3": {
+        "visualContainers": {
+          "d71ca7ce7d514e0e2ab3": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "4f446f75d62471eab68a": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "92745a1e39d0810f0d1b": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "a782a9d3d8a54bd0fff8": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "41395d26445da6a64fc6": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "5c174409befc1ca1e379": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "5727ce0d5775f17316d4": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "7e424f0affdc5222921b",
+  "position": {
+    "x": 1122,
+    "y": 66,
+    "z": 11000,
+    "height": 84,
+    "width": 147,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Excess Holding Cost (Annual)"
+                }
+              },
+              "queryRef": "_Measures.Excess Holding Cost (Annual)",
+              "nativeQueryRef": "Excess Holding Cost (Annual)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

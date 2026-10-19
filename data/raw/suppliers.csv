@@ -1,0 +1,43 @@
+Supplier_ID,Supplier_Name,City,State,Rating,Payment_Terms
+SUP026,Galaxy Enterprises,Hyderabad,Telangana,4.4,Net 30
+SUP014,Everest Manufacturing Co,Mumbai,Maharashtra,3.7,Net 45
+SUP009,Kaveri Suppliers,Bengaluru,Karnataka,4.9,Net 45
+SUP027,Ganesh Wholesale Co,Pune,Maharashtra,4.4,Advance 50%
+SUP005,Sunrise Wholesale Co ,Ahmedabad,Gujarat,4.9,Net 30
+SUP040,Prime Supply Chain LLP,Jaipur,Rajasthan,4.4,Net 30
+SUP020,Orient Sourcing Pvt Ltd,Surat,Gujarat,3.8,Net 30
+SUP030,Vardhman Manufacturing Co,Kanpur,Uttar Pradesh,3.7,Net 45
+SUP031,Sai Manufacturing Co,Bengaluru,Karnataka,4.2,Net 30
+SUP007,Royal Manufacturing Co,Coimbatore,Tamil Nadu,4.5,Net 45
+SUP028,Sai Sourcing Pvt Ltd,Hyderabad,Telangana,NA,Net 30
+SUP013,Kaveri Exports,Coimbatore,Tamil Nadu,4.0,Net 45
+SUP018,Sterling Wholesale Co,Surat,Gujarat,4.0,Net 30
+SUP010,Vardhman Sourcing Pvt Ltd,Bengaluru,Karnataka,4.6,Net 45
+SUP016,Laxmi Traders ,Mumbai,Maharashtra,4.2,Net 60
+SUP034,Bharat Suppliers,Pune,Maharashtra,3.7,Net 30
+SUP017,Orient Exports,Indore,Madhya Pradesh,3.9,Net 60
+SUP037,Galaxy Industries,Pune,Maharashtra,4.8,Net 45
+SUP036,Royal Exports,Pune,Maharashtra,NA,Net 30
+SUP001,Pioneer Sourcing Pvt Ltd,Delhi,Delhi,4.4,Net 30
+SUP025,  Narmada Suppliers,Hyderabad,Telangana,4.4,Net 60
+SUP006,Sterling Traders,Mumbai,Maharashtra,4.8,Net 45
+SUP012,Everest Exports,Vadodara,Gujarat,2.9,Net 30
+SUP020,Orient Sourcing Pvt Ltd,Surat,Gujarat,3.8,Net 30
+SUP002,Apex Enterprises,Indore,Madhya Pradesh,4.1,Advance 50%
+SUP032,Sai Suppliers,Vadodara,Gujarat,4.0,Net 60
+SUP022,Galaxy Traders,Noida,Uttar Pradesh,4.6,Net 30
+SUP003,Royal Industries,Ahmedabad,Gujarat,3.7,Net 45
+SUP033,Sunrise Exports,Ludhiana,Punjab,3.8,Net 60
+SUP017,Orient Exports,Indore,Madhya Pradesh,3.9,Net 60
+SUP004,Unity Suppliers,Kanpur,Uttar Pradesh,2.6,Net 60
+SUP038,Royal Supply Chain LLP,Ludhiana,Punjab,4.4,Net 30
+SUP024,Narmada Industries,Kolkata,West Bengal,4.2,Net 60
+SUP035,Ganesh Sourcing Pvt Ltd,Hyderabad,Telangana,3.2,Advance 50%
+SUP011,Narmada Wholesale Co,Kolkata,West Bengal,4.5,Net 30
+SUP023,Ganesh Supply Chain LLP,Noida,Uttar Pradesh,3.3,Net 45
+SUP019,Orient Manufacturing Co,Ludhiana,Punjab,4.4,Net 45
+SUP021,sai distributors,Delhi,Delhi,4.7,Net 45
+SUP008,Sai Exports,Ludhiana,Punjab,3.9,Advance 50%
+SUP015,Kaveri Sourcing Pvt Ltd,Mumbai,Maharashtra,4.8,Net 30
+SUP029,Prime Manufacturing Co,Ludhiana,Punjab,4.1,Net 30
+SUP039,Sai Supply Chain LLP,Mumbai,Maharashtra,4.1,Advance 50%

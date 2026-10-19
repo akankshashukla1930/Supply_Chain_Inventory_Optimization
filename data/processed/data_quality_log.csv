@@ -1,0 +1,57 @@
+Table,Issue,Rows_Affected,Action
+products,Leading/trailing/double spaces in text,26,Trimmed and collapsed whitespace
+products,Inconsistent casing in Category,19,Mapped to most frequent spelling
+products,Inconsistent casing in Sub_Category,0,Mapped to most frequent spelling
+products,ALL-CAPS / lower-case values in Product_Name,7,Converted to Title Case
+products,Exact duplicate rows,5,Removed
+products,'NA' text in Shelf_Life_Days (non-perishable items),226,Kept as null (not applicable)
+products,Missing Unit_Cost,4,Imputed = Unit_Price / category median markup
+suppliers,Leading/trailing/double spaces in text,3,Trimmed and collapsed whitespace
+suppliers,ALL-CAPS / lower-case values in Supplier_Name,1,Converted to Title Case
+suppliers,Exact duplicate rows,2,Removed
+suppliers,'NA' supplier Rating,2,Kept as null (unrated supplier)
+customers,Leading/trailing/double spaces in text,124,Trimmed and collapsed whitespace
+customers,Inconsistent casing in City,84,Mapped to most frequent spelling
+customers,Inconsistent casing in Segment,55,Mapped to most frequent spelling
+customers,ALL-CAPS / lower-case values in Customer_Name,0,Converted to Title Case
+customers,Exact duplicate rows,25,Removed
+customers,Missing State,15,Inferred from City
+warehouses,Leading/trailing/double spaces in text,1,Trimmed and collapsed whitespace
+warehouses,ALL-CAPS / lower-case values in City,1,Converted to Title Case
+warehouses,Exact duplicate rows,0,Removed
+sales,Leading/trailing/double spaces in text,3003,Trimmed and collapsed whitespace
+sales,Inconsistent casing in Order_Status,3219,Mapped to most frequent spelling
+sales,Exact duplicate rows,900,Removed
+sales,"Mixed date formats in Order_Date (DD/MM/YYYY, DD-Mon-YYYY)",12150,Parsed explicitly to ISO date
+sales,"Mixed date formats in Ship_Date (DD/MM/YYYY, DD-Mon-YYYY)",11399,Parsed explicitly to ISO date
+sales,"Mixed date formats in Delivery_Date (DD/MM/YYYY, DD-Mon-YYYY)",11227,Parsed explicitly to ISO date
+sales,Negative Quantity,120,Sign error -> absolute value
+sales,Quantity above IQR fence (47) - informational,9060,Reviewed; only rule below changes data
+sales,Delivered line with Quantity != Fulfilled_Qty (x100 keying outliers),50,Quantity set to Fulfilled_Qty
+sales,Fulfilled_Qty > Quantity,0,Capped at Quantity
+sales,Quantity > 500 after fixes (still implausible),8,Dropped
+sales,Missing Customer_ID,150,Mapped to C00000 'Unknown Customer'
+sales,'NA' Discount,900,Imputed with customer-segment median
+sales,Delivery_Date before Order_Date,0,Set Delivery_Date to null
+purchases,Leading/trailing/double spaces in text,441,Trimmed and collapsed whitespace
+purchases,Inconsistent casing in Status,458,Mapped to most frequent spelling
+purchases,Exact duplicate rows,120,Removed
+purchases,"Mixed date formats in PO_Date (DD/MM/YYYY, DD-Mon-YYYY)",1868,Parsed explicitly to ISO date
+purchases,"Mixed date formats in Expected_Delivery_Date (DD/MM/YYYY, DD-Mon-YYYY)",1841,Parsed explicitly to ISO date
+purchases,"Mixed date formats in Actual_Delivery_Date (DD/MM/YYYY, DD-Mon-YYYY)",1738,Parsed explicitly to ISO date
+purchases,'NA' Actual_Delivery_Date (open / cancelled POs),517,Kept as null
+purchases,Negative Received_Qty,25,Sign error -> absolute value
+purchases,Unit_Cost > 10x product median (keying outlier),15,Replaced with product median PO cost
+purchases,Received_Qty > Quantity,0,Capped at Quantity
+inventory,Exact duplicate rows,400,Removed
+inventory,"Mixed date formats in Snapshot_Date (DD/MM/YYYY, DD-Mon-YYYY)",0,Parsed explicitly to ISO date
+inventory,Negative Stock_Quantity (system error),40,Interpolated from neighbouring weekly snapshots
+inventory,'NA' Reserved_Qty,300,Set to 0
+sales,Orphan Product_ID (FK check),0,None found
+sales,Orphan Warehouse_ID (FK check),0,None found
+purchases,Orphan Product_ID (FK check),0,None found
+purchases,Orphan Warehouse_ID (FK check),0,None found
+inventory,Orphan Product_ID (FK check),0,None found
+inventory,Orphan Warehouse_ID (FK check),0,None found
+sales,Orphan Customer_ID (FK check),0,None found
+purchases,Orphan Supplier_ID (FK check),0,None found

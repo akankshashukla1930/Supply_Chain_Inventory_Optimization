@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "14fc8a0670fb5aefa82b",
+  "position": {
+    "x": 643,
+    "y": 66,
+    "z": 7000,
+    "height": 84,
+    "width": 201,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Reorder Point (ROP)"
+                }
+              },
+              "queryRef": "_Measures.Reorder Point (ROP)",
+              "nativeQueryRef": "Reorder Point (ROP)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

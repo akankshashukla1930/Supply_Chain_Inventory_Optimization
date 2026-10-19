@@ -1,0 +1,406 @@
+Product_ID,Product_Name,Category,Sub_Category,Unit_Cost,Unit_Price,Lead_Time_Days_Std,Reorder_Point,Safety_Stock,Shelf_Life_Days
+P0071,Indus Mobile Accessories D215,Electronics,Mobile Accessories,2312.09,3237.29,12,15,13,NA
+P0219,Agni Skin Care R912,Personal Care,Skin Care,517.42,768.19,10,8,7,180.0
+P0386,Indus Hand Tools D973,Hardware & Tools,Hand Tools,96.73,134.52,17,18,15,NA
+P0034,Aster Beverages H876,Grocery & FMCG,Beverages,69.67,90.15,14,29,23,270.0
+P0043,Kriti Desk Accessories L366,Office Supplies,Desk Accessories,73.65,114.57,13,18,15,NA
+P0078,Maple Power Tools R765,Hardware & Tools,Power Tools,3610.36,5251.58,13,12,10,NA
+P0138,Nova Footwear B480 ,Apparel,Footwear,860.75,1347.09,11,11,10,NA
+P0333,Pristine Cookware T565,Home & Kitchen,Cookware,4627.25,5499.0,8,15,13,NA
+P0365,Urban Beverages C735,Grocery & FMCG,Beverages,135.04,221.33,17,33,25,365.0
+P0266,Nova Computer Peripherals S244,Electronics,Computer Peripherals,2361.87,3613.76,19,24,19,NA
+P0366,Orbit Paper D742,Office Supplies,Paper,22.71,30.98,9,21,17,NA
+P0079,Kriti Office Chairs R127,Furniture ,Office Chairs,6130.06,8399.91,22,25,20,NA
+P0284,SARAL WRITING S152,Office Supplies,Writing,45.64,72.9,8,17,14,NA
+P0388,Agni Desk Accessories H146,OFFICE SUPPLIES,Desk Accessories,114.41,152.63,13,62,41,NA
+P0156,Swift Cookware E409,Home & Kitchen,Cookware,246.53,390.59,6,13,11,NA
+P0256,Mitra Staples B472,Grocery & FMCG,Staples,254.24,390.17,13,8,7,730.0
+P0178,Ruby Writing C490,Office Supplies,Writing,202.22,264.31,9,14,12,NA
+P0353,Urban Desk Accessories K230,Office Supplies,Desk Accessories,93.95,134.28,5,34,26,NA
+P0010,Aster Hygiene E737,Personal Care,Hygiene,118.21,186.9,7,17,14,180.0
+P0196,Mitra Smart Home A254,Electronics,Smart Home,1419.09,1971.34,15,86,52,NA
+P0056,Nova Hair Care R422,Personal Care,Hair Care,198.55,235.45,5,14,12,540.0
+P0210,Tara Audio G658,Electronics,Audio,427.58,549.95,28,31,24,NA
+P0254,Agni Small Appliances M220,Home & Kitchen,Small Appliances,3603.87,5340.43,17,33,14,NA
+P0233,Swift Paper E428,Office Supplies,Paper,434.32,576.56,16,56,38,NA
+P0321,Saral Paper A119,Office Supplies,Paper,25.04,36.39,9,46,33,NA
+P0306,Urban Cleaning K977,Home & Kitchen,Cleaning,2244.65,2682.6,14,22,18,NA
+P0085,Pristine Hygiene H353,Personal Care,Hygiene,635.01,981.32,13,30,23,540.0
+P0210,Tara Audio G658,Electronics,Audio,427.58,549.95,28,31,24,NA
+P0173,Ruby Storage X861,Home & Kitchen,Storage,1769.24,2131.42,14,22,18,NA
+P0016,Vega Power Tools D598,Hardware & Tools,Power Tools,409.88,496.6,6,14,12,NA
+P0133,Urban Storage T340,Home & Kitchen,Storage,2883.8,4068.73,9,8,7,NA
+P0095,Nimbu Packaged Foods A596,Grocery & FMCG,Packaged Foods,100.57,148.88,5,18,15,90.0
+P0001,Mitra Beverages H886,Grocery & FMCG,Beverages,28.47,44.0,7,25,20,730.0
+P0125,Orbit Hygiene R324,Personal Care,Hygiene,49.69,61.86,16,21,17,270.0
+P0251,Pukka Hygiene H755,Personal Care,Hygiene,45.11,57.64,14,10,9,180.0
+P0352,Pristine Staples F787,Grocery & FMCG,Staples,55.03,76.74,8,15,13,180.0
+P0057,Nimbu Snacks T691,Grocery & FMCG ,Snacks,91.41,111.91,10,15,13,180.0
+P0313,Ruby Footwear S302,Apparel,Footwear,347.37,496.19,16,14,12,NA
+P0083,Agni Storage F580,Home & Kitchen,Storage,3467.21,5516.51,6,10,9,NA
+P0325,Kriti Power Tools M276,Hardware & Tools,Power Tools,198.11,295.22,16,50,35,NA
+P0267,Mitra Snacks D377,Grocery & FMCG,Snacks,62.41,77.1,9,41,30,730.0
+P0318,Mitra Skin Care G150,Personal Care,Skin Care,71.98,113.71,16,23,19,180.0
+P0141,Mitra Skin Care B782,Personal Care,Skin Care,76.53,117.34,5,23,19,180.0
+P0115,Agni Desk Accessories H498,Office Supplies,Desk Accessories,74.81,107.42,5,19,16,NA
+P0102,Swift Desk Accessories E424,Office Supplies,Desk Accessories,176.18,262.54,12,23,19,NA
+P0338,Agni Snacks H589,Grocery & FMCG,Snacks,371.29,520.57,8,25,20,180.0
+P0026,Aster Oral Care G225,Personal Care,Oral Care,783.19,1112.9,7,26,21,365.0
+P0369,Desi Beverages D137,Grocery & FMCG,Beverages,375.61,544.19,17,41,30,540.0
+P0174,Mitra Hair Care A654,Personal Care,Hair Care,710.14,1031.21,12,28,22,90.0
+P0127,maple storage units k319,Furniture,Storage Units,3828.04,5279.03,27,16,14,NA
+P0146,Agni Hair Care K445,Personal Care ,Hair Care,394.04,569.87,11,15,13,90.0
+P0023,Pukka Storage Units H953,Furniture,Storage Units,16608.96,23020.71,15,18,15,NA
+P0117,Nova Hygiene R996,Personal Care,Hygiene,552.57,906.08,15,15,13,365.0
+P0047,Nimbu Cleaning C702,HOME & KITCHEN,Cleaning,1341.05,1661.87,17,14,12,NA
+P0394,Desi Power Tools A402,Hardware & Tools,Power Tools,995.67,1512.31,6,6,4,NA
+P0343,Maple Beverages C505,Grocery & FMCG,Beverages,226.11,371.73,9,34,26,90.0
+P0074,Kriti Desk Accessories X651,Office Supplies,Desk Accessories,724.36,1161.71,15,50,35,NA
+P0073,Kriti Audio E381,Electronics,Audio,462.58,600.73,14,14,12,NA
+P0040,Indus Mobile Accessories C906,  Electronics,Mobile Accessories,8452.21,12433.08,17,25,20,NA
+P0298,Tara Staples B995,Grocery & FMCG,Staples,103.44,141.95,5,8,7,540.0
+P0058,Vega Beverages X338,Grocery & FMCG,Beverages,218.8,273.55,11,13,11,180.0
+P0169,Vega Hand Tools E972,hardware & tools,Hand Tools,1521.93,2192.44,17,30,23,NA
+P0031,Desi Beverages B472,Grocery & FMCG,Beverages,93.96,110.95,7,19,16,730.0
+P0154,Pristine Staples M124,Grocery & FMCG,Staples,160.85,204.58,5,7,6,540.0
+P0334,Agni Cleaning X276,Home & Kitchen,Cleaning,156.82,241.29,17,17,14,NA
+P0193,Vega Oral Care A379,Personal Care,Oral Care,102.35,164.21,11,8,7,270.0
+P0281,Nimbu Oral Care D466,Personal Care,Oral Care,452.66,586.41,13,18,15,730.0
+P0105,Ruby Hair Care G517,Personal Care,Hair Care,299.93,402.18,15,22,18,365.0
+P0032,Desi Hygiene H126,Personal Care,Hygiene,40.15,56.97,5,16,14,730.0
+P0382,Aarav Packaged Foods T543,Grocery & FMCG,Packaged Foods,324.3,429.69,10,26,21,365.0
+P0240,Aarav Men S792,Apparel,Men,368.01,571.41,6,6,3,NA
+P0337,Agni Storage B731,Home & Kitchen,Storage,264.32,403.8,5,9,8,NA
+P0077,  Aarav Writing D508,OFFICE SUPPLIES,Writing,184.26,231.74,7,13,11,NA
+P0181,Vega Packaged Foods S554,Grocery & FMCG,Packaged Foods,82.18,100.88,16,15,13,365.0
+P0142,Nova Power Tools S154,  Hardware & Tools,Power Tools,175.97,222.15,16,15,13,NA
+P0006,Vega Packaged Foods S443,Grocery & FMCG,Packaged Foods,391.25,597.65,15,59,40,540.0
+P0046,Saral Desk Accessories E211,Office Supplies,Desk Accessories,363.18,554.62,5,41,30,NA
+P0091,KRITI STORAGE S834,Home & Kitchen,Storage,299.27,492.19,16,50,35,NA
+P0250,Orbit Cleaning K426,Home & Kitchen,Cleaning,329.19,389.11,7,8,7,NA
+P0211,Kriti Storage Units K480,Furniture,Storage Units,6235.47,9616.74,26,75,47,NA
+P0375,Desi Skin Care A949,Personal Care,Skin Care,718.52,937.2,14,13,11,180.0
+P0356,Nimbu Writing R551,Office Supplies,Writing,456.31,599.53,15,11,10,NA
+P0235,Vega Cookware H664,Home & Kitchen,Cookware,2504.45,4049.95,13,17,14,NA
+P0004,Aarav Hygiene F956,Personal Care,Hygiene,518.02,620.26,14,32,25,180.0
+P0019,Orbit Women E900,Apparel,Women,2269.76,2929.12,5,10,9,NA
+P0132,Vega Hygiene E311,Personal Care,Hygiene,515.84,709.71,8,29,23,180.0
+P0119,Pristine Men D515,Apparel,Men,1146.56,1508.85,13,22,18,NA
+P0359,Kriti Hygiene S560,Personal Care,Hygiene,42.07,58.59,7,26,21,180.0
+P0064,Mitra Storage F823,Home & Kitchen,Storage,163.37,267.97,15,12,10,NA
+P0319,Swift Cookware A977,Home & Kitchen,Cookware,2469.46,3556.94,12,68,44,NA
+P0212,Swift Paper M245,Office Supplies,Paper,74.36,110.57,8,10,9,NA
+P0383,Nova Men B348,Apparel,Men,2953.8,4554.59,11,16,14,NA
+P0094,Saral Storage D289,Home & Kitchen,Storage,2393.2,3716.66,13,31,24,NA
+P0332,Orbit Beverages T491,Grocery & FMCG,Beverages,43.83,68.7,10,25,20,90.0
+P0109,Nimbu Oral Care C352,Personal Care,Oral Care,59.84,78.35,8,7,6,540.0
+P0397,Kriti Footwear K399,Apparel,Footwear,330.94,440.79,7,27,21,NA
+P0224,Kriti Men R301,Apparel,Men,342.44,504.96,12,31,24,NA
+P0182,Agni Beverages L918,Grocery & FMCG,Beverages,150.29,246.72,14,12,10,365.0
+P0248,Mitra Hygiene G728,Personal Care,Hygiene,91.17,126.0,13,38,28,365.0
+P0379,Vega Skin Care T140,Personal Care,Skin Care,421.88,694.28,15,23,19,180.0
+P0395,Maple Hand Tools H365,Hardware & Tools,Hand Tools,3073.1,3723.79,6,7,6,NA
+P0220,Nimbu Women L371,Apparel,Women,1125.39,1780.85,8,46,33,NA
+P0076,Saral Paper S767 ,Office Supplies,Paper,192.38,235.78,5,28,22,NA
+P0111,Orbit Snacks L770,Grocery & FMCG,Snacks,232.28,378.12,7,18,15,730.0
+P0114,Swift Footwear X861,apparel,Footwear,1044.03,1449.8,5,16,14,NA
+P0017,Pukka Office Chairs F504,FURNITURE,Office Chairs,7473.59,11047.71,29,56,38,NA
+P0067,Pristine Packaged Foods F426,Grocery & FMCG,Packaged Foods,110.51,140.62,8,11,10,540.0
+P0272,Aarav Women X299,Apparel,Women,1126.26,1579.86,5,33,25,NA
+P0008,Maple Mobile Accessories A782,electronics,Mobile Accessories,2246.27,3365.64,15,50,35,NA
+P0020,Urban Computer Peripherals K657,Electronics,Computer Peripherals,2381.21,3640.61,19,88,53,NA
+P0177,Pukka Staples T988,Grocery & FMCG,Staples,304.57,406.73,13,9,8,365.0
+P0391,Indus Beverages X619,Grocery & FMCG,Beverages,545.04,844.17,5,7,6,365.0
+P0354,Pukka Staples G763,Grocery & FMCG,Staples,128.51,172.47,5,43,31,180.0
+P0300,Mitra Computer Peripherals H585,Electronics,Computer Peripherals,2537.56,3901.24,24,13,11,NA
+P0299,Nimbu Men D860 ,Apparel,Men,660.15,1009.48,6,21,17,NA
+P0297,Orbit Cookware M647,Home & Kitchen,Cookware,1937.25,2900.32,7,23,19,NA
+P0392,Orbit Hygiene C303,Personal Care,Hygiene,62.26,88.87,5,36,27,730.0
+P0302,Kriti Writing B468,Office Supplies ,Writing,235.22,359.09,8,9,5,NA
+P0061,Ruby Writing M580,Office Supplies,Writing,166.1,253.9,7,14,12,NA
+P0080,Tara Footwear B309,Apparel,Footwear,350.16,568.14,8,21,17,NA
+P0305,Zeal Skin Care G429,Personal Care,Skin Care,53.8,63.5,9,25,20,270.0
+P0288,  Maple Packaged Foods S760,Grocery & FMCG,Packaged Foods,31.63,39.29,7,24,19,180.0
+P0339,Nova Beverages F972,Grocery & FMCG,Beverages,544.5,830.13,15,15,13,90.0
+P0159,Indus Staples L466,Grocery & FMCG,Staples,35.17,43.41,13,19,16,90.0
+P0110,Agni Hair Care D963,Personal Care,Hair Care,326.91,525.62,12,18,15,365.0
+P0018,Maple Beverages K981,Grocery & FMCG,Beverages,527.05,808.19,16,10,9,365.0
+P0377,Tara Beverages F981,Grocery & FMCG,Beverages,46.16,62.68,14,14,12,365.0
+P0025,Pristine Hygiene B484,Personal Care,Hygiene,71.2,102.83,8,36,27,270.0
+P0269,Nimbu Cleaning R360,Home & Kitchen,Cleaning,4355.3,5644.3,8,13,11,NA
+P0149,Swift Hygiene F778,Personal Care,Hygiene,524.55,757.33,17,25,20,365.0
+P0249,Orbit Power Tools F763,Hardware & Tools,Power Tools,2568.52,3962.63,9,19,16,NA
+P0158,Nova Hand Tools T728,Hardware & Tools,Hand Tools,200.43,320.19,5,15,13,NA
+P0166,Ruby Packaged Foods G495,Grocery & FMCG,Packaged Foods,162.68,219.39,15,20,17,180.0
+P0246,Nimbu Hygiene C369,Personal Care,Hygiene,91.2,146.76,17,14,12,540.0
+P0278,SARAL BEVERAGES F474,Grocery & FMCG,Beverages,390.81,466.83,15,21,17,90.0
+P0120,Ruby Smart Home S361,Electronics,Smart Home,1491.66,1913.59,14,22,18,NA
+P0197,Maple Cleaning E277,Home & Kitchen,Cleaning,471.82,598.74,5,19,16,NA
+P0221,Aster Hair Care X733,Personal Care,Hair Care,314.72,470.75,12,17,14,365.0
+P0228,Vega Hand Tools E323,Hardware & Tools,Hand Tools,679.45,848.83,11,86,52,NA
+P0153,Indus Beverages A405,Grocery & FMCG,Beverages,113.51,183.85,6,21,17,180.0
+P0312,Agni Footwear S461,Apparel,Footwear,832.84,1232.89,14,9,8,NA
+P0037,Aarav Men A938,Apparel,Men,290.79,468.71,13,41,30,NA
+P0140,Pristine Snacks F470,Grocery & FMCG,Snacks,271.31,379.4,5,18,15,90.0
+P0326,Orbit Storage E927,Home & Kitchen,Storage,5047.68,7128.38,8,14,12,NA
+P0355,Pristine Men A980,Apparel,Men,1666.09,2703.95,11,33,25,NA
+P0199,Vega Footwear X663,Apparel,Footwear,2810.44,4428.73,6,5,4,NA
+P0229,Saral Hair Care M233,Personal Care,Hair Care,59.45,85.53,14,108,61,540.0
+P0060,Zeal Paper T680,Office Supplies ,Paper,136.9,208.74,6,13,11,NA
+P0112,Agni Women X567,APPAREL,Women,1088.05,1447.79,11,35,26,NA
+P0358,Nimbu Writing F182,Office Supplies,Writing,187.78,234.53,5,24,19,NA
+P0176,Urban Smart Home G506,Electronics,Smart Home,8411.83,11888.58,28,24,19,NA
+P0007,Urban Paper S498,Office Supplies,Paper,52.25,76.93,16,37,15,NA
+P0292,Nimbu Audio S719,Electronics,Audio,546.97,708.76,18,13,11,NA
+P0279,Maple Hygiene D571,Personal Care,Hygiene,46.87,71.82,15,11,10,365.0
+P0151,Nova Desk Accessories D637,Office Supplies,Desk Accessories,26.21,30.94,17,30,23,NA
+P0011,Maple Smart Home T878,Electronics,Smart Home,1417.46,1855.69,29,12,10,NA
+P0195,Aarav Desk Accessories T883,Office Supplies,Desk Accessories,37.84,54.16,7,26,21,NA
+P0104,Agni Snacks T397,Grocery & FMCG,Snacks,246.26,349.49,5,24,19,365.0
+P0082,Swift Men D890,Apparel,Men,612.95,852.88,8,25,20,NA
+P0209,Zeal Desk Accessories X214,Office Supplies,Desk Accessories,250.93,398.01,7,16,14,NA
+P0282,Kriti Men L434,Apparel,Men,,4058.57,11,24,19,NA
+P0381,Swift Hygiene G209,Personal Care ,Hygiene,554.2,887.21,11,79,49,180.0
+P0211,Kriti Storage Units K480,Furniture,Storage Units,6235.47,9616.74,26,75,47,NA
+P0262,Zeal Packaged Foods S323,Grocery & FMCG,Packaged Foods,48.87,78.74,12,31,24,180.0
+P0259,Desi Hair Care C121,Personal Care,Hair Care,93.92,122.07,14,9,8,730.0
+P0168,Mitra Women K444,Apparel,Women,487.83,679.06,8,14,12,NA
+P0090,Mitra Beverages G575,Grocery & FMCG,Beverages,172.7,241.53,8,79,49,90.0
+P0194,Desi Computer Peripherals A104,Electronics,Computer Peripherals,7942.69,9811.03,24,14,12,NA
+P0164,Nimbu Footwear K522,Apparel,Footwear,560.8,766.52,12,14,12,NA
+P0148,Desi Kids G332,Apparel,Kids,746.17,971.73,15,27,21,NA
+P0232,Pristine Audio F746,Electronics,Audio,598.06,837.12,20,22,18,NA
+P0093,Aarav Beverages R691,Grocery & FMCG,Beverages,29.32,39.32,6,159,79,365.0
+P0070,Indus Hygiene D977,Personal Care,Hygiene,621.41,814.49,16,43,31,180.0
+P0124,Pukka Office Chairs T360,Furniture,Office Chairs,6943.04,10214.91,12,18,15,NA
+P0097,Indus Staples F237,Grocery & FMCG,Staples,40.57,59.93,14,13,11,540.0
+P0144,Mitra Small Appliances X959,home & kitchen,Small Appliances,639.1,1016.99,15,6,5,NA
+P0308,Desi Power Tools R237,Hardware & Tools,Power Tools,1409.31,1936.06,13,36,27,NA
+P0098,Agni Packaged Foods G372,Grocery & FMCG,Packaged Foods,68.94,104.88,11,15,13,90.0
+P0234,Pukka Men F909,Apparel,Men,656.33,867.93,14,19,16,NA
+P0069,Swift Beverages B525,Grocery & FMCG,Beverages,519.88,672.98,7,56,38,270.0
+P0024,Ruby Cleaning T340,Home & Kitchen,Cleaning,1806.5,2823.34,13,33,25,NA
+P0038,Agni Paper L527,Office Supplies,Paper,22.73,28.0,5,15,13,NA
+P0145,Indus Computer Peripherals L950,Electronics,Computer Peripherals,636.55,817.19,16,17,14,NA
+P0123,Desi Power Tools C950,Hardware & Tools,Power Tools,457.71,754.92,14,24,19,NA
+P0203,Agni Mobile Accessories G274,Electronics,Mobile Accessories,406.15,628.13,21,14,12,NA
+P0183,Kriti Writing B892,Office Supplies,Writing,90.97,125.2,9,27,21,NA
+P0068,Pristine Audio M142,Electronics,Audio,501.04,629.58,26,25,20,NA
+P0400,Orbit Cleaning T688,Home & Kitchen,Cleaning,207.34,255.77,5,9,8,NA
+P0283,Kriti Desk Accessories G154,Office Supplies,Desk Accessories,176.33,247.53,7,11,6,NA
+P0223,Orbit Storage R414,Home & Kitchen,Storage,817.66,1047.65,6,8,7,NA
+P0322,Urban Fasteners G706,Hardware & Tools,Fasteners,160.28,234.82,8,22,18,NA
+P0230,Orbit Mobile Accessories R198,Electronics,Mobile Accessories,1970.31,3049.33,23,31,24,NA
+P0126,Indus Women B739,Apparel,Women,2196.31,3276.51,8,24,19,NA
+P0147,Maple Packaged Foods A936,Grocery & FMCG,Packaged Foods,239.13,285.16,9,10,9,540.0
+P0239,Zeal Beverages S989,Grocery & FMCG,Beverages,152.1,218.95,10,8,7,270.0
+P0087,Aarav Staples H850,Grocery & FMCG,Staples,37.27,60.66,17,19,16,730.0
+P0341,Ruby Snacks F279,Grocery & FMCG,Snacks,49.55,78.49,6,30,23,540.0
+P0324,Pristine Paper K712,Office Supplies,Paper,41.55,66.68,12,9,8,NA
+P0342,Indus Computer Peripherals T211,Electronics,Computer Peripherals,772.26,1135.82,15,9,8,NA
+P0204,Pristine Computer Peripherals C873,Electronics ,Computer Peripherals,3290.53,3937.23,28,36,27,NA
+P0263,Pukka Cleaning T586,Home & Kitchen,Cleaning,347.39,418.17,5,7,6,NA
+P0362,Nova Oral Care T756,Personal Care,Oral Care,53.05,73.16,17,25,20,270.0
+P0184,Agni Footwear E756,Apparel,Footwear,1933.13,2539.49,14,36,27,NA
+P0376,Saral Mobile Accessories A416,Electronics,Mobile Accessories,767.89,1004.97,13,25,20,NA
+P0287,Vega Office Chairs B155,Furniture,Office Chairs,3107.21,3841.92,18,22,18,NA
+P0290,Tara Snacks G733,Grocery & FMCG,Snacks,131.4,199.07,8,43,31,90.0
+P0286,Saral Hygiene C361,Personal Care,Hygiene,705.72,942.92,9,39,29,730.0
+P0130,Swift Hygiene G288,Personal Care,Hygiene,107.77,150.53,7,27,21,540.0
+P0039,Ruby Mobile Accessories S544,Electronics,Mobile Accessories,2780.96,4052.95,23,74,47,NA
+P0012,Tara Cookware M481,HOME & KITCHEN,Cookware,205.1,274.98,7,6,5,NA
+P0357,Agni Oral Care A429,Personal Care,Oral Care,721.87,1184.64,9,25,20,180.0
+P0186,Kriti Fasteners F810,hardware & tools,Fasteners,166.11,248.19,5,12,10,NA
+P0226,Pristine Staples H269,Grocery & FMCG,Staples,46.86,61.71,12,23,19,90.0
+P0113,Maple Small Appliances G730,Home & Kitchen,Small Appliances,1880.13,2239.08,17,50,35,NA
+P0180,Aster Packaged Foods K964,Grocery & FMCG,Packaged Foods,,480.93,6,6,5,180.0
+P0384,Agni Writing R821,Office Supplies,Writing,23.0,35.47,6,23,11,NA
+P0273,Aarav Skin Care E564,Personal Care,Skin Care,144.43,229.86,14,43,31,270.0
+P0347,Vega Hygiene T719,Personal Care,Hygiene,303.43,374.58,5,19,16,540.0
+P0118,Zeal Computer Peripherals G729,Electronics,Computer Peripherals,5925.69,8330.84,25,27,21,NA
+P0374,Tara Snacks L412,  Grocery & FMCG,Snacks,136.12,172.0,13,107,61,180.0
+P0281,Nimbu Oral Care D466,Personal Care,Oral Care,452.66,586.41,13,18,15,730.0
+P0390,Indus Women S967,Apparel,Women,925.66,1272.14,11,134,71,NA
+P0291,Tara Small Appliances R802,Home & Kitchen,Small Appliances,841.97,1060.68,6,22,18,NA
+P0368,Indus Small Appliances G687,Home & Kitchen,Small Appliances,543.23,824.01,17,11,10,NA
+P0165,Mitra Staples B817,Grocery & FMCG,Staples,69.36,88.14,5,21,17,730.0
+P0285,Desi Hair Care X252,Personal Care,Hair Care,242.35,302.04,13,46,33,540.0
+P0137,Aarav Hygiene S341,Personal Care,Hygiene,67.49,84.3,7,23,19,730.0
+P0155,Kriti Staples G568,Grocery & FMCG,Staples,34.26,43.76,14,24,19,90.0
+P0200,Vega Cookware K967,Home & Kitchen,Cookware,2824.83,4057.78,17,8,7,NA
+P0198,Kriti Cleaning M586,Home & Kitchen,Cleaning,212.39,337.2,17,25,20,NA
+P0398,Agni Kids B748,Apparel,Kids,663.18,831.27,15,23,19,NA
+P0003,Maple Packaged Foods S339,GROCERY & FMCG,Packaged Foods,32.73,47.17,10,39,29,180.0
+P0205,Vega Mobile Accessories H697,electronics,Mobile Accessories,13641.67,17499.41,14,25,20,NA
+P0116,Tara Storage T958,Home & Kitchen,Storage,514.47,666.12,8,18,15,NA
+P0238,Indus Power Tools H542,Hardware & Tools,Power Tools,85.86,120.57,16,25,20,NA
+P0275,Urban Beverages L364,Grocery & FMCG,Beverages,289.05,386.84,14,39,29,540.0
+P0027,Desi Paper A146,Office Supplies,Paper,1017.78,1250.25,7,30,23,NA
+P0121,Nova Fasteners F508,Hardware & Tools,Fasteners,169.34,200.42,14,8,7,NA
+P0311,Nimbu Beverages X107,grocery & fmcg,Beverages,57.64,83.79,12,18,15,180.0
+P0225,Aarav Cleaning X821,Home & Kitchen,Cleaning,410.01,505.15,7,11,10,NA
+P0247,Mitra Kids E407,Apparel,Kids,1815.2,2342.64,6,13,11,NA
+P0330,Zeal Kids L724,APPAREL,Kids,264.2,370.74,11,26,21,NA
+P0367,Vega Oral Care D555,Personal Care,Oral Care,70.35,105.33,6,22,18,540.0
+P0348,Swift Women M219,  Apparel,Women,293.5,367.39,5,9,8,NA
+P0128,Nova Hand Tools X121,Hardware & Tools,Hand Tools,1720.38,2557.8,9,8,7,NA
+P0075,Tara Computer Peripherals C946,Electronics,Computer Peripherals,12480.68,15148.51,24,13,11,NA
+P0327,Agni Beverages A194,Grocery & FMCG,Beverages,78.41,100.79,11,38,28,180.0
+P0030,Mitra Staples E540,Grocery & FMCG,Staples,229.93,293.69,7,10,9,540.0
+P0084,Desi Oral Care C132,Personal Care,Oral Care,86.69,112.27,13,34,26,730.0
+P0335,Nimbu Desk Accessories B159,Office Supplies,Desk Accessories,1064.39,1531.29,11,66,43,NA
+P0108,Nimbu Office Chairs D920,Furniture,Office Chairs,16382.89,25958.63,14,41,30,NA
+P0378,Zeal Women A303,Apparel,Women,486.07,594.06,12,15,13,NA
+P0380,Nova Hand Tools R161,Hardware & Tools,Hand Tools,862.77,1145.63,7,41,30,NA
+P0134,Pristine Skin Care C376,Personal Care,Skin Care,617.62,756.69,15,21,17,540.0
+P0245,Agni Packaged Foods C302,Grocery & FMCG,Packaged Foods,217.93,276.82,6,18,15,180.0
+P0185,Maple Computer Peripherals G489,Electronics,Computer Peripherals,329.49,469.4,24,17,14,NA
+P0295,Urban Packaged Foods E404,Grocery & FMCG,Packaged Foods,63.85,92.41,6,14,12,540.0
+P0045,Agni Cookware C692,Home & Kitchen,Cookware,538.48,640.22,7,11,10,NA
+P0393,Swift Hygiene T945,Personal Care,Hygiene,246.58,321.5,8,18,15,270.0
+P0066,Nova Oral Care L617,Personal Care,Oral Care,244.15,335.05,17,8,7,730.0
+P0086,Saral Writing G424,Office Supplies,Writing,174.98,250.6,14,22,18,NA
+P0243,Urban Small Appliances C300,Home & Kitchen,Small Appliances,1170.69,1544.45,5,36,27,NA
+P0187,Mitra Writing H937,Office Supplies,Writing,23.57,32.93,11,7,6,NA
+P0160,Kriti Staples S722,Grocery & FMCG,Staples,375.33,575.95,8,7,6,730.0
+P0013,Nimbu Packaged Foods G580,Grocery & FMCG,Packaged Foods,597.61,788.42,16,30,23,730.0
+P0036,Swift Cookware C642,Home & Kitchen,Cookware,820.87,1243.15,8,8,7,NA
+P0029,Zeal Beverages F798,Grocery & FMCG,Beverages,29.4,36.23,17,60,40,90.0
+P0171,Nimbu Desk Accessories K781,Office Supplies,Desk Accessories,98.38,126.01,13,93,55,NA
+P0143,Mitra Small Appliances L261,Home & Kitchen,Small Appliances,5790.99,7206.83,5,11,10,NA
+P0323,Zeal Hair Care T213,Personal Care,Hair Care,50.02,77.9,15,33,25,540.0
+P0276,Indus Tables D925,Furniture,Tables,18550.96,22103.32,15,29,23,NA
+P0222,Vega Writing H141,Office Supplies,Writing,114.0,178.03,12,23,19,NA
+P0096,Vega Packaged Foods G817,Grocery & FMCG,Packaged Foods,61.04,73.81,8,28,22,540.0
+P0052,Swift Audio A146,Electronics,Audio,4023.4,6328.95,21,103,59,NA
+P0241,Swift Hygiene E215,Personal Care,Hygiene,605.89,968.37,5,13,7,365.0
+P0303,Pristine Snacks H601,Grocery & FMCG,Snacks,115.51,186.34,8,22,18,365.0
+P0387,Swift Women E874,Apparel,Women,632.4,1007.62,6,6,5,NA
+P0179,Urban Packaged Foods X168,Grocery & FMCG,Packaged Foods,121.15,173.5,5,8,7,270.0
+P0042,Aarav Small Appliances F759,Home & Kitchen,Small Appliances,1389.36,2282.42,14,11,6,NA
+P0315,Nova Hygiene E672,Personal Care,Hygiene,480.52,627.8,8,22,18,90.0
+P0207,Kriti Office Chairs K427,  Furniture,Office Chairs,2913.3,3704.87,22,33,25,NA
+P0255,Urban Cleaning T164,Home & Kitchen,Cleaning,685.31,938.58,12,58,39,NA
+P0336,Indus Computer Peripherals G673,Electronics,Computer Peripherals,3311.29,4864.04,22,66,43,NA
+P0005,Nimbu Power Tools M690,Hardware & Tools,Power Tools,130.41,195.28,12,10,9,NA
+P0257,Tara Beverages G313,Grocery & FMCG,Beverages,47.29,59.92,6,39,29,730.0
+P0363,Pukka Oral Care H752,Personal Care ,Oral Care,822.64,1070.79,14,15,13,365.0
+P0101,Agni Power Tools R349,Hardware & Tools,Power Tools,597.42,955.55,15,22,18,NA
+P0227,Saral Footwear C775,Apparel,Footwear,1568.56,2372.97,17,21,17,NA
+P0351,Nimbu Oral Care B471,Personal Care,Oral Care,128.05,190.3,14,10,9,90.0
+P0214,Orbit Footwear H577,APPAREL,Footwear,332.68,409.34,11,26,21,NA
+P0172,Mitra Hygiene T263,Personal Care ,Hygiene,89.15,139.84,7,11,10,730.0
+P0099,Zeal Kids X572,Apparel,Kids,1014.67,1422.78,14,17,14,NA
+P0293,Pukka Paper B892,Office Supplies,Paper,331.84,525.14,11,22,18,NA
+P0216,Mitra Audio B759,Electronics,Audio,1945.98,2682.01,27,50,35,NA
+P0062,Nimbu Computer Peripherals T728,Electronics,Computer Peripherals,2788.83,3427.94,16,19,16,NA
+P0048,Kriti Snacks X338,Grocery & FMCG,Snacks,43.32,61.45,8,14,12,270.0
+P0033,Indus Paper S576,Office Supplies,Paper,116.95,180.91,17,36,27,NA
+P0268,Pukka Snacks F848,Grocery & FMCG,Snacks,124.55,181.08,15,25,20,540.0
+P0201,nimbu desk accessories h510,Office Supplies,Desk Accessories,,1615.79,14,25,20,NA
+P0361,Mitra Staples D809,Grocery & FMCG,Staples,29.47,47.87,7,21,17,90.0
+P0028,Desi Skin Care H810,Personal Care,Skin Care,49.05,68.37,17,13,11,270.0
+P0317,Tara Small Appliances E574,HOME & KITCHEN,Small Appliances,2378.56,3179.58,6,7,6,NA
+P0231,Desi Hygiene D405,Personal Care,Hygiene,161.5,252.85,16,26,21,90.0
+P0261,Nimbu Beverages L489,Grocery & FMCG,Beverages,27.95,35.11,9,9,5,90.0
+P0289,Tara Writing T376,Office Supplies,Writing,476.5,703.57,10,17,14,NA
+P0163,Maple Power Tools H360,Hardware & Tools,Power Tools,6362.17,8998.4,7,16,14,NA
+P0385,Nimbu Kids E979,Apparel,Kids,2035.99,2496.13,9,14,12,NA
+P0139,Pristine Tables R281,Furniture,Tables,14861.08,19334.3,18,28,22,NA
+P0063,Nova Cleaning D487,Home & Kitchen,Cleaning,2848.99,3495.53,13,8,7,NA
+P0136,Pristine Beverages L771,Grocery & FMCG,Beverages,293.15,350.72,10,22,18,270.0
+P0129,Ruby Packaged Foods M206,Grocery & FMCG,Packaged Foods,129.05,158.05,5,11,10,270.0
+P0009,Desi Hair Care D473,  Personal Care,Hair Care,650.31,972.64,16,74,47,270.0
+P0065,Zeal Snacks E412,Grocery & FMCG,Snacks,419.74,573.14,8,33,25,365.0
+P0301,Aster Writing H962,  Office Supplies,Writing,252.92,408.76,17,17,14,NA
+P0015,Urban Oral Care H409,Personal Care,Oral Care,135.71,218.52,17,14,12,180.0
+P0157,Pristine Small Appliances D935,  Home & Kitchen,Small Appliances,183.92,247.92,12,26,21,NA
+P0041,Urban Hygiene T600,Personal Care,Hygiene,573.91,745.8,9,8,7,270.0
+P0372,Swift Desk Accessories M473,Office Supplies,Desk Accessories,926.81,1357.84,7,15,13,NA
+P0328,Pristine Beverages G588,Grocery & FMCG,Beverages,239.79,285.03,6,9,8,270.0
+P0217,Zeal Storage A637,HOME & KITCHEN,Storage,347.78,514.6,13,93,55,NA
+P0280,Desi Packaged Foods D592,Grocery & FMCG,Packaged Foods,267.71,427.34,17,14,12,730.0
+P0350,Tara Beverages A716,Grocery & FMCG,Beverages,131.29,172.18,7,18,15,365.0
+P0237,Vega Cleaning G783,Home & Kitchen,Cleaning,4282.88,6646.95,17,18,15,NA
+P0208,Nimbu Cleaning D556,Home & Kitchen,Cleaning,1088.3,1604.39,8,41,30,NA
+P0213,ASTER WOMEN C742,Apparel,Women,371.48,564.39,12,207,94,NA
+P0296,Swift Snacks L931,Grocery & FMCG,Snacks,180.4,264.62,11,28,22,540.0
+P0370,Orbit Cleaning H597,Home & Kitchen,Cleaning,530.93,636.22,9,84,51,NA
+P0252,Pristine Packaged Foods R240,Grocery & FMCG,Packaged Foods,33.18,45.32,17,11,10,90.0
+P0396,Vega Beverages X334,Grocery & FMCG,Beverages,205.55,254.01,7,45,32,270.0
+P0371,Pristine Mobile Accessories B366,Electronics,Mobile Accessories,762.55,1167.57,29,37,28,NA
+P0304,Orbit Small Appliances C482,Home & Kitchen,Small Appliances,5219.07,7263.75,8,14,12,NA
+P0270,Pristine Oral Care R507,Personal Care,Oral Care,203.88,258.64,12,40,29,270.0
+P0202,Swift Hair Care F202,Personal Care,Hair Care,133.19,179.8,6,13,11,365.0
+P0162,Aster Hair Care S931,Personal Care,Hair Care,767.01,1113.03,5,10,9,730.0
+P0044,Saral Staples B874,Grocery & FMCG,Staples,93.19,123.88,10,25,20,270.0
+P0218,Desi Cleaning H744,Home & Kitchen,Cleaning,846.19,1355.15,14,41,30,NA
+P0191,Vega Hand Tools A283,Hardware & Tools,Hand Tools,544.83,753.29,8,11,10,NA
+P0310,Agni Footwear E414,Apparel,Footwear,2990.5,3843.55,17,26,21,NA
+P0260,Tara Hygiene S668,Personal Care,Hygiene,139.86,179.8,8,14,12,90.0
+P0106,Pristine Writing M218,Office Supplies,Writing,33.48,40.95,5,9,8,NA
+P0054,Nimbu Smart Home M578,Electronics,Smart Home,2615.6,3573.43,14,31,24,NA
+P0002,Urban Packaged Foods G166,Grocery & FMCG,Packaged Foods,109.57,179.65,11,11,10,270.0
+P0050,Tara Mobile Accessories K248,Electronics,Mobile Accessories,10037.16,15997.01,27,16,14,NA
+P0081,Swift Hygiene S655,Personal Care,Hygiene,54.68,71.32,12,15,13,90.0
+P0206,Orbit Hygiene A419,Personal Care,Hygiene,838.31,1082.33,12,41,30,730.0
+P0035,Urban Snacks T533,Grocery & FMCG,Snacks,51.64,68.96,14,14,12,730.0
+P0264,Zeal Hair Care B209,Personal Care,Hair Care,274.76,422.36,15,37,28,730.0
+P0092,Saral Snacks T713,Grocery & FMCG,Snacks,110.9,138.83,12,10,6,270.0
+P0340,Orbit Skin Care X568,Personal Care,Skin Care,79.24,110.78,6,8,7,270.0
+P0053,Saral Storage D657,Home & Kitchen,Storage,352.06,560.03,14,17,14,NA
+P0346,Nova Hygiene G820,Personal Care,Hygiene,201.97,318.32,7,21,17,270.0
+P0265,Mitra Packaged Foods G150,Grocery & FMCG,Packaged Foods,493.5,751.27,8,6,5,90.0
+P0242,Zeal Hair Care X488,Personal Care,Hair Care,92.16,135.01,8,28,22,365.0
+P0014,Pukka Power Tools M760,Hardware & Tools,Power Tools,1045.91,1724.56,10,14,12,NA
+P0316,Orbit Smart Home L470,Electronics,Smart Home,2690.7,3814.3,19,12,10,NA
+P0089,Swift Hair Care T101,Personal Care,Hair Care,43.92,54.28,10,28,22,270.0
+P0274,Indus Hygiene T801,Personal Care,Hygiene,131.72,216.1,8,36,27,180.0
+P0167,Saral Hand Tools T756,Hardware & Tools,Hand Tools,1357.28,2192.8,12,11,10,NA
+P0329,Maple Smart Home S299,Electronics,Smart Home,3267.23,5047.95,27,38,28,NA
+P0399,Desi Packaged Foods H793,Grocery & FMCG,Packaged Foods,106.27,168.98,13,35,26,365.0
+P0135,Urban Oral Care A178,Personal Care,Oral Care,,59.47,6,18,15,90.0
+P0307,Tara Staples L275,Grocery & FMCG,Staples,497.54,626.23,9,18,15,180.0
+P0389,Nova Audio C789,Electronics ,Audio,821.09,1162.88,15,49,34,NA
+P0320,Pukka Small Appliances E717,Home & Kitchen,Small Appliances,288.18,428.89,8,15,13,NA
+P0244,Nimbu Power Tools G153,  Hardware & Tools,Power Tools,103.66,168.57,7,10,9,NA
+P0055,Agni Oral Care X234,Personal Care,Oral Care,233.7,359.07,13,5,4,180.0
+P0364,Tara Computer Peripherals S875,Electronics,Computer Peripherals,1732.56,2272.01,14,8,7,NA
+P0051,Tara Smart Home K218,Electronics,Smart Home,873.49,1051.46,14,29,23,NA
+P0175,  Aarav Men A401,Apparel,Men,1262.6,1823.77,17,25,20,NA
+P0190,Mitra Computer Peripherals T894,Electronics,Computer Peripherals,411.42,611.49,26,62,41,NA
+P0034,Aster Beverages H876,Grocery & FMCG,Beverages,69.67,90.15,14,29,23,270.0
+P0188,Indus Staples F266,Grocery & FMCG,Staples,38.96,49.42,13,16,14,270.0
+P0170,Pristine Small Appliances C550,Home & Kitchen,Small Appliances,606.21,742.29,13,28,22,NA
+P0059,Mitra Skin Care T319,Personal Care,Skin Care,74.45,117.91,13,48,34,365.0
+P0049,Orbit Cookware K448,Home & Kitchen,Cookware,159.46,262.59,8,18,15,NA
+P0345,Maple Hair Care F122,Personal Care,Hair Care,418.11,549.4,12,19,16,365.0
+P0236,Indus Smart Home L496,Electronics,Smart Home,8921.15,14714.99,13,45,32,NA
+P0253,Orbit Beverages G491,Grocery & FMCG,Beverages,45.56,57.95,15,34,26,540.0
+P0022,Aarav Paper K325,Office Supplies,Paper,717.29,941.89,9,33,25,NA
+P0314,Tara Beverages X926,Grocery & FMCG,Beverages,101.15,166.21,15,79,49,90.0
+P0161,Urban Kids G156,Apparel,Kids,2973.13,3570.02,6,7,6,NA
+P0277,Indus Oral Care A506,Personal Care,Oral Care,231.23,326.71,6,15,13,270.0
+P0192,Ruby Oral Care A282,Personal Care,Oral Care,882.09,1438.33,15,52,36,540.0
+P0294,Indus Computer Peripherals M684,Electronics,Computer Peripherals,999.62,1281.33,18,96,56,NA
+P0344,Pristine Paper B473,Office Supplies,Paper,316.12,423.5,8,15,13,NA
+P0258,MAPLE BEVERAGES S672,Grocery & FMCG,Beverages,313.81,504.16,16,50,35,540.0
+P0309,Swift Power Tools R542,Hardware & Tools,Power Tools,4593.51,6500.27,16,15,13,NA
+P0150,Indus Beverages K674,Grocery & FMCG,Beverages,131.31,174.37,6,5,4,180.0
+P0131,Pristine Mobile Accessories R712,Electronics,Mobile Accessories,4161.77,5602.03,25,126,68,NA
+P0152,Saral Footwear T185,Apparel,Footwear,1151.14,1451.38,17,14,12,NA
+P0360,Desi Paper H116,Office Supplies,Paper,142.62,233.85,11,35,26,NA
+P0100,Mitra Beverages S624,Grocery & FMCG,Beverages,43.91,65.81,12,33,25,90.0
+P0373,Maple Snacks C200,  Grocery & FMCG,Snacks,586.44,786.14,13,28,22,540.0
+P0088,Mitra Packaged Foods D247,Grocery & FMCG,Packaged Foods,42.04,60.56,6,17,14,540.0
+P0331,Orbit Staples G245,Grocery & FMCG,Staples,28.62,36.78,12,19,16,90.0
+P0215,Desi Writing X188,office supplies,Writing,160.2,221.91,14,30,23,NA
+P0122,Ruby Cleaning R643,Home & Kitchen,Cleaning,3315.11,4127.36,5,11,10,NA
+P0094,Saral Storage D289,Home & Kitchen,Storage,2393.2,3716.66,13,31,24,NA
+P0021,Desi Smart Home E259,Electronics,Smart Home,967.75,1251.73,29,17,14,NA
+P0189,Urban Paper S472,Office Supplies,Paper,967.18,1325.37,17,34,26,NA
+P0072,Urban Paper L705,Office Supplies,Paper,143.61,234.21,15,64,42,NA
+P0107,Pukka Oral Care E823,Personal Care,Oral Care,315.09,374.73,9,41,30,365.0
+P0271,Swift Hygiene X452,Personal Care,Hygiene,378.54,609.98,15,49,34,365.0
+P0349,Urban Mobile Accessories G720,Electronics,Mobile Accessories,920.52,1146.69,22,51,35,NA
+P0103,Vega Packaged Foods G903,Grocery & FMCG,Packaged Foods,80.09,122.31,5,7,4,730.0

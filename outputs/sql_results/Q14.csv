@@ -1,0 +1,7 @@
+warehouse_name,avg_stock_value,carrying_cost_per_year,fixed_cost_per_year,total_cost_per_unit_shipped,network_carrying_cost
+Chennai Hub (Sriperumbudur),28010313.0,5602063.0,31200000.0,540.93,27095395.0
+Kolkata Hub (Dankuni),28011395.0,5602279.0,28800000.0,534.68,27095395.0
+Hyderabad Hub (Shamshabad),20199085.0,4039817.0,32400000.0,448.33,27095395.0
+Bengaluru Hub (Hoskote),19519684.0,3903937.0,38400000.0,434.96,27095395.0
+Mumbai Hub (Bhiwandi),19649919.0,3929984.0,54000000.0,360.66,27095395.0
+Delhi NCR Hub (Gurugram),20086576.0,4017315.0,45600000.0,339.84,27095395.0

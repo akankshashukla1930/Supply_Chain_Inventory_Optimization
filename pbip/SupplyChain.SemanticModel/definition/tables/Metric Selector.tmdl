@@ -1,0 +1,57 @@
+/// Field parameter (Modeling > New parameter > Fields): lets the user switch the metric shown in the trend chart.
+table 'Metric Selector'
+	lineageTag: d76a6f20-3bd5-4116-a407-e860fdfbe856
+
+	column 'Metric Selector'
+		dataType: string
+		lineageTag: 1ad27c1a-9e2e-41db-8ccb-abb909c283d4
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Metric Selector Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Metric Selector Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Selector Fields'
+		dataType: string
+		isHidden
+		lineageTag: 32994b1b-f4ef-4a28-b3f5-d75a75f346b6
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Metric Selector Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Selector Order'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 350d136a-7467-4932-85f4-733eb1193e0b
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Metric Selector' = calculated
+		mode: import
+		source =
+				{
+				    ( "Net sales (INR)", NAMEOF ( '_Measures'[Net Sales] ), 0 ),
+				    ( "Units sold", NAMEOF ( '_Measures'[Units Sold] ), 1 ),
+				    ( "Units demanded", NAMEOF ( '_Measures'[Units Demanded] ), 2 ),
+				    ( "Lost sales value (INR)", NAMEOF ( '_Measures'[Lost Sales Value] ), 3 ),
+				    ( "Fill rate %", NAMEOF ( '_Measures'[Fill Rate %] ), 4 ),
+				    ( "Gross margin %", NAMEOF ( '_Measures'[Gross Margin %] ), 5 ),
+				    ( "Purchase value (INR)", NAMEOF ( '_Measures'[Purchase Value] ), 6 ),
+				    ( "Closing stock value (INR)", NAMEOF ( '_Measures'[Stock Value] ), 7 )
+				}
+
+	annotation PBI_Id = 40a719f6f3d949f1a47a48521d65b62e

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "7b40e067efc85fcb93f9",
+  "position": {
+    "x": 872,
+    "y": 8,
+    "z": 3000,
+    "height": 48,
+    "width": 392,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Drill-through page: right-click a product on any page > Drill through > Product Detail. Use the arrow (Ctrl+click in Desktop) to go back.",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#8D99AE"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

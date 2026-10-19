@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "60aa4872eb295c2fad7d",
+  "position": {
+    "x": 737,
+    "y": 66,
+    "z": 8000,
+    "height": 84,
+    "width": 173,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Supplier OTIF %"
+                }
+              },
+              "queryRef": "_Measures.Supplier OTIF %",
+              "nativeQueryRef": "Supplier OTIF %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

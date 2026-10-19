@@ -1,0 +1,48 @@
+relationship 4c6f5892-6f92-5729-8933-c580b28e7d83
+	fromColumn: Sales.'Order Date'
+	toColumn: 'Date'.'Date'
+
+relationship fdca23ab-2bff-55b8-8b6e-434c171dd67a
+	fromColumn: Sales.'Product ID'
+	toColumn: 'Product'.'Product ID'
+
+relationship 4a04cd4d-8f33-5dd8-9f57-2441def3f10a
+	fromColumn: Sales.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 49ed9378-e3ac-51fb-beb9-b4579476de90
+	fromColumn: Sales.'Warehouse ID'
+	toColumn: Warehouse.'Warehouse ID'
+
+relationship 4c5162a0-ea3e-5320-8848-6063bcc4d8af
+	fromColumn: Purchases.'PO Date'
+	toColumn: 'Date'.'Date'
+
+relationship cb2e9095-5878-5955-b816-3e87b21fd18e
+	isActive: false
+	fromColumn: Purchases.'Actual Delivery Date'
+	toColumn: 'Date'.'Date'
+
+relationship 5e270a79-9a11-5900-8a25-0addb88d76d8
+	fromColumn: Purchases.'Supplier ID'
+	toColumn: Supplier.'Supplier ID'
+
+relationship 538909dc-f8ba-5e80-a508-035171cf05b3
+	fromColumn: Purchases.'Product ID'
+	toColumn: 'Product'.'Product ID'
+
+relationship b0307e2b-f519-59ed-8fda-894a91d11e02
+	fromColumn: Purchases.'Warehouse ID'
+	toColumn: Warehouse.'Warehouse ID'
+
+relationship c2caff93-9116-5b75-9041-27b10b467470
+	fromColumn: Inventory.'Snapshot Date'
+	toColumn: 'Date'.'Date'
+
+relationship 5547419c-9d79-502c-b130-310366ec923e
+	fromColumn: Inventory.'Product ID'
+	toColumn: 'Product'.'Product ID'
+
+relationship 01841720-3510-5054-bb6d-2244fbf50b5f
+	fromColumn: Inventory.'Warehouse ID'
+	toColumn: Warehouse.'Warehouse ID'

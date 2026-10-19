@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Help - show (Shortage & Overstock)",
+  "name": "83ccce62aebe0afe5415",
+  "options": {
+    "targetVisualNames": [
+      "5c174409befc1ca1e379",
+      "5727ce0d5775f17316d4"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "aa47197039a95484a0d3",
+    "sections": {
+      "aa47197039a95484a0d3": {
+        "visualContainers": {
+          "5c174409befc1ca1e379": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "5727ce0d5775f17316d4": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

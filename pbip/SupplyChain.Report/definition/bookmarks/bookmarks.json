@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "445c07de5d18bbe57c05",
+      "displayName": "Help overlay",
+      "children": [
+        "aef79741f7e0e2042dc9",
+        "759d34914f535a318e06",
+        "763b58e8eda2043dab78",
+        "9952b30b7a5dd1ca9082",
+        "0efa9a0a15eb4fdd9962",
+        "b5261fb6b1ddf0f54dee",
+        "3e78cecaa0a43031d083",
+        "be150afbf500433032e4",
+        "83ccce62aebe0afe5415",
+        "c402dbe9159178eb1c9a"
+      ]
+    },
+    {
+      "name": "2739de781b2c869f53c9",
+      "displayName": "Reset views",
+      "children": [
+        "01275e80fb64ba02f5a5",
+        "1a8d5904a1300085832e",
+        "64f3517f5ed5eeba123d",
+        "29ae2c2251818d438e0e",
+        "6429af2b473ceb7e29be"
+      ]
+    }
+  ]
+}

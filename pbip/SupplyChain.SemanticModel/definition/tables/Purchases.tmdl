@@ -1,0 +1,203 @@
+/// Purchase-order lines (~22k). Active date relationship = PO Date; inactive = Actual Delivery Date (used for receipts).
+table Purchases
+	lineageTag: 7af83661-b688-5f39-8725-843310d33393
+
+	column 'Purchase ID'
+		dataType: string
+		lineageTag: c9b06851-33ea-5dad-8786-3bee0fcbb70f
+		summarizeBy: none
+		sourceColumn: Purchase ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PO Date'
+		dataType: dateTime
+		lineageTag: 4ec009e8-5cf4-523c-ac30-e33ed981b9c5
+		summarizeBy: none
+		sourceColumn: PO Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supplier ID'
+		dataType: string
+		isHidden
+		lineageTag: 4d5e27d0-17bc-50dd-ab1f-29459ff53d77
+		summarizeBy: none
+		sourceColumn: Supplier ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		isHidden
+		lineageTag: 8f225940-9eb9-5d28-a7b6-ea22c83955a8
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Warehouse ID'
+		dataType: string
+		isHidden
+		lineageTag: 48cff058-d994-560f-bc2f-8d9b55df77dd
+		summarizeBy: none
+		sourceColumn: Warehouse ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		lineageTag: fa61a6b6-798a-52bf-9561-8eda067f84ab
+		summarizeBy: none
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Cost'
+		dataType: double
+		formatString: ₹#,0.00
+		lineageTag: 020942ad-4e62-5531-88d9-e5d1ca046c90
+		summarizeBy: none
+		sourceColumn: Unit Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Expected Delivery Date'
+		dataType: dateTime
+		lineageTag: a5830c33-0e9a-56a5-bf67-b81e25f45478
+		summarizeBy: none
+		sourceColumn: Expected Delivery Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Actual Delivery Date'
+		dataType: dateTime
+		lineageTag: adb8a03a-e56b-5a34-89f5-5c68f5c377b3
+		summarizeBy: none
+		sourceColumn: Actual Delivery Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Received Qty'
+		dataType: int64
+		lineageTag: 27590974-7374-560f-9227-684a010dfc4c
+		summarizeBy: none
+		sourceColumn: Received Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 1602082e-2605-5810-8955-bc92b744504c
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PO Value'
+		dataType: double
+		formatString: ₹#,0
+		lineageTag: 8b710416-c3cb-5122-ba09-7a12abe3e403
+		summarizeBy: none
+		sourceColumn: PO Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Received Value'
+		dataType: double
+		formatString: ₹#,0
+		lineageTag: 2aa822d7-7bf0-5cb1-b08c-f3e687641cd1
+		summarizeBy: none
+		sourceColumn: Received Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Delivered'
+		dataType: int64
+		lineageTag: 6f2ff0a7-e557-5bf5-8a7d-bbad169bf9e8
+		summarizeBy: none
+		sourceColumn: Is Delivered
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Time Days'
+		dataType: int64
+		lineageTag: f871079d-7810-53dc-8b97-39f6718d988d
+		summarizeBy: none
+		sourceColumn: Lead Time Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delay Days'
+		dataType: int64
+		lineageTag: a04aa46c-e9a8-55da-968c-a7d90dd20b68
+		summarizeBy: none
+		sourceColumn: Delay Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'On Time Flag'
+		dataType: int64
+		lineageTag: 03f31b05-3c62-552b-ba56-e3a2b4b595d4
+		summarizeBy: none
+		sourceColumn: On Time Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'In Full Flag'
+		dataType: int64
+		lineageTag: 057e51ca-94e8-5dfc-a8aa-c28fcc8cb6f8
+		summarizeBy: none
+		sourceColumn: In Full Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OTIF Flag'
+		dataType: int64
+		lineageTag: c7c5bf72-362e-5c9f-8a6b-25c04c003b74
+		summarizeBy: none
+		sourceColumn: OTIF Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Short Flag'
+		dataType: int64
+		lineageTag: df17c5d8-602f-56b1-9691-ba7ee2126d4a
+		summarizeBy: none
+		sourceColumn: Short Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Open Qty'
+		dataType: int64
+		lineageTag: 05c1d97e-6811-5b09-8d05-1ae3dd14f208
+		summarizeBy: none
+		sourceColumn: Open Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Purchases = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "purchases.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // empty CSV cells in optional columns -> null before typing
+				    Blanks = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, {"Actual_Delivery_Date"}),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Purchase_ID", type text}, {"PO_Date", type date}, {"Supplier_ID", type text}, {"Product_ID", type text}, {"Warehouse_ID", type text}, {"Quantity", Int64.Type}, {"Unit_Cost", type number}, {"Expected_Delivery_Date", type date}, {"Actual_Delivery_Date", type date}, {"Received_Qty", Int64.Type}, {"Status", type text}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " ")),
+				    AddValue = Table.AddColumn(Renamed, "PO Value", each [Quantity] * [Unit Cost], type number),
+				    AddRecVal = Table.AddColumn(AddValue, "Received Value", each [Received Qty] * [Unit Cost], type number),
+				    AddDeliv = Table.AddColumn(AddRecVal, "Is Delivered", each if [Actual Delivery Date] = null then 0 else 1, Int64.Type),
+				    AddLT = Table.AddColumn(AddDeliv, "Lead Time Days", each if [Is Delivered] = 1 then Duration.Days([Actual Delivery Date] - [PO Date]) else null, Int64.Type),
+				    AddDelay = Table.AddColumn(AddLT, "Delay Days", each if [Is Delivered] = 1 then Duration.Days([Actual Delivery Date] - [Expected Delivery Date]) else null, Int64.Type),
+				    AddOnTime = Table.AddColumn(AddDelay, "On Time Flag", each if [Is Delivered] = 1 then (if [Delay Days] <= 0 then 1 else 0) else null, Int64.Type),
+				    AddInFull = Table.AddColumn(AddOnTime, "In Full Flag", each if [Is Delivered] = 1 then (if [Received Qty] >= [Quantity] then 1 else 0) else null, Int64.Type),
+				    AddOTIF = Table.AddColumn(AddInFull, "OTIF Flag", each if [Is Delivered] = 1 then [On Time Flag] * [In Full Flag] else null, Int64.Type),
+				    AddShort = Table.AddColumn(AddOTIF, "Short Flag", each if [Is Delivered] = 1 then 1 - [In Full Flag] else null, Int64.Type),
+				    AddOpen = Table.AddColumn(AddShort, "Open Qty", each if [Status] = "Open" then [Quantity] else 0, Int64.Type)
+				in
+				    AddOpen
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "bfc9ec87ec1d5c0aa6e1",
+  "displayName": "4 Sales & Purchase Analysis",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "004d1b30940251b9ae7e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "09296ad9f0445706822b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "1bbf5dc8ed7e5c0cad20",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "2b1c369439d866eef166",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "31ed845f8951e66857a2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "35202f6741d053bc8d28",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "3716d22c05338f010488",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "3cfb59778d8650e4a8d7",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "414f530c03b859c58af5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "4ee9962ca5caab2f5771",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "4f8ff4838864336a6dd3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "5666409ffde441716e52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "5cdf7a4620f15930a039",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "5e1e2c6622c88def3465",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "7300f57e0f75d9c5d653",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "752911b855e53087e015",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "894e2c44ec21cc9bf346",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "9bfbef9507f411f381bd",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "adaaa75533cdeead0c8b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "b38cbc31d2ed58a4921b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "b3e4a48c4af054bfbe29",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "bbb83f220e4c5849b6ff",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "bc4f754476f2c5f89524",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "bf39de7c74f9e050aa07",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "e1a31da470ad06d01629",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "e207522f254b6e1cb60e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "e8b0c9878fb21ac357b6",
+      "type": "NoFilter"
+    },
+    {
+      "source": "326397fbd9b044b3eebd",
+      "target": "f03171f592ecc0e0b058",
+      "type": "NoFilter"
+    }
+  ]
+}

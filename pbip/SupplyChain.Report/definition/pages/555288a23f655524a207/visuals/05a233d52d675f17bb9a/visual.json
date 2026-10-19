@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "05a233d52d675f17bb9a",
+  "position": {
+    "x": 556,
+    "y": 66,
+    "z": 7000,
+    "height": 84,
+    "width": 174,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Capacity Utilisation %"
+                }
+              },
+              "queryRef": "_Measures.Capacity Utilisation %",
+              "nativeQueryRef": "Capacity Utilisation %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

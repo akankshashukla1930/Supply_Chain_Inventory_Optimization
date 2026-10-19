@@ -1,0 +1,77 @@
+/// Supplier master (40 suppliers).
+table Supplier
+	lineageTag: e1636811-b9af-5756-b4f5-8406b94a5a0b
+
+	column 'Supplier ID'
+		dataType: string
+		lineageTag: 33ecc546-29c4-5c7d-b4b0-b3ed74d64ce6
+		summarizeBy: none
+		sourceColumn: Supplier ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supplier Name'
+		dataType: string
+		lineageTag: b19c9e34-3df8-5055-a49e-238d0cfe2b85
+		summarizeBy: none
+		sourceColumn: Supplier Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 50fbb2ba-1cf2-52d1-a288-deeec5f92ffb
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: d0d4581c-4eeb-542d-a8e9-fdca51e1fa0f
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rating
+		dataType: double
+		formatString: 0.0
+		lineageTag: f0fee721-21e4-5595-a604-331339207520
+		summarizeBy: none
+		sourceColumn: Rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Payment Terms'
+		dataType: string
+		lineageTag: 5ac6b149-fee0-5116-aa30-c87ea26fbb28
+		summarizeBy: none
+		sourceColumn: Payment Terms
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rating Band'
+		dataType: string
+		lineageTag: fe8dc3f3-686c-5b76-b521-f5c270e8cc7e
+		summarizeBy: none
+		sourceColumn: Rating Band
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Supplier = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "suppliers.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // empty CSV cells in optional columns -> null before typing
+				    Blanks = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, {"Rating"}),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Supplier_ID", type text}, {"Supplier_Name", type text}, {"City", type text}, {"State", type text}, {"Rating", type number}, {"Payment_Terms", type text}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " ")),
+				    AddBand = Table.AddColumn(Renamed, "Rating Band", each if [Rating] = null then "Unrated" else if [Rating] >= 4.5 then "4.5+ Excellent" else if [Rating] >= 3.5 then "3.5-4.4 Good" else "< 3.5 At risk", type text)
+				in
+				    AddBand
+
+	annotation PBI_ResultType = Table

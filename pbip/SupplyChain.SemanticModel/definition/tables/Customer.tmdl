@@ -1,0 +1,65 @@
+/// Customer master (2,000 customers + C00000 'Unknown Customer' for orders with missing customer id).
+table Customer
+	lineageTag: ee3c6241-4d09-5897-89cd-14164a86b8a0
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 3d65a817-9f00-58de-ad40-737bbaf2b6f3
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: b4436197-e80b-5a9c-870a-5e57a3d36563
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: bff0f2f5-d89d-501e-8260-6e046fc58a93
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: ecc4f49e-7dc4-59c7-a15e-567d69f59175
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 394c5177-161d-5ed4-b44d-b78db4270aba
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: ab5ed403-f2db-54ec-930b-3df7a6495716
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "customers.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Promoted, {{"Customer_ID", type text}, {"Customer_Name", type text}, {"Segment", type text}, {"City", type text}, {"State", type text}, {"Region", type text}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " "))
+				in
+				    Renamed
+
+	annotation PBI_ResultType = Table

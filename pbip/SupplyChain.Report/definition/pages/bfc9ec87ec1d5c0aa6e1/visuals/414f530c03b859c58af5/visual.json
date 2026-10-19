@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "414f530c03b859c58af5",
+  "position": {
+    "x": 196,
+    "y": 4,
+    "z": 1000,
+    "height": 54,
+    "width": 556,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Sales & Purchase Analysis",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#1F3A5F",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demand, seasonality, margin and buying vs selling",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#8D99AE"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

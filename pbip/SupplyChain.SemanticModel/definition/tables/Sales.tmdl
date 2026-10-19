@@ -1,0 +1,161 @@
+/// Order lines (~152k). Quantity = ordered, Fulfilled Qty = shipped. Model columns added in Power Query: Net Sales, Demand Qty, Lost Qty, Delivery Days.
+table Sales
+	lineageTag: 4f1e02df-b280-57a6-8898-41b5d3334405
+
+	column 'Sales ID'
+		dataType: string
+		lineageTag: 31fb0eb3-eca9-56a5-9e31-ea49df1b21ec
+		summarizeBy: none
+		sourceColumn: Sales ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: dateTime
+		lineageTag: 29eb99b8-324c-50e6-8501-07460e159944
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		isHidden
+		lineageTag: 5ba55ed1-9e54-5a64-9097-b73dc85445c7
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		lineageTag: 9669186e-ac48-582a-bbca-51e6d19d192d
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Warehouse ID'
+		dataType: string
+		isHidden
+		lineageTag: ce46203b-37ea-5a9e-9f90-97a740d29c06
+		summarizeBy: none
+		sourceColumn: Warehouse ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: #,0
+		lineageTag: 41b49435-9096-5ae0-af3c-fe5be3b1be22
+		summarizeBy: none
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Price'
+		dataType: double
+		formatString: ₹#,0.00
+		lineageTag: 814eeca5-04a0-5d36-9a9c-7c7430d75be3
+		summarizeBy: none
+		sourceColumn: Unit Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: double
+		formatString: 0%
+		lineageTag: 89528ba9-1530-5d8f-95de-644753f0a9ab
+		summarizeBy: none
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Date'
+		dataType: dateTime
+		lineageTag: ab3adfad-44f9-59da-9015-d0b6bcbda605
+		summarizeBy: none
+		sourceColumn: Ship Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Date'
+		dataType: dateTime
+		lineageTag: 84688fe7-e341-5d0c-8ed7-f864b8fd7346
+		summarizeBy: none
+		sourceColumn: Delivery Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Status'
+		dataType: string
+		lineageTag: 3e360d31-3550-5a2e-b21b-7765b445a23d
+		summarizeBy: none
+		sourceColumn: Order Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fulfilled Qty'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 82bd0d23-8e4f-5df4-b801-5365972cf0ac
+		summarizeBy: none
+		sourceColumn: Fulfilled Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Net Sales'
+		dataType: double
+		formatString: ₹#,0
+		lineageTag: a696bf65-2753-5325-9ba2-ecd4b46d6829
+		summarizeBy: none
+		sourceColumn: Net Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Demand Qty'
+		dataType: int64
+		lineageTag: d0e3dd16-56fd-5245-86ae-be991b749f92
+		summarizeBy: none
+		sourceColumn: Demand Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lost Qty'
+		dataType: int64
+		lineageTag: 25843c16-9573-502e-9cd4-c34cb105339d
+		summarizeBy: none
+		sourceColumn: Lost Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Days'
+		dataType: int64
+		lineageTag: 73b5dde2-34a5-560d-8469-d3b4f40002b3
+		summarizeBy: none
+		sourceColumn: Delivery Days
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "sales.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // empty CSV cells in optional columns -> null before typing
+				    Blanks = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, {"Ship_Date", "Delivery_Date"}),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Sales_ID", type text}, {"Order_Date", type date}, {"Product_ID", type text}, {"Customer_ID", type text}, {"Warehouse_ID", type text}, {"Quantity", Int64.Type}, {"Unit_Price", type number}, {"Discount", type number}, {"Ship_Date", type date}, {"Delivery_Date", type date}, {"Order_Status", type text}, {"Fulfilled_Qty", Int64.Type}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " ")),
+				    // model-specific columns (no cleaning here - data/processed is already clean)
+				    AddNet = Table.AddColumn(Renamed, "Net Sales", each [Fulfilled Qty] * [Unit Price] * (1 - [Discount]), type number),
+				    // demand excludes customer cancellations; lost = demand we could not ship (stockouts / partial fills)
+				    AddDemand = Table.AddColumn(AddNet, "Demand Qty", each if [Order Status] = "Cancelled" then 0 else [Quantity], Int64.Type),
+				    AddLost = Table.AddColumn(AddDemand, "Lost Qty", each if [Order Status] = "Cancelled" then 0 else [Quantity] - [Fulfilled Qty], Int64.Type),
+				    AddDays = Table.AddColumn(AddLost, "Delivery Days", each if [Delivery Date] = null then null else Duration.Days([Delivery Date] - [Order Date]), Int64.Type)
+				in
+				    AddDays
+
+	annotation PBI_ResultType = Table

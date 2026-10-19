@@ -1,0 +1,21 @@
+warehouse_name,category,excess_units,excess_value_inr,excess_holding_cost_per_year,excess_rank
+Kolkata Hub (Dankuni),Home & Kitchen,4860.0,10597188.0,2119438.0,1
+Chennai Hub (Sriperumbudur),Home & Kitchen,4359.0,10344533.0,2068907.0,2
+Chennai Hub (Sriperumbudur),Electronics,1434.0,4264431.0,852886.0,3
+Kolkata Hub (Dankuni),Furniture,690.0,4247701.0,849540.0,4
+Kolkata Hub (Dankuni),Electronics,1575.0,4190154.0,838031.0,5
+Chennai Hub (Sriperumbudur),Furniture,630.0,3908313.0,781663.0,6
+Hyderabad Hub (Shamshabad),Electronics,1068.0,3429840.0,685968.0,7
+Bengaluru Hub (Hoskote),Electronics,1054.0,3160909.0,632182.0,8
+Bengaluru Hub (Hoskote),Furniture,311.0,2840370.0,568074.0,9
+Mumbai Hub (Bhiwandi),Electronics,630.0,2262916.0,452583.0,10
+Kolkata Hub (Dankuni),Apparel,2104.0,2239480.0,447896.0,11
+Chennai Hub (Sriperumbudur),Apparel,1967.0,2093809.0,418762.0,12
+Bengaluru Hub (Hoskote),Home & Kitchen,1107.0,2001533.0,400307.0,13
+Delhi NCR Hub (Gurugram),Electronics,748.0,1923382.0,384676.0,14
+Mumbai Hub (Bhiwandi),Home & Kitchen,1149.0,1869256.0,373851.0,15
+Hyderabad Hub (Shamshabad),Home & Kitchen,1227.0,1672870.0,334574.0,16
+Kolkata Hub (Dankuni),Hardware & Tools,1482.0,1465237.0,293047.0,17
+Delhi NCR Hub (Gurugram),Home & Kitchen,987.0,1420495.0,284099.0,18
+Hyderabad Hub (Shamshabad),Furniture,159.0,1353390.0,270678.0,19
+Hyderabad Hub (Shamshabad),Apparel,1072.0,1314903.0,262981.0,20

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "952cabbed329562ca85f",
+  "position": {
+    "x": 556,
+    "y": 66,
+    "z": 7000,
+    "height": 84,
+    "width": 174,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Supplier On-Time %"
+                }
+              },
+              "queryRef": "_Measures.Supplier On-Time %",
+              "nativeQueryRef": "Supplier On-Time %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,9 @@
+category,cogs_12m,avg_inventory_value,inventory_turnover,days_inventory_outstanding,slowest_rank
+Home & Kitchen,74815004.0,30571265.0,2.45,149.0,1
+Hardware & Tools,28720012.0,8719950.0,3.29,111.0,2
+Furniture,106582189.0,27927989.0,3.82,96.0,3
+Apparel,65991010.0,14090076.0,4.68,78.0,4
+Electronics,182277215.0,38870887.0,4.69,78.0,5
+Personal Care,33708082.0,6735330.0,5.0,73.0,6
+Grocery & FMCG,24674102.0,4640080.0,5.32,69.0,7
+Office Supplies,26037471.0,3921395.0,6.64,55.0,8

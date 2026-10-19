@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "60a1d1ae05f1506d8790",
+  "position": {
+    "x": 434,
+    "y": 66,
+    "z": 6000,
+    "height": 84,
+    "width": 201,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Daily Demand (90d)"
+                }
+              },
+              "queryRef": "_Measures.Avg Daily Demand (90d)",
+              "nativeQueryRef": "Avg Daily Demand (90d)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

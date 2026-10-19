@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "a59d8ca48abc5549b684",
+  "position": {
+    "x": 659,
+    "y": 66,
+    "z": 8000,
+    "height": 84,
+    "width": 147,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Needs Restock Count"
+                }
+              },
+              "queryRef": "_Measures.Needs Restock Count",
+              "nativeQueryRef": "Needs Restock Count"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

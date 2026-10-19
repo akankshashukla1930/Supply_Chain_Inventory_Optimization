@@ -1,0 +1,152 @@
+/// Product master (400 SKUs, 8 categories). ABC Class is a DAX calculated column (lifetime net sales, 80/15/5 split).
+table 'Product'
+	lineageTag: 1afa1a6a-84ce-5004-843b-448e67a01ec6
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: 3e8d1207-6078-518f-9171-aa139daa9d35
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 96950237-1fca-5c86-8704-083999cca201
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 54483b2f-853a-5ba4-bd2b-0cb0065faf1c
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sub Category'
+		dataType: string
+		lineageTag: 20005970-07dd-5a73-b57e-9b264e4455b8
+		summarizeBy: none
+		sourceColumn: Sub Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Cost'
+		dataType: double
+		formatString: ₹#,0.00
+		lineageTag: 94ccf813-482f-589d-ac12-875940011966
+		summarizeBy: none
+		sourceColumn: Unit Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Price'
+		dataType: double
+		formatString: ₹#,0.00
+		lineageTag: 18a9e8fc-747b-5edf-a321-aa9ef37e6507
+		summarizeBy: none
+		sourceColumn: Unit Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Time Days Std'
+		dataType: int64
+		lineageTag: 4f4dff1f-4e0b-5748-b899-9ac126103226
+		summarizeBy: none
+		sourceColumn: Lead Time Days Std
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reorder Point'
+		dataType: int64
+		lineageTag: c3780c50-f4f4-5389-8097-d971ad93d257
+		summarizeBy: none
+		sourceColumn: Reorder Point
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Safety Stock'
+		dataType: int64
+		lineageTag: e2e406db-7218-5dc8-b18d-40ef8a79d193
+		summarizeBy: none
+		sourceColumn: Safety Stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Shelf Life Days'
+		dataType: int64
+		lineageTag: 6d801458-e98e-5df7-b409-226c8f774163
+		summarizeBy: none
+		sourceColumn: Shelf Life Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Label'
+		dataType: string
+		lineageTag: 75dfa251-32d8-5a9d-ba1a-25d62981c41c
+		summarizeBy: none
+		sourceColumn: Product Label
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Margin %'
+		dataType: double
+		formatString: 0.0%
+		lineageTag: bb28ff0e-b2f7-5c50-9218-c72aa6c352ed
+		summarizeBy: none
+		sourceColumn: Unit Margin %
+
+		annotation SummarizationSetBy = Automatic
+
+	column Perishable
+		dataType: string
+		lineageTag: 6b2e7c8c-69fe-5bf5-8528-23a2779834c7
+		summarizeBy: none
+		sourceColumn: Perishable
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Lifetime net sales of the product (ALLEXCEPT avoids a circular dependency with ABC Class)
+	column 'Lifetime Net Sales' = CALCULATE ( SUM ( Sales[Net Sales] ), ALLEXCEPT ( 'Product', 'Product'[Product ID] ) )
+		dataType: double
+		formatString: ₹#,0
+		isHidden
+		lineageTag: e0043189-576b-52f6-9640-57f89560606e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// A = products making the first 80% of revenue, B = next 15%, C = last 5%
+	column 'ABC Class' =
+			VAR r = 'Product'[Lifetime Net Sales]
+			VAR tot = SUM ( 'Product'[Lifetime Net Sales] )
+			VAR cum = SUMX ( FILTER ( 'Product', 'Product'[Lifetime Net Sales] >= r ), 'Product'[Lifetime Net Sales] )
+			VAR share = DIVIDE ( cum, tot )
+			RETURN IF ( share <= 0.80, "A", IF ( share <= 0.95, "B", "C" ) )
+		dataType: string
+		lineageTag: 43df4cd3-42e6-5b0c-b892-8d5b751c72d7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "products.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    // empty CSV cells in optional columns -> null before typing
+				    Blanks = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, {"Shelf_Life_Days"}),
+				    // culture en-US so '.' is always the decimal separator, whatever the PC's regional settings
+				    Typed = Table.TransformColumnTypes(Blanks, {{"Product_ID", type text}, {"Product_Name", type text}, {"Category", type text}, {"Sub_Category", type text}, {"Unit_Cost", type number}, {"Unit_Price", type number}, {"Lead_Time_Days_Std", Int64.Type}, {"Reorder_Point", Int64.Type}, {"Safety_Stock", Int64.Type}, {"Shelf_Life_Days", Int64.Type}}, "en-US"),
+				    Renamed = Table.TransformColumnNames(Typed, each Text.Replace(_, "_", " ")),
+				    AddLabel = Table.AddColumn(Renamed, "Product Label", each [Product ID] & " - " & [Product Name], type text),
+				    AddMargin = Table.AddColumn(AddLabel, "Unit Margin %", each if [Unit Price] = 0 then null else ([Unit Price] - [Unit Cost]) / [Unit Price], type number),
+				    AddPerish = Table.AddColumn(AddMargin, "Perishable", each if [Shelf Life Days] = null then "Non-perishable" else "Perishable", type text)
+				in
+				    AddPerish
+
+	annotation PBI_ResultType = Table

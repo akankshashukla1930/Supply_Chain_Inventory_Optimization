@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "50366a74ec3b5baaafb9",
+  "position": {
+    "x": 917,
+    "y": 66,
+    "z": 9000,
+    "height": 84,
+    "width": 173,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overstock Value"
+                }
+              },
+              "queryRef": "_Measures.Overstock Value",
+              "nativeQueryRef": "Overstock Value"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,4 @@
+abc_class,products,pct_products,net_sales,pct_revenue,best_decile,worst_decile
+A,66,16.5,1519154107.0,80.0,1,2
+B,96,24.0,285210856.0,15.0,2,5
+C,238,59.5,95662940.0,5.0,5,10

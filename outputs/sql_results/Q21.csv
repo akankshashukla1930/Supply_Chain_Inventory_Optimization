@@ -1,0 +1,7 @@
+warehouse_name,stock_value,releasable_value,pct_releasable,holding_cost_saving_per_year,cumulative_saving
+Kolkata Hub (Dankuni),32801216.0,18876763.0,57.5,3775353.0,3775353.0
+Chennai Hub (Sriperumbudur),32371652.0,18296992.0,56.5,3659398.0,7434751.0
+Bengaluru Hub (Hoskote),20851199.0,6175550.0,29.6,1235110.0,8669861.0
+Hyderabad Hub (Shamshabad),19406720.0,5066843.0,26.1,1013369.0,9683230.0
+Mumbai Hub (Bhiwandi),20081412.0,4227836.0,21.1,845567.0,10528797.0
+Delhi NCR Hub (Gurugram),20051454.0,3851488.0,19.2,770298.0,11299095.0

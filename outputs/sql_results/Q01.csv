@@ -1,0 +1,4 @@
+table_name,row_count,first_date,last_date
+fact_inventory_snapshot,343200,2024-01-07,2026-09-27
+fact_purchases,22750,2024-01-01,2026-09-30
+fact_sales,152291,2024-01-01,2026-09-30

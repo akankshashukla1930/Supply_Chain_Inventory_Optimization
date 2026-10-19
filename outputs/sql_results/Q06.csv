@@ -1,0 +1,7 @@
+warehouse_name,region,stock_units,stock_value_inr,capacity_units,capacity_utilisation_pct,value_rank
+Kolkata Hub (Dankuni),East,26126.0,32801216.0,41000,63.7,1
+Chennai Hub (Sriperumbudur),South,26088.0,32371652.0,38000,68.7,2
+Bengaluru Hub (Hoskote),South,17288.0,20851199.0,31000,55.8,3
+Mumbai Hub (Bhiwandi),West,18807.0,20081412.0,21000,89.6,4
+Delhi NCR Hub (Gurugram),North,19212.0,20051454.0,30000,64.0,5
+Hyderabad Hub (Shamshabad),South,18795.0,19406720.0,35000,53.7,6

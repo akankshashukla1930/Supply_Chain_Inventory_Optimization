@@ -1,0 +1,73 @@
+/// Time Intelligence calculation group: apply to any measure via the 'Time Calculation' slicer / column.
+/// Periods after the last sales date are blanked. YTD = calendar year, FYTD = Indian financial year (Apr-Mar).
+table 'Time Intelligence'
+	lineageTag: 6d60e078-5f9d-4789-a3ca-e64eeeeb3692
+
+	calculationGroup
+		precedence: 10
+
+		calculationItem Current = SELECTEDMEASURE ()
+			ordinal: 0
+
+		calculationItem PY =
+				IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) ) )
+			ordinal: 1
+
+		/// Absolute change vs same period last year (keeps the measure's own format)
+		calculationItem YoY =
+				VAR cur = SELECTEDMEASURE ()
+				VAR py  = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( py ), cur - py ) )
+			ordinal: 2
+			formatStringDefinition = SELECTEDMEASUREFORMATSTRING ()
+
+		calculationItem 'YoY %' =
+				VAR cur = SELECTEDMEASURE ()
+				VAR py  = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( py ), DIVIDE ( cur - py, py ) ) )
+			ordinal: 3
+			formatStringDefinition = "0.0%"
+
+		/// Change vs previous month (absolute)
+		calculationItem MoM =
+				VAR cur = SELECTEDMEASURE ()
+				VAR pm  = CALCULATE ( SELECTEDMEASURE (), DATEADD ( 'Date'[Date], -1, MONTH ) )
+				RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( pm ), cur - pm ) )
+			ordinal: 4
+			formatStringDefinition = SELECTEDMEASUREFORMATSTRING ()
+
+		calculationItem 'MoM %' =
+				VAR cur = SELECTEDMEASURE ()
+				VAR pm  = CALCULATE ( SELECTEDMEASURE (), DATEADD ( 'Date'[Date], -1, MONTH ) )
+				RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( pm ), DIVIDE ( cur - pm, pm ) ) )
+			ordinal: 5
+			formatStringDefinition = "0.0%"
+
+		calculationItem YTD =
+				IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date] ) ) )
+			ordinal: 6
+
+		calculationItem FYTD =
+				IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date], "3/31" ) ) )
+			ordinal: 7
+
+		calculationItem 'Rolling 3M' =
+				IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -3, MONTH ) ) )
+			ordinal: 8
+
+	column 'Time Calculation'
+		dataType: string
+		lineageTag: 431d6f34-1480-487d-88ac-b1edb1de6277
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+	column Ordinal
+		dataType: int64
+		lineageTag: c268be24-7349-4024-b2d4-4bcae07d01a1
+		isHidden
+		summarizeBy: none
+		sourceColumn: Ordinal
+
+	partition 'Time Intelligence' = calculationGroup
+		mode: import

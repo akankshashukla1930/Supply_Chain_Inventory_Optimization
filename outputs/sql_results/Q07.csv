@@ -1,0 +1,199 @@
+warehouse_name,month_start,stock_value,change_vs_prev_month
+Bengaluru Hub (Hoskote),2024-01-01,23189487.0,
+Bengaluru Hub (Hoskote),2024-02-01,21207020.0,-1982468.0
+Bengaluru Hub (Hoskote),2024-03-01,20743410.0,-463610.0
+Bengaluru Hub (Hoskote),2024-04-01,20433618.0,-309792.0
+Bengaluru Hub (Hoskote),2024-05-01,19670614.0,-763004.0
+Bengaluru Hub (Hoskote),2024-06-01,22289432.0,2618818.0
+Bengaluru Hub (Hoskote),2024-07-01,20224405.0,-2065027.0
+Bengaluru Hub (Hoskote),2024-08-01,19910732.0,-313673.0
+Bengaluru Hub (Hoskote),2024-09-01,20386431.0,475699.0
+Bengaluru Hub (Hoskote),2024-10-01,18066102.0,-2320329.0
+Bengaluru Hub (Hoskote),2024-11-01,17379650.0,-686451.0
+Bengaluru Hub (Hoskote),2024-12-01,19216529.0,1836879.0
+Bengaluru Hub (Hoskote),2025-01-01,20044090.0,827561.0
+Bengaluru Hub (Hoskote),2025-02-01,20680306.0,636216.0
+Bengaluru Hub (Hoskote),2025-03-01,19222112.0,-1458194.0
+Bengaluru Hub (Hoskote),2025-04-01,20626040.0,1403928.0
+Bengaluru Hub (Hoskote),2025-05-01,19834773.0,-791267.0
+Bengaluru Hub (Hoskote),2025-06-01,21235900.0,1401127.0
+Bengaluru Hub (Hoskote),2025-07-01,19363973.0,-1871927.0
+Bengaluru Hub (Hoskote),2025-08-01,20012814.0,648841.0
+Bengaluru Hub (Hoskote),2025-09-01,19375609.0,-637205.0
+Bengaluru Hub (Hoskote),2025-10-01,19026780.0,-348829.0
+Bengaluru Hub (Hoskote),2025-11-01,20079188.0,1052407.0
+Bengaluru Hub (Hoskote),2025-12-01,19955519.0,-123668.0
+Bengaluru Hub (Hoskote),2026-01-01,20142238.0,186719.0
+Bengaluru Hub (Hoskote),2026-02-01,19016088.0,-1126150.0
+Bengaluru Hub (Hoskote),2026-03-01,20117020.0,1100932.0
+Bengaluru Hub (Hoskote),2026-04-01,19952987.0,-164034.0
+Bengaluru Hub (Hoskote),2026-05-01,19370651.0,-582335.0
+Bengaluru Hub (Hoskote),2026-06-01,19292256.0,-78395.0
+Bengaluru Hub (Hoskote),2026-07-01,19730994.0,438738.0
+Bengaluru Hub (Hoskote),2026-08-01,19438228.0,-292766.0
+Bengaluru Hub (Hoskote),2026-09-01,20851199.0,1412971.0
+Chennai Hub (Sriperumbudur),2024-01-01,22206479.0,
+Chennai Hub (Sriperumbudur),2024-02-01,20170720.0,-2035760.0
+Chennai Hub (Sriperumbudur),2024-03-01,21334331.0,1163611.0
+Chennai Hub (Sriperumbudur),2024-04-01,21486848.0,152517.0
+Chennai Hub (Sriperumbudur),2024-05-01,21904641.0,417794.0
+Chennai Hub (Sriperumbudur),2024-06-01,22118368.0,213727.0
+Chennai Hub (Sriperumbudur),2024-07-01,21333328.0,-785041.0
+Chennai Hub (Sriperumbudur),2024-08-01,21847952.0,514625.0
+Chennai Hub (Sriperumbudur),2024-09-01,20998462.0,-849490.0
+Chennai Hub (Sriperumbudur),2024-10-01,20188954.0,-809508.0
+Chennai Hub (Sriperumbudur),2024-11-01,19638487.0,-550467.0
+Chennai Hub (Sriperumbudur),2024-12-01,20135298.0,496811.0
+Chennai Hub (Sriperumbudur),2025-01-01,21658405.0,1523107.0
+Chennai Hub (Sriperumbudur),2025-02-01,20533444.0,-1124961.0
+Chennai Hub (Sriperumbudur),2025-03-01,19461742.0,-1071702.0
+Chennai Hub (Sriperumbudur),2025-04-01,20872716.0,1410974.0
+Chennai Hub (Sriperumbudur),2025-05-01,22146673.0,1273957.0
+Chennai Hub (Sriperumbudur),2025-06-01,21440457.0,-706216.0
+Chennai Hub (Sriperumbudur),2025-07-01,24683160.0,3242703.0
+Chennai Hub (Sriperumbudur),2025-08-01,23457347.0,-1225814.0
+Chennai Hub (Sriperumbudur),2025-09-01,24306890.0,849543.0
+Chennai Hub (Sriperumbudur),2025-10-01,21137262.0,-3169628.0
+Chennai Hub (Sriperumbudur),2025-11-01,24111801.0,2974539.0
+Chennai Hub (Sriperumbudur),2025-12-01,24464402.0,352601.0
+Chennai Hub (Sriperumbudur),2026-01-01,28495076.0,4030674.0
+Chennai Hub (Sriperumbudur),2026-02-01,28250100.0,-244976.0
+Chennai Hub (Sriperumbudur),2026-03-01,27217836.0,-1032263.0
+Chennai Hub (Sriperumbudur),2026-04-01,27374539.0,156703.0
+Chennai Hub (Sriperumbudur),2026-05-01,29002817.0,1628279.0
+Chennai Hub (Sriperumbudur),2026-06-01,31134168.0,2131351.0
+Chennai Hub (Sriperumbudur),2026-07-01,31347353.0,213185.0
+Chennai Hub (Sriperumbudur),2026-08-01,32679276.0,1331924.0
+Chennai Hub (Sriperumbudur),2026-09-01,32371652.0,-307624.0
+Delhi NCR Hub (Gurugram),2024-01-01,20432518.0,
+Delhi NCR Hub (Gurugram),2024-02-01,19609672.0,-822846.0
+Delhi NCR Hub (Gurugram),2024-03-01,19235981.0,-373691.0
+Delhi NCR Hub (Gurugram),2024-04-01,20518102.0,1282121.0
+Delhi NCR Hub (Gurugram),2024-05-01,19364249.0,-1153853.0
+Delhi NCR Hub (Gurugram),2024-06-01,22664450.0,3300201.0
+Delhi NCR Hub (Gurugram),2024-07-01,21130495.0,-1533955.0
+Delhi NCR Hub (Gurugram),2024-08-01,20991325.0,-139170.0
+Delhi NCR Hub (Gurugram),2024-09-01,20513505.0,-477820.0
+Delhi NCR Hub (Gurugram),2024-10-01,20494859.0,-18646.0
+Delhi NCR Hub (Gurugram),2024-11-01,19637583.0,-857276.0
+Delhi NCR Hub (Gurugram),2024-12-01,21157146.0,1519563.0
+Delhi NCR Hub (Gurugram),2025-01-01,21754672.0,597526.0
+Delhi NCR Hub (Gurugram),2025-02-01,19400886.0,-2353786.0
+Delhi NCR Hub (Gurugram),2025-03-01,21852810.0,2451924.0
+Delhi NCR Hub (Gurugram),2025-04-01,21194037.0,-658773.0
+Delhi NCR Hub (Gurugram),2025-05-01,19873942.0,-1320095.0
+Delhi NCR Hub (Gurugram),2025-06-01,21816453.0,1942511.0
+Delhi NCR Hub (Gurugram),2025-07-01,21889746.0,73294.0
+Delhi NCR Hub (Gurugram),2025-08-01,20807832.0,-1081914.0
+Delhi NCR Hub (Gurugram),2025-09-01,21726988.0,919156.0
+Delhi NCR Hub (Gurugram),2025-10-01,16380832.0,-5346156.0
+Delhi NCR Hub (Gurugram),2025-11-01,19280333.0,2899501.0
+Delhi NCR Hub (Gurugram),2025-12-01,19262433.0,-17901.0
+Delhi NCR Hub (Gurugram),2026-01-01,19681723.0,419291.0
+Delhi NCR Hub (Gurugram),2026-02-01,19907192.0,225468.0
+Delhi NCR Hub (Gurugram),2026-03-01,20621500.0,714309.0
+Delhi NCR Hub (Gurugram),2026-04-01,21430398.0,808898.0
+Delhi NCR Hub (Gurugram),2026-05-01,21021740.0,-408659.0
+Delhi NCR Hub (Gurugram),2026-06-01,20847026.0,-174713.0
+Delhi NCR Hub (Gurugram),2026-07-01,20766503.0,-80523.0
+Delhi NCR Hub (Gurugram),2026-08-01,20009063.0,-757441.0
+Delhi NCR Hub (Gurugram),2026-09-01,20051454.0,42391.0
+Hyderabad Hub (Shamshabad),2024-01-01,22606873.0,
+Hyderabad Hub (Shamshabad),2024-02-01,22377372.0,-229501.0
+Hyderabad Hub (Shamshabad),2024-03-01,20030345.0,-2347027.0
+Hyderabad Hub (Shamshabad),2024-04-01,21169135.0,1138789.0
+Hyderabad Hub (Shamshabad),2024-05-01,19759646.0,-1409489.0
+Hyderabad Hub (Shamshabad),2024-06-01,21698219.0,1938574.0
+Hyderabad Hub (Shamshabad),2024-07-01,19894567.0,-1803652.0
+Hyderabad Hub (Shamshabad),2024-08-01,19804580.0,-89987.0
+Hyderabad Hub (Shamshabad),2024-09-01,21190005.0,1385426.0
+Hyderabad Hub (Shamshabad),2024-10-01,19543202.0,-1646804.0
+Hyderabad Hub (Shamshabad),2024-11-01,18349688.0,-1193514.0
+Hyderabad Hub (Shamshabad),2024-12-01,19941027.0,1591339.0
+Hyderabad Hub (Shamshabad),2025-01-01,19943292.0,2265.0
+Hyderabad Hub (Shamshabad),2025-02-01,21300288.0,1356996.0
+Hyderabad Hub (Shamshabad),2025-03-01,20344798.0,-955490.0
+Hyderabad Hub (Shamshabad),2025-04-01,20736065.0,391267.0
+Hyderabad Hub (Shamshabad),2025-05-01,21144046.0,407981.0
+Hyderabad Hub (Shamshabad),2025-06-01,19879481.0,-1264565.0
+Hyderabad Hub (Shamshabad),2025-07-01,21626852.0,1747371.0
+Hyderabad Hub (Shamshabad),2025-08-01,21618640.0,-8212.0
+Hyderabad Hub (Shamshabad),2025-09-01,20908306.0,-710333.0
+Hyderabad Hub (Shamshabad),2025-10-01,19284932.0,-1623375.0
+Hyderabad Hub (Shamshabad),2025-11-01,18385393.0,-899539.0
+Hyderabad Hub (Shamshabad),2025-12-01,20191361.0,1805968.0
+Hyderabad Hub (Shamshabad),2026-01-01,21536013.0,1344652.0
+Hyderabad Hub (Shamshabad),2026-02-01,20812855.0,-723157.0
+Hyderabad Hub (Shamshabad),2026-03-01,20236925.0,-575931.0
+Hyderabad Hub (Shamshabad),2026-04-01,19846156.0,-390769.0
+Hyderabad Hub (Shamshabad),2026-05-01,21122940.0,1276785.0
+Hyderabad Hub (Shamshabad),2026-06-01,19668519.0,-1454421.0
+Hyderabad Hub (Shamshabad),2026-07-01,19751480.0,82961.0
+Hyderabad Hub (Shamshabad),2026-08-01,18589050.0,-1162430.0
+Hyderabad Hub (Shamshabad),2026-09-01,19406720.0,817671.0
+Kolkata Hub (Dankuni),2024-01-01,22500079.0,
+Kolkata Hub (Dankuni),2024-02-01,22974470.0,474391.0
+Kolkata Hub (Dankuni),2024-03-01,22127388.0,-847082.0
+Kolkata Hub (Dankuni),2024-04-01,22271016.0,143629.0
+Kolkata Hub (Dankuni),2024-05-01,21379910.0,-891106.0
+Kolkata Hub (Dankuni),2024-06-01,21973938.0,594028.0
+Kolkata Hub (Dankuni),2024-07-01,21002519.0,-971419.0
+Kolkata Hub (Dankuni),2024-08-01,21449266.0,446747.0
+Kolkata Hub (Dankuni),2024-09-01,20175401.0,-1273865.0
+Kolkata Hub (Dankuni),2024-10-01,19626852.0,-548549.0
+Kolkata Hub (Dankuni),2024-11-01,20688781.0,1061929.0
+Kolkata Hub (Dankuni),2024-12-01,21214951.0,526171.0
+Kolkata Hub (Dankuni),2025-01-01,21528935.0,313984.0
+Kolkata Hub (Dankuni),2025-02-01,20634258.0,-894677.0
+Kolkata Hub (Dankuni),2025-03-01,21761499.0,1127241.0
+Kolkata Hub (Dankuni),2025-04-01,22214693.0,453194.0
+Kolkata Hub (Dankuni),2025-05-01,22997068.0,782375.0
+Kolkata Hub (Dankuni),2025-06-01,21599055.0,-1398013.0
+Kolkata Hub (Dankuni),2025-07-01,23312661.0,1713606.0
+Kolkata Hub (Dankuni),2025-08-01,24650671.0,1338009.0
+Kolkata Hub (Dankuni),2025-09-01,24034086.0,-616585.0
+Kolkata Hub (Dankuni),2025-10-01,24496115.0,462029.0
+Kolkata Hub (Dankuni),2025-11-01,23163723.0,-1332392.0
+Kolkata Hub (Dankuni),2025-12-01,24293968.0,1130245.0
+Kolkata Hub (Dankuni),2026-01-01,27211282.0,2917314.0
+Kolkata Hub (Dankuni),2026-02-01,26918846.0,-292436.0
+Kolkata Hub (Dankuni),2026-03-01,26765844.0,-153002.0
+Kolkata Hub (Dankuni),2026-04-01,28198138.0,1432294.0
+Kolkata Hub (Dankuni),2026-05-01,30388840.0,2190702.0
+Kolkata Hub (Dankuni),2026-06-01,31011735.0,622895.0
+Kolkata Hub (Dankuni),2026-07-01,31394195.0,382459.0
+Kolkata Hub (Dankuni),2026-08-01,31400010.0,5815.0
+Kolkata Hub (Dankuni),2026-09-01,32801216.0,1401207.0
+Mumbai Hub (Bhiwandi),2024-01-01,20350441.0,
+Mumbai Hub (Bhiwandi),2024-02-01,22040080.0,1689639.0
+Mumbai Hub (Bhiwandi),2024-03-01,20604732.0,-1435348.0
+Mumbai Hub (Bhiwandi),2024-04-01,21210793.0,606061.0
+Mumbai Hub (Bhiwandi),2024-05-01,21276823.0,66029.0
+Mumbai Hub (Bhiwandi),2024-06-01,20951122.0,-325701.0
+Mumbai Hub (Bhiwandi),2024-07-01,20780780.0,-170342.0
+Mumbai Hub (Bhiwandi),2024-08-01,21814684.0,1033905.0
+Mumbai Hub (Bhiwandi),2024-09-01,21591420.0,-223264.0
+Mumbai Hub (Bhiwandi),2024-10-01,18761757.0,-2829663.0
+Mumbai Hub (Bhiwandi),2024-11-01,19177816.0,416059.0
+Mumbai Hub (Bhiwandi),2024-12-01,19269168.0,91352.0
+Mumbai Hub (Bhiwandi),2025-01-01,20174027.0,904859.0
+Mumbai Hub (Bhiwandi),2025-02-01,20607293.0,433265.0
+Mumbai Hub (Bhiwandi),2025-03-01,18240006.0,-2367286.0
+Mumbai Hub (Bhiwandi),2025-04-01,21342440.0,3102433.0
+Mumbai Hub (Bhiwandi),2025-05-01,20581590.0,-760850.0
+Mumbai Hub (Bhiwandi),2025-06-01,20994454.0,412864.0
+Mumbai Hub (Bhiwandi),2025-07-01,21154652.0,160199.0
+Mumbai Hub (Bhiwandi),2025-08-01,22165153.0,1010500.0
+Mumbai Hub (Bhiwandi),2025-09-01,20726098.0,-1439054.0
+Mumbai Hub (Bhiwandi),2025-10-01,18953164.0,-1772934.0
+Mumbai Hub (Bhiwandi),2025-11-01,18727932.0,-225232.0
+Mumbai Hub (Bhiwandi),2025-12-01,20470984.0,1743052.0
+Mumbai Hub (Bhiwandi),2026-01-01,20102301.0,-368683.0
+Mumbai Hub (Bhiwandi),2026-02-01,19601938.0,-500363.0
+Mumbai Hub (Bhiwandi),2026-03-01,17878645.0,-1723294.0
+Mumbai Hub (Bhiwandi),2026-04-01,16436230.0,-1442415.0
+Mumbai Hub (Bhiwandi),2026-05-01,20112678.0,3676448.0
+Mumbai Hub (Bhiwandi),2026-06-01,19315494.0,-797184.0
+Mumbai Hub (Bhiwandi),2026-07-01,21633485.0,2317991.0
+Mumbai Hub (Bhiwandi),2026-08-01,21177510.0,-455975.0
+Mumbai Hub (Bhiwandi),2026-09-01,20081412.0,-1096097.0

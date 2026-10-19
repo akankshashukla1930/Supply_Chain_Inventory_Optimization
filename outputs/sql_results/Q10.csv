@@ -1,0 +1,336 @@
+warehouse_name,product_id,product_name,category,stock_quantity,stock_value_inr,last_sale_date,days_since_last_sale
+Kolkata Hub (Dankuni),P0304,Orbit Small Appliances C482,Home & Kitchen,377,1967589.0,2025-09-01,391
+Chennai Hub (Sriperumbudur),P0333,Pristine Cookware T565,Home & Kitchen,422,1952700.0,2025-02-10,594
+Kolkata Hub (Dankuni),P0333,Pristine Cookware T565,Home & Kitchen,421,1948072.0,2024-11-06,690
+Chennai Hub (Sriperumbudur),P0304,Orbit Small Appliances C482,Home & Kitchen,364,1899741.0,2024-07-30,789
+Kolkata Hub (Dankuni),P0319,Swift Cookware A977,Home & Kitchen,745,1839748.0,2025-07-07,447
+Chennai Hub (Sriperumbudur),P0326,Orbit Storage E927,Home & Kitchen,355,1791926.0,2024-10-13,714
+Kolkata Hub (Dankuni),P0326,Orbit Storage E927,Home & Kitchen,308,1554685.0,2025-10-05,357
+Chennai Hub (Sriperumbudur),P0269,Nimbu Cleaning R360,Home & Kitchen,308,1341432.0,2024-10-13,714
+Kolkata Hub (Dankuni),P0287,Vega Office Chairs B155,Furniture,397,1233562.0,2025-02-05,599
+Chennai Hub (Sriperumbudur),P0287,Vega Office Chairs B155,Furniture,386,1199383.0,2025-01-13,622
+Kolkata Hub (Dankuni),P0269,Nimbu Cleaning R360,Home & Kitchen,232,1010430.0,2024-10-08,719
+Kolkata Hub (Dankuni),P0383,Nova Men B348,Apparel,262,773896.0,2024-09-10,747
+Chennai Hub (Sriperumbudur),P0383,Nova Men B348,Apparel,255,753219.0,2024-10-21,706
+Kolkata Hub (Dankuni),P0194,Desi Computer Peripherals A104,Electronics,59,468619.0,2026-03-21,190
+Chennai Hub (Sriperumbudur),P0176,Urban Smart Home G506,Electronics,51,429003.0,2025-10-24,338
+Chennai Hub (Sriperumbudur),P0167,Saral Hand Tools T756,Hardware & Tools,311,422114.0,2024-12-07,659
+Chennai Hub (Sriperumbudur),P0217,Zeal Storage A637,Home & Kitchen,1198,416640.0,2026-01-26,244
+Kolkata Hub (Dankuni),P0167,Saral Hand Tools T756,Hardware & Tools,304,412613.0,,
+Mumbai Hub (Bhiwandi),P0075,Tara Computer Peripherals C946,Electronics,33,411862.0,2025-10-15,347
+Hyderabad Hub (Shamshabad),P0194,Desi Computer Peripherals A104,Electronics,48,381249.0,2025-11-09,322
+Bengaluru Hub (Hoskote),P0194,Desi Computer Peripherals A104,Electronics,47,373306.0,2025-03-25,551
+Kolkata Hub (Dankuni),P0050,Tara Mobile Accessories K248,Electronics,37,371375.0,2026-01-01,269
+Delhi NCR Hub (Gurugram),P0075,Tara Computer Peripherals C946,Electronics,29,361940.0,2026-01-01,269
+Mumbai Hub (Bhiwandi),P0326,Orbit Storage E927,Home & Kitchen,67,338195.0,2026-01-23,247
+Chennai Hub (Sriperumbudur),P0286,Saral Hygiene C361,Personal Care,473,333806.0,2025-03-16,560
+Chennai Hub (Sriperumbudur),P0050,Tara Mobile Accessories K248,Electronics,31,311152.0,2026-03-07,204
+Chennai Hub (Sriperumbudur),P0168,Mitra Women K444,Apparel,561,273673.0,2024-11-16,680
+Delhi NCR Hub (Gurugram),P0287,Vega Office Chairs B155,Furniture,87,270327.0,2024-11-05,691
+Kolkata Hub (Dankuni),P0176,Urban Smart Home G506,Electronics,27,227119.0,2025-11-28,303
+Hyderabad Hub (Shamshabad),P0333,Pristine Cookware T565,Home & Kitchen,47,217481.0,2025-11-05,326
+Chennai Hub (Sriperumbudur),P0291,Tara Small Appliances R802,Home & Kitchen,256,215544.0,2025-09-07,385
+Bengaluru Hub (Hoskote),P0326,Orbit Storage E927,Home & Kitchen,39,196860.0,2025-03-25,551
+Hyderabad Hub (Shamshabad),P0078,Maple Power Tools R765,Hardware & Tools,50,180518.0,2025-11-24,307
+Kolkata Hub (Dankuni),P0309,Swift Power Tools R542,Hardware & Tools,39,179147.0,2025-12-19,282
+Delhi NCR Hub (Gurugram),P0326,Orbit Storage E927,Home & Kitchen,33,166573.0,2025-03-27,549
+Kolkata Hub (Dankuni),P0078,Maple Power Tools R765,Hardware & Tools,41,148025.0,,
+Hyderabad Hub (Shamshabad),P0326,Orbit Storage E927,Home & Kitchen,29,146383.0,2024-12-03,663
+Kolkata Hub (Dankuni),P0083,Agni Storage F580,Home & Kitchen,42,145623.0,2026-03-17,194
+Mumbai Hub (Bhiwandi),P0287,Vega Office Chairs B155,Furniture,45,139824.0,2025-04-16,529
+Mumbai Hub (Bhiwandi),P0269,Nimbu Cleaning R360,Home & Kitchen,32,139370.0,2025-03-27,549
+Delhi NCR Hub (Gurugram),P0317,Tara Small Appliances E574,Home & Kitchen,58,137956.0,2026-01-18,252
+Chennai Hub (Sriperumbudur),P0317,Tara Small Appliances E574,Home & Kitchen,58,137956.0,2025-12-31,270
+Chennai Hub (Sriperumbudur),P0149,Swift Hygiene F778,Personal Care,262,137432.0,2024-12-26,640
+Chennai Hub (Sriperumbudur),P0194,Desi Computer Peripherals A104,Electronics,17,135026.0,2026-03-03,208
+Hyderabad Hub (Shamshabad),P0199,Vega Footwear X663,Apparel,48,134901.0,2025-10-15,347
+Chennai Hub (Sriperumbudur),P0127,Maple Storage Units K319,Furniture,35,133981.0,2025-11-09,322
+Bengaluru Hub (Hoskote),P0287,Vega Office Chairs B155,Furniture,43,133610.0,2025-03-23,553
+Bengaluru Hub (Hoskote),P0200,Vega Cookware K967,Home & Kitchen,47,132767.0,2025-04-06,539
+Mumbai Hub (Bhiwandi),P0063,Nova Cleaning D487,Home & Kitchen,46,131054.0,2025-10-29,333
+Mumbai Hub (Bhiwandi),P0317,Tara Small Appliances E574,Home & Kitchen,54,128442.0,2025-11-28,303
+Mumbai Hub (Bhiwandi),P0200,Vega Cookware K967,Home & Kitchen,45,127117.0,2024-11-01,695
+Mumbai Hub (Bhiwandi),P0383,Nova Men B348,Apparel,42,124060.0,2024-12-13,653
+Bengaluru Hub (Hoskote),P0199,Vega Footwear X663,Apparel,44,123659.0,2025-11-12,319
+Bengaluru Hub (Hoskote),P0078,Maple Power Tools R765,Hardware & Tools,33,119142.0,2026-01-15,255
+Kolkata Hub (Dankuni),P0133,Urban Storage T340,Home & Kitchen,41,118236.0,,
+Bengaluru Hub (Hoskote),P0269,Nimbu Cleaning R360,Home & Kitchen,27,117593.0,2025-06-05,479
+Kolkata Hub (Dankuni),P0199,Vega Footwear X663,Apparel,40,112418.0,,
+Kolkata Hub (Dankuni),P0317,Tara Small Appliances E574,Home & Kitchen,43,102278.0,2026-03-13,198
+Chennai Hub (Sriperumbudur),P0325,Kriti Power Tools M276,Hardware & Tools,516,102225.0,2025-11-27,304
+Bengaluru Hub (Hoskote),P0333,Pristine Cookware T565,Home & Kitchen,22,101800.0,2024-11-13,683
+Chennai Hub (Sriperumbudur),P0073,Kriti Audio E381,Electronics,217,100380.0,2025-04-12,533
+Kolkata Hub (Dankuni),P0073,Kriti Audio E381,Electronics,214,98992.0,2025-04-14,531
+Kolkata Hub (Dankuni),P0161,Urban Kids G156,Apparel,32,95140.0,2026-01-04,266
+Hyderabad Hub (Shamshabad),P0300,Mitra Computer Peripherals H585,Electronics,37,93890.0,2026-03-16,195
+Hyderabad Hub (Shamshabad),P0269,Nimbu Cleaning R360,Home & Kitchen,21,91461.0,2025-06-01,483
+Chennai Hub (Sriperumbudur),P0078,Maple Power Tools R765,Hardware & Tools,25,90259.0,2026-03-10,201
+Delhi NCR Hub (Gurugram),P0199,Vega Footwear X663,Apparel,32,89934.0,2025-06-25,459
+Kolkata Hub (Dankuni),P0395,Maple Hand Tools H365,Hardware & Tools,29,89120.0,2025-03-09,567
+Kolkata Hub (Dankuni),P0330,Zeal Kids L724,Apparel,334,88243.0,2025-07-12,442
+Chennai Hub (Sriperumbudur),P0330,Zeal Kids L724,Apparel,323,85337.0,2025-12-31,270
+Bengaluru Hub (Hoskote),P0304,Orbit Small Appliances C482,Home & Kitchen,16,83505.0,2025-02-01,603
+Mumbai Hub (Bhiwandi),P0364,Tara Computer Peripherals S875,Electronics,48,83163.0,2026-03-06,205
+Delhi NCR Hub (Gurugram),P0269,Nimbu Cleaning R360,Home & Kitchen,19,82751.0,2025-09-25,367
+Bengaluru Hub (Hoskote),P0161,Urban Kids G156,Apparel,27,80275.0,2025-09-12,380
+Hyderabad Hub (Shamshabad),P0161,Urban Kids G156,Apparel,27,80275.0,2025-11-12,319
+Kolkata Hub (Dankuni),P0316,Orbit Smart Home L470,Electronics,29,78030.0,2025-12-22,279
+Bengaluru Hub (Hoskote),P0063,Nova Cleaning D487,Home & Kitchen,27,76923.0,2026-02-19,220
+Chennai Hub (Sriperumbudur),P0395,Maple Hand Tools H365,Hardware & Tools,25,76828.0,2025-06-25,459
+Chennai Hub (Sriperumbudur),P0200,Vega Cookware K967,Home & Kitchen,27,76270.0,,
+Hyderabad Hub (Shamshabad),P0063,Nova Cleaning D487,Home & Kitchen,26,74074.0,2024-05-09,871
+Chennai Hub (Sriperumbudur),P0063,Nova Cleaning D487,Home & Kitchen,26,74074.0,2025-03-04,572
+Mumbai Hub (Bhiwandi),P0333,Pristine Cookware T565,Home & Kitchen,16,74036.0,2024-10-22,705
+Chennai Hub (Sriperumbudur),P0346,Nova Hygiene G820,Personal Care,357,72103.0,2025-09-02,390
+Hyderabad Hub (Shamshabad),P0287,Vega Office Chairs B155,Furniture,23,71466.0,2025-03-31,545
+Mumbai Hub (Bhiwandi),P0167,Saral Hand Tools T756,Hardware & Tools,52,70579.0,2025-02-24,580
+Mumbai Hub (Bhiwandi),P0011,Maple Smart Home T878,Electronics,49,69456.0,2025-12-20,281
+Kolkata Hub (Dankuni),P0346,Nova Hygiene G820,Personal Care,342,69074.0,2025-10-05,357
+Delhi NCR Hub (Gurugram),P0364,Tara Computer Peripherals S875,Electronics,39,67570.0,2025-11-12,319
+Kolkata Hub (Dankuni),P0128,Nova Hand Tools X121,Hardware & Tools,38,65374.0,2026-03-15,196
+Bengaluru Hub (Hoskote),P0167,Saral Hand Tools T756,Hardware & Tools,48,65149.0,2025-02-22,582
+Kolkata Hub (Dankuni),P0273,Aarav Skin Care E564,Personal Care,451,65138.0,2025-02-08,596
+Bengaluru Hub (Hoskote),P0300,Mitra Computer Peripherals H585,Electronics,25,63439.0,2025-10-13,349
+Delhi NCR Hub (Gurugram),P0063,Nova Cleaning D487,Home & Kitchen,22,62678.0,2025-10-31,331
+Chennai Hub (Sriperumbudur),P0161,Urban Kids G156,Apparel,21,62436.0,2025-12-02,299
+Delhi NCR Hub (Gurugram),P0167,Saral Hand Tools T756,Hardware & Tools,46,62435.0,2025-02-05,599
+Hyderabad Hub (Shamshabad),P0383,Nova Men B348,Apparel,21,62030.0,2025-01-24,611
+Chennai Hub (Sriperumbudur),P0128,Nova Hand Tools X121,Hardware & Tools,35,60213.0,2025-01-20,615
+Chennai Hub (Sriperumbudur),P0019,Orbit Women E900,Apparel,26,59014.0,2026-02-03,236
+Hyderabad Hub (Shamshabad),P0286,Saral Hygiene C361,Personal Care,82,57869.0,2025-03-12,564
+Mumbai Hub (Bhiwandi),P0291,Tara Small Appliances R802,Home & Kitchen,64,53886.0,2025-04-09,536
+Bengaluru Hub (Hoskote),P0364,Tara Computer Peripherals S875,Electronics,31,53709.0,2026-01-20,250
+Kolkata Hub (Dankuni),P0353,Urban Desk Accessories K230,Office Supplies,562,52800.0,2025-04-18,527
+Kolkata Hub (Dankuni),P0011,Maple Smart Home T878,Electronics,37,52446.0,2025-05-07,508
+Chennai Hub (Sriperumbudur),P0011,Maple Smart Home T878,Electronics,37,52446.0,,
+Delhi NCR Hub (Gurugram),P0395,Maple Hand Tools H365,Hardware & Tools,17,52243.0,2025-12-23,278
+Chennai Hub (Sriperumbudur),P0273,Aarav Skin Care E564,Personal Care,357,51562.0,2025-12-09,292
+Chennai Hub (Sriperumbudur),P0364,Tara Computer Peripherals S875,Electronics,29,50244.0,,
+Mumbai Hub (Bhiwandi),P0300,Mitra Computer Peripherals H585,Electronics,17,43139.0,2026-02-25,214
+Delhi NCR Hub (Gurugram),P0316,Orbit Smart Home L470,Electronics,16,43051.0,2025-08-16,407
+Kolkata Hub (Dankuni),P0200,Vega Cookware K967,Home & Kitchen,15,42372.0,2024-12-05,661
+Hyderabad Hub (Shamshabad),P0167,Saral Hand Tools T756,Hardware & Tools,31,42076.0,2024-10-01,726
+Kolkata Hub (Dankuni),P0398,Agni Kids B748,Apparel,63,41780.0,2026-03-19,192
+Kolkata Hub (Dankuni),P0234,Pukka Men F909,Apparel,57,37411.0,2026-03-09,202
+Kolkata Hub (Dankuni),P0145,Indus Computer Peripherals L950,Electronics,53,33737.0,2025-11-04,327
+Mumbai Hub (Bhiwandi),P0199,Vega Footwear X663,Apparel,11,30915.0,2026-02-16,223
+Bengaluru Hub (Hoskote),P0144,Mitra Small Appliances X959,Home & Kitchen,47,30038.0,,
+Mumbai Hub (Bhiwandi),P0144,Mitra Small Appliances X959,Home & Kitchen,46,29399.0,2025-05-13,502
+Kolkata Hub (Dankuni),P0144,Mitra Small Appliances X959,Home & Kitchen,45,28760.0,2024-04-27,883
+Mumbai Hub (Bhiwandi),P0168,Mitra Women K444,Apparel,58,28294.0,2025-01-16,619
+Kolkata Hub (Dankuni),P0363,Pukka Oral Care H752,Personal Care,34,27970.0,2025-12-08,293
+Bengaluru Hub (Hoskote),P0168,Mitra Women K444,Apparel,56,27318.0,2025-01-22,613
+Hyderabad Hub (Shamshabad),P0291,Tara Small Appliances R802,Home & Kitchen,32,26943.0,2025-03-14,562
+Mumbai Hub (Bhiwandi),P0180,Aster Packaged Foods K964,Grocery & FMCG,76,26764.0,2025-12-30,271
+Mumbai Hub (Bhiwandi),P0368,Indus Small Appliances G687,Home & Kitchen,49,26618.0,2026-03-06,205
+Mumbai Hub (Bhiwandi),P0149,Swift Hygiene F778,Personal Care,49,25703.0,2025-01-19,616
+Chennai Hub (Sriperumbudur),P0138,Nova Footwear B480,Apparel,29,24962.0,2025-11-20,311
+Hyderabad Hub (Shamshabad),P0144,Mitra Small Appliances X959,Home & Kitchen,38,24286.0,,
+Kolkata Hub (Dankuni),P0021,Desi Smart Home E259,Electronics,25,24194.0,2026-03-25,186
+Delhi NCR Hub (Gurugram),P0312,Agni Footwear S461,Apparel,29,24152.0,2026-02-05,234
+Hyderabad Hub (Shamshabad),P0223,Orbit Storage R414,Home & Kitchen,29,23712.0,2025-09-11,381
+Mumbai Hub (Bhiwandi),P0018,Maple Beverages K981,Grocery & FMCG,44,23190.0,2025-08-19,404
+Bengaluru Hub (Hoskote),P0342,Indus Computer Peripherals T211,Electronics,30,23168.0,2025-02-21,583
+Kolkata Hub (Dankuni),P0045,Agni Cookware C692,Home & Kitchen,43,23155.0,2025-10-12,350
+Chennai Hub (Sriperumbudur),P0375,Desi Skin Care A949,Personal Care,32,22993.0,2026-03-07,204
+Kolkata Hub (Dankuni),P0364,Tara Computer Peripherals S875,Electronics,13,22523.0,2025-04-12,533
+Chennai Hub (Sriperumbudur),P0342,Indus Computer Peripherals T211,Electronics,29,22396.0,2025-09-18,374
+Bengaluru Hub (Hoskote),P0378,Zeal Women A303,Apparel,46,22359.0,2025-11-11,320
+Chennai Hub (Sriperumbudur),P0265,Mitra Packaged Foods G150,Grocery & FMCG,44,21714.0,2026-01-08,262
+Mumbai Hub (Bhiwandi),P0073,Kriti Audio E381,Electronics,46,21279.0,2025-05-12,503
+Mumbai Hub (Bhiwandi),P0160,Kriti Staples S722,Grocery & FMCG,56,21018.0,2026-01-15,255
+Mumbai Hub (Bhiwandi),P0342,Indus Computer Peripherals T211,Electronics,27,20851.0,2025-06-11,473
+Kolkata Hub (Dankuni),P0223,Orbit Storage R414,Home & Kitchen,25,20442.0,2025-11-10,321
+Bengaluru Hub (Hoskote),P0291,Tara Small Appliances R802,Home & Kitchen,24,20207.0,2025-04-01,544
+Kolkata Hub (Dankuni),P0164,Nimbu Footwear K522,Apparel,36,20189.0,2025-11-20,311
+Kolkata Hub (Dankuni),P0047,Nimbu Cleaning C702,Home & Kitchen,15,20116.0,2026-02-03,236
+Chennai Hub (Sriperumbudur),P0312,Agni Footwear S461,Apparel,24,19988.0,2025-06-25,459
+Hyderabad Hub (Shamshabad),P0105,Ruby Hair Care G517,Personal Care,66,19795.0,2026-03-05,206
+Delhi NCR Hub (Gurugram),P0068,Pristine Audio M142,Electronics,39,19541.0,2026-02-14,225
+Bengaluru Hub (Hoskote),P0041,Urban Hygiene T600,Personal Care,34,19513.0,2025-08-08,415
+Kolkata Hub (Dankuni),P0250,Orbit Cleaning K426,Home & Kitchen,59,19422.0,2026-02-27,212
+Mumbai Hub (Bhiwandi),P0041,Urban Hygiene T600,Personal Care,33,18939.0,2026-01-04,266
+Chennai Hub (Sriperumbudur),P0036,Swift Cookware C642,Home & Kitchen,23,18880.0,2025-10-27,335
+Mumbai Hub (Bhiwandi),P0391,Indus Beverages X619,Grocery & FMCG,34,18531.0,2026-03-07,204
+Chennai Hub (Sriperumbudur),P0367,Vega Oral Care D555,Personal Care,258,18150.0,2025-06-23,461
+Delhi NCR Hub (Gurugram),P0203,Agni Mobile Accessories G274,Electronics,44,17871.0,2026-02-01,238
+Kolkata Hub (Dankuni),P0041,Urban Hygiene T600,Personal Care,31,17791.0,2025-06-26,458
+Bengaluru Hub (Hoskote),P0368,Indus Small Appliances G687,Home & Kitchen,32,17383.0,2025-11-23,308
+Chennai Hub (Sriperumbudur),P0144,Mitra Small Appliances X959,Home & Kitchen,27,17256.0,2026-02-14,225
+Kolkata Hub (Dankuni),P0387,Swift Women E874,Apparel,27,17075.0,2026-03-24,187
+Hyderabad Hub (Shamshabad),P0387,Swift Women E874,Apparel,27,17075.0,2025-06-21,463
+Bengaluru Hub (Hoskote),P0177,Pukka Staples T988,Grocery & FMCG,56,17056.0,2025-11-18,313
+Bengaluru Hub (Hoskote),P0160,Kriti Staples S722,Grocery & FMCG,45,16890.0,2025-10-22,340
+Bengaluru Hub (Hoskote),P0219,Agni Skin Care R912,Personal Care,32,16557.0,2025-11-03,328
+Chennai Hub (Sriperumbudur),P0219,Agni Skin Care R912,Personal Care,32,16557.0,2025-10-25,337
+Kolkata Hub (Dankuni),P0378,Zeal Women A303,Apparel,34,16526.0,2026-03-01,210
+Mumbai Hub (Bhiwandi),P0036,Swift Cookware C642,Home & Kitchen,20,16417.0,2026-02-02,237
+Kolkata Hub (Dankuni),P0018,Maple Beverages K981,Grocery & FMCG,31,16339.0,,
+Kolkata Hub (Dankuni),P0265,Mitra Packaged Foods G150,Grocery & FMCG,33,16286.0,2024-12-12,654
+Kolkata Hub (Dankuni),P0342,Indus Computer Peripherals T211,Electronics,21,16217.0,2024-03-28,913
+Kolkata Hub (Dankuni),P0312,Agni Footwear S461,Apparel,19,15824.0,,
+Hyderabad Hub (Shamshabad),P0073,Kriti Audio E381,Electronics,34,15728.0,2024-09-23,734
+Hyderabad Hub (Shamshabad),P0203,Agni Mobile Accessories G274,Electronics,38,15434.0,2026-02-14,225
+Kolkata Hub (Dankuni),P0191,Vega Hand Tools A283,Hardware & Tools,28,15255.0,2024-11-23,673
+Hyderabad Hub (Shamshabad),P0149,Swift Hygiene F778,Personal Care,29,15212.0,2025-01-25,610
+Delhi NCR Hub (Gurugram),P0291,Tara Small Appliances R802,Home & Kitchen,18,15155.0,2025-07-09,445
+Delhi NCR Hub (Gurugram),P0180,Aster Packaged Foods K964,Grocery & FMCG,43,15143.0,2025-10-19,343
+Hyderabad Hub (Shamshabad),P0168,Mitra Women K444,Apparel,31,15123.0,2024-09-14,743
+Hyderabad Hub (Shamshabad),P0330,Zeal Kids L724,Apparel,57,15059.0,2025-07-17,437
+Bengaluru Hub (Hoskote),P0036,Swift Cookware C642,Home & Kitchen,18,14776.0,2026-01-13,257
+Kolkata Hub (Dankuni),P0367,Vega Oral Care D555,Personal Care,201,14140.0,2025-10-31,331
+Hyderabad Hub (Shamshabad),P0219,Agni Skin Care R912,Personal Care,27,13970.0,,
+Delhi NCR Hub (Gurugram),P0333,Pristine Cookware T565,Home & Kitchen,3,13882.0,2025-11-23,308
+Bengaluru Hub (Hoskote),P0073,Kriti Audio E381,Electronics,30,13877.0,2025-12-09,292
+Chennai Hub (Sriperumbudur),P0368,Indus Small Appliances G687,Home & Kitchen,25,13581.0,2025-10-27,335
+Chennai Hub (Sriperumbudur),P0356,Nimbu Writing R551,Office Supplies,29,13233.0,2025-08-29,394
+Kolkata Hub (Dankuni),P0375,Desi Skin Care A949,Personal Care,18,12933.0,2025-10-29,333
+Chennai Hub (Sriperumbudur),P0058,Vega Beverages X338,Grocery & FMCG,59,12909.0,2025-11-17,314
+Hyderabad Hub (Shamshabad),P0265,Mitra Packaged Foods G150,Grocery & FMCG,26,12831.0,,
+Hyderabad Hub (Shamshabad),P0145,Indus Computer Peripherals L950,Electronics,20,12731.0,2026-02-08,231
+Delhi NCR Hub (Gurugram),P0263,Pukka Cleaning T586,Home & Kitchen,36,12506.0,2026-01-19,251
+Mumbai Hub (Bhiwandi),P0147,Maple Packaged Foods A936,Grocery & FMCG,52,12435.0,2026-01-26,244
+Hyderabad Hub (Shamshabad),P0164,Nimbu Footwear K522,Apparel,22,12338.0,2025-12-01,300
+Mumbai Hub (Bhiwandi),P0375,Desi Skin Care A949,Personal Care,17,12215.0,2026-02-27,212
+Delhi NCR Hub (Gurugram),P0041,Urban Hygiene T600,Personal Care,21,12052.0,2026-03-27,184
+Delhi NCR Hub (Gurugram),P0073,Kriti Audio E381,Electronics,26,12027.0,2025-03-18,558
+Delhi NCR Hub (Gurugram),P0256,Mitra Staples B472,Grocery & FMCG,47,11949.0,2025-07-28,426
+Kolkata Hub (Dankuni),P0219,Agni Skin Care R912,Personal Care,23,11901.0,2025-02-04,600
+Hyderabad Hub (Shamshabad),P0313,Ruby Footwear S302,Apparel,33,11463.0,2025-11-18,313
+Kolkata Hub (Dankuni),P0307,Tara Staples L275,Grocery & FMCG,23,11443.0,2026-03-01,210
+Hyderabad Hub (Shamshabad),P0325,Kriti Power Tools M276,Hardware & Tools,57,11292.0,2025-01-28,607
+Hyderabad Hub (Shamshabad),P0250,Orbit Cleaning K426,Home & Kitchen,34,11192.0,2025-09-11,381
+Chennai Hub (Sriperumbudur),P0160,Kriti Staples S722,Grocery & FMCG,29,10885.0,2026-01-25,245
+Kolkata Hub (Dankuni),P0391,Indus Beverages X619,Grocery & FMCG,19,10356.0,2025-07-08,446
+Delhi NCR Hub (Gurugram),P0168,Mitra Women K444,Apparel,21,10244.0,2025-02-07,597
+Delhi NCR Hub (Gurugram),P0387,Swift Women E874,Apparel,16,10118.0,2024-12-06,660
+Chennai Hub (Sriperumbudur),P0348,Swift Women M219,Apparel,34,9979.0,2025-10-08,354
+Bengaluru Hub (Hoskote),P0180,Aster Packaged Foods K964,Grocery & FMCG,28,9860.0,2024-07-12,807
+Kolkata Hub (Dankuni),P0256,Mitra Staples B472,Grocery & FMCG,38,9661.0,,
+Kolkata Hub (Dankuni),P0356,Nimbu Writing R551,Office Supplies,21,9583.0,2026-01-28,242
+Chennai Hub (Sriperumbudur),P0387,Swift Women E874,Apparel,15,9486.0,,
+Bengaluru Hub (Hoskote),P0263,Pukka Cleaning T586,Home & Kitchen,27,9380.0,2026-01-10,260
+Bengaluru Hub (Hoskote),P0391,Indus Beverages X619,Grocery & FMCG,17,9266.0,2025-12-24,277
+Mumbai Hub (Bhiwandi),P0330,Zeal Kids L724,Apparel,35,9247.0,2025-07-20,434
+Delhi NCR Hub (Gurugram),P0185,Maple Computer Peripherals G489,Electronics,28,9226.0,2026-03-22,189
+Delhi NCR Hub (Gurugram),P0356,Nimbu Writing R551,Office Supplies,20,9126.0,2026-03-31,180
+Kolkata Hub (Dankuni),P0055,Agni Oral Care X234,Personal Care,39,9114.0,,
+Hyderabad Hub (Shamshabad),P0055,Agni Oral Care X234,Personal Care,38,8881.0,,
+Chennai Hub (Sriperumbudur),P0320,Pukka Small Appliances E717,Home & Kitchen,30,8645.0,2025-12-14,287
+Hyderabad Hub (Shamshabad),P0121,Nova Fasteners F508,Hardware & Tools,51,8636.0,2025-11-26,305
+Hyderabad Hub (Shamshabad),P0180,Aster Packaged Foods K964,Grocery & FMCG,24,8452.0,2024-05-03,877
+Delhi NCR Hub (Gurugram),P0144,Mitra Small Appliances X959,Home & Kitchen,13,8308.0,2026-02-17,222
+Hyderabad Hub (Shamshabad),P0160,Kriti Staples S722,Grocery & FMCG,22,8257.0,2026-03-23,188
+Chennai Hub (Sriperumbudur),P0221,Aster Hair Care X733,Personal Care,26,8183.0,2026-01-02,268
+Chennai Hub (Sriperumbudur),P0256,Mitra Staples B472,Grocery & FMCG,32,8136.0,2024-10-08,719
+Mumbai Hub (Bhiwandi),P0256,Mitra Staples B472,Grocery & FMCG,32,8136.0,2026-03-08,203
+Chennai Hub (Sriperumbudur),P0180,Aster Packaged Foods K964,Grocery & FMCG,23,8100.0,2025-11-29,302
+Kolkata Hub (Dankuni),P0154,Pristine Staples M124,Grocery & FMCG,50,8043.0,2025-02-15,589
+Chennai Hub (Sriperumbudur),P0185,Maple Computer Peripherals G489,Electronics,24,7908.0,2026-03-15,196
+Chennai Hub (Sriperumbudur),P0015,Urban Oral Care H409,Personal Care,58,7871.0,2026-01-23,247
+Delhi NCR Hub (Gurugram),P0325,Kriti Power Tools M276,Hardware & Tools,38,7528.0,2026-01-31,239
+Bengaluru Hub (Hoskote),P0015,Urban Oral Care H409,Personal Care,54,7328.0,2026-03-30,181
+Bengaluru Hub (Hoskote),P0330,Zeal Kids L724,Apparel,27,7133.0,2025-05-04,511
+Bengaluru Hub (Hoskote),P0239,Zeal Beverages S989,Grocery & FMCG,46,6997.0,2026-02-23,216
+Hyderabad Hub (Shamshabad),P0263,Pukka Cleaning T586,Home & Kitchen,20,6948.0,2025-09-07,385
+Hyderabad Hub (Shamshabad),P0346,Nova Hygiene G820,Personal Care,34,6867.0,2025-01-07,628
+Kolkata Hub (Dankuni),P0061,Ruby Writing M580,Office Supplies,41,6810.0,2026-03-26,185
+Hyderabad Hub (Shamshabad),P0256,Mitra Staples B472,Grocery & FMCG,26,6610.0,2025-05-20,495
+Bengaluru Hub (Hoskote),P0055,Agni Oral Care X234,Personal Care,28,6544.0,2024-04-25,885
+Chennai Hub (Sriperumbudur),P0334,Agni Cleaning X276,Home & Kitchen,41,6430.0,2026-01-17,253
+Hyderabad Hub (Shamshabad),P0064,Mitra Storage F823,Home & Kitchen,39,6371.0,2026-01-19,251
+Hyderabad Hub (Shamshabad),P0012,Tara Cookware M481,Home & Kitchen,31,6358.0,2026-03-18,193
+Chennai Hub (Sriperumbudur),P0110,Agni Hair Care D963,Personal Care,19,6211.0,2026-01-10,260
+Mumbai Hub (Bhiwandi),P0121,Nova Fasteners F508,Hardware & Tools,36,6096.0,2026-03-25,186
+Delhi NCR Hub (Gurugram),P0330,Zeal Kids L724,Apparel,23,6077.0,2026-01-20,250
+Hyderabad Hub (Shamshabad),P0351,Nimbu Oral Care B471,Personal Care,47,6018.0,2026-03-28,183
+Chennai Hub (Sriperumbudur),P0061,Ruby Writing M580,Office Supplies,36,5980.0,2025-12-15,286
+Hyderabad Hub (Shamshabad),P0334,Agni Cleaning X276,Home & Kitchen,38,5959.0,2026-01-29,241
+Kolkata Hub (Dankuni),P0301,Aster Writing H962,Office Supplies,23,5817.0,2025-10-30,332
+Kolkata Hub (Dankuni),P0179,Urban Packaged Foods X168,Grocery & FMCG,46,5573.0,2026-03-14,197
+Bengaluru Hub (Hoskote),P0012,Tara Cookware M481,Home & Kitchen,27,5538.0,2024-08-27,761
+Hyderabad Hub (Shamshabad),P0356,Nimbu Writing R551,Office Supplies,12,5476.0,2024-05-13,867
+Chennai Hub (Sriperumbudur),P0060,Zeal Paper T680,Office Supplies,40,5476.0,2025-10-17,345
+Kolkata Hub (Dankuni),P0150,Indus Beverages K674,Grocery & FMCG,41,5384.0,2026-01-03,267
+Delhi NCR Hub (Gurugram),P0066,Nova Oral Care L617,Personal Care,22,5371.0,2025-03-13,563
+Bengaluru Hub (Hoskote),P0066,Nova Oral Care L617,Personal Care,22,5371.0,2025-01-30,605
+Chennai Hub (Sriperumbudur),P0172,Mitra Hygiene T263,Personal Care,60,5349.0,2026-02-16,223
+Delhi NCR Hub (Gurugram),P0246,Nimbu Hygiene C369,Personal Care,57,5198.0,2026-03-24,187
+Chennai Hub (Sriperumbudur),P0077,Aarav Writing D508,Office Supplies,28,5159.0,2026-01-29,241
+Kolkata Hub (Dankuni),P0386,Indus Hand Tools D973,Hardware & Tools,53,5127.0,2026-02-09,230
+Kolkata Hub (Dankuni),P0239,Zeal Beverages S989,Grocery & FMCG,33,5019.0,2025-10-06,356
+Delhi NCR Hub (Gurugram),P0298,Tara Staples B995,Grocery & FMCG,48,4965.0,2025-07-22,432
+Bengaluru Hub (Hoskote),P0346,Nova Hygiene G820,Personal Care,24,4847.0,2025-02-08,596
+Chennai Hub (Sriperumbudur),P0182,Agni Beverages L918,Grocery & FMCG,30,4509.0,2024-04-26,884
+Mumbai Hub (Bhiwandi),P0005,Nimbu Power Tools M690,Hardware & Tools,34,4434.0,2025-10-23,339
+Hyderabad Hub (Shamshabad),P0066,Nova Oral Care L617,Personal Care,18,4395.0,2024-11-17,679
+Delhi NCR Hub (Gurugram),P0055,Agni Oral Care X234,Personal Care,18,4207.0,2024-09-05,752
+Chennai Hub (Sriperumbudur),P0055,Agni Oral Care X234,Personal Care,18,4207.0,2025-07-01,453
+Hyderabad Hub (Shamshabad),P0002,Urban Packaged Foods G166,Grocery & FMCG,38,4164.0,2026-03-24,187
+Bengaluru Hub (Hoskote),P0150,Indus Beverages K674,Grocery & FMCG,31,4071.0,,
+Mumbai Hub (Bhiwandi),P0259,Desi Hair Care C121,Personal Care,43,4039.0,2026-02-13,226
+Mumbai Hub (Bhiwandi),P0325,Kriti Power Tools M276,Hardware & Tools,20,3962.0,2026-03-12,199
+Chennai Hub (Sriperumbudur),P0246,Nimbu Hygiene C369,Personal Care,43,3922.0,2026-01-31,239
+Chennai Hub (Sriperumbudur),P0064,Mitra Storage F823,Home & Kitchen,24,3921.0,2025-06-19,465
+Kolkata Hub (Dankuni),P0351,Nimbu Oral Care B471,Personal Care,30,3842.0,,
+Hyderabad Hub (Shamshabad),P0348,Swift Women M219,Apparel,13,3816.0,2025-10-14,348
+Kolkata Hub (Dankuni),P0334,Agni Cleaning X276,Home & Kitchen,24,3764.0,2026-01-01,269
+Bengaluru Hub (Hoskote),P0244,Nimbu Power Tools G153,Hardware & Tools,36,3732.0,2026-03-08,203
+Chennai Hub (Sriperumbudur),P0142,Nova Power Tools S154,Hardware & Tools,21,3695.0,2026-03-05,206
+Bengaluru Hub (Hoskote),P0212,Swift Paper M245,Office Supplies,48,3569.0,2025-10-06,356
+Chennai Hub (Sriperumbudur),P0005,Nimbu Power Tools M690,Hardware & Tools,27,3521.0,2026-01-10,260
+Mumbai Hub (Bhiwandi),P0055,Agni Oral Care X234,Personal Care,15,3506.0,2025-07-30,424
+Chennai Hub (Sriperumbudur),P0012,Tara Cookware M481,Home & Kitchen,17,3487.0,2024-04-30,880
+Bengaluru Hub (Hoskote),P0181,Vega Packaged Foods S554,Grocery & FMCG,42,3452.0,2026-02-17,222
+Hyderabad Hub (Shamshabad),P0058,Vega Beverages X338,Grocery & FMCG,15,3282.0,2024-12-29,637
+Kolkata Hub (Dankuni),P0182,Agni Beverages L918,Grocery & FMCG,21,3156.0,2026-01-29,241
+Chennai Hub (Sriperumbudur),P0179,Urban Packaged Foods X168,Grocery & FMCG,25,3029.0,2025-12-21,280
+Mumbai Hub (Bhiwandi),P0066,Nova Oral Care L617,Personal Care,12,2930.0,2026-01-01,269
+Hyderabad Hub (Shamshabad),P0150,Indus Beverages K674,Grocery & FMCG,22,2889.0,2025-10-19,343
+Bengaluru Hub (Hoskote),P0109,Nimbu Oral Care C352,Personal Care,44,2633.0,,
+Hyderabad Hub (Shamshabad),P0212,Swift Paper M245,Office Supplies,35,2603.0,2026-03-28,183
+Chennai Hub (Sriperumbudur),P0109,Nimbu Oral Care C352,Personal Care,43,2573.0,,
+Hyderabad Hub (Shamshabad),P0005,Nimbu Power Tools M690,Hardware & Tools,19,2478.0,2025-11-14,317
+Bengaluru Hub (Hoskote),P0121,Nova Fasteners F508,Hardware & Tools,14,2371.0,2025-10-13,349
+Chennai Hub (Sriperumbudur),P0212,Swift Paper M245,Office Supplies,31,2305.0,2026-02-06,233
+Chennai Hub (Sriperumbudur),P0279,Maple Hygiene D571,Personal Care,44,2062.0,2026-02-19,220
+Bengaluru Hub (Hoskote),P0279,Maple Hygiene D571,Personal Care,44,2062.0,2025-05-14,501
+Bengaluru Hub (Hoskote),P0193,Vega Oral Care A379,Personal Care,20,2047.0,2025-05-22,493
+Hyderabad Hub (Shamshabad),P0035,Urban Snacks T533,Grocery & FMCG,39,2014.0,2026-02-03,236
+Delhi NCR Hub (Gurugram),P0352,Pristine Staples F787,Grocery & FMCG,36,1981.0,2026-01-18,252
+Mumbai Hub (Bhiwandi),P0298,Tara Staples B995,Grocery & FMCG,19,1965.0,2026-03-29,182
+Chennai Hub (Sriperumbudur),P0193,Vega Oral Care A379,Personal Care,19,1945.0,2025-10-15,347
+Chennai Hub (Sriperumbudur),P0351,Nimbu Oral Care B471,Personal Care,15,1921.0,2026-01-22,248
+Bengaluru Hub (Hoskote),P0028,Desi Skin Care H810,Personal Care,38,1864.0,2025-12-02,299
+Chennai Hub (Sriperumbudur),P0340,Orbit Skin Care X568,Personal Care,23,1823.0,2026-03-25,186
+Delhi NCR Hub (Gurugram),P0251,Pukka Hygiene H755,Personal Care,38,1714.0,2026-03-16,195
+Chennai Hub (Sriperumbudur),P0081,Swift Hygiene S655,Personal Care,29,1586.0,2025-11-15,316
+Delhi NCR Hub (Gurugram),P0150,Indus Beverages K674,Grocery & FMCG,12,1576.0,2025-05-29,486
+Mumbai Hub (Bhiwandi),P0109,Nimbu Oral Care C352,Personal Care,26,1556.0,2025-06-30,454
+Kolkata Hub (Dankuni),P0298,Tara Staples B995,Grocery & FMCG,15,1552.0,2026-02-11,228
+Kolkata Hub (Dankuni),P0377,Tara Beverages F981,Grocery & FMCG,33,1523.0,2025-09-14,378
+Chennai Hub (Sriperumbudur),P0377,Tara Beverages F981,Grocery & FMCG,33,1523.0,2025-12-08,293
+Kolkata Hub (Dankuni),P0259,Desi Hair Care C121,Personal Care,16,1503.0,2025-11-12,319
+Kolkata Hub (Dankuni),P0035,Urban Snacks T533,Grocery & FMCG,29,1498.0,2025-07-19,435
+Chennai Hub (Sriperumbudur),P0035,Urban Snacks T533,Grocery & FMCG,29,1498.0,2025-10-05,357
+Kolkata Hub (Dankuni),P0279,Maple Hygiene D571,Personal Care,31,1453.0,2025-12-04,297
+Bengaluru Hub (Hoskote),P0097,Indus Staples F237,Grocery & FMCG,35,1420.0,2025-07-27,427
+Chennai Hub (Sriperumbudur),P0251,Pukka Hygiene H755,Personal Care,31,1398.0,2024-11-09,687
+Kolkata Hub (Dankuni),P0251,Pukka Hygiene H755,Personal Care,30,1353.0,2025-11-01,330
+Bengaluru Hub (Hoskote),P0340,Orbit Skin Care X568,Personal Care,17,1347.0,2026-01-07,263
+Chennai Hub (Sriperumbudur),P0028,Desi Skin Care H810,Personal Care,26,1275.0,2026-03-19,192
+Kolkata Hub (Dankuni),P0087,Aarav Staples H850,Grocery & FMCG,31,1155.0,2025-11-30,301
+Delhi NCR Hub (Gurugram),P0109,Nimbu Oral Care C352,Personal Care,18,1077.0,2026-02-06,233
+Kolkata Hub (Dankuni),P0187,Mitra Writing H937,Office Supplies,44,1037.0,2026-01-21,249
+Hyderabad Hub (Shamshabad),P0109,Nimbu Oral Care C352,Personal Care,17,1017.0,2025-06-11,473
+Hyderabad Hub (Shamshabad),P0097,Indus Staples F237,Grocery & FMCG,25,1014.0,2025-10-06,356
+Hyderabad Hub (Shamshabad),P0279,Maple Hygiene D571,Personal Care,21,984.0,2025-02-06,598
+Chennai Hub (Sriperumbudur),P0259,Desi Hair Care C121,Personal Care,10,939.0,2024-05-11,869
+Kolkata Hub (Dankuni),P0324,Pristine Paper K712,Office Supplies,22,914.0,2025-12-17,284
+Hyderabad Hub (Shamshabad),P0324,Pristine Paper K712,Office Supplies,20,831.0,2024-08-02,786
+Delhi NCR Hub (Gurugram),P0367,Vega Oral Care D555,Personal Care,11,774.0,2025-09-19,373
+Hyderabad Hub (Shamshabad),P0187,Mitra Writing H937,Office Supplies,32,754.0,2024-11-28,668
+Hyderabad Hub (Shamshabad),P0252,Pristine Packaged Foods R240,Grocery & FMCG,21,697.0,2024-06-21,828
+Bengaluru Hub (Hoskote),P0324,Pristine Paper K712,Office Supplies,16,665.0,2025-06-14,470
+Bengaluru Hub (Hoskote),P0367,Vega Oral Care D555,Personal Care,8,563.0,2026-03-29,182
+Chennai Hub (Sriperumbudur),P0187,Mitra Writing H937,Office Supplies,20,471.0,2025-11-05,326

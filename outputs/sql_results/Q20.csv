@@ -1,0 +1,10 @@
+abc_class,xyz_class,products,revenue_12m,pct_revenue,avg_cv
+A,X (stable),37,450324916.0,58.3,0.35
+A,Y (variable),22,156936488.0,20.3,0.63
+A,Z (erratic),3,10491215.0,1.4,1.08
+B,X (stable),45,59089733.0,7.6,0.35
+B,Y (variable),40,49820310.0,6.4,0.65
+B,Z (erratic),6,7070896.0,0.9,1.18
+C,X (stable),53,11488171.0,1.5,0.4
+C,Y (variable),144,21973842.0,2.8,0.74
+C,Z (erratic),47,5686609.0,0.7,1.16

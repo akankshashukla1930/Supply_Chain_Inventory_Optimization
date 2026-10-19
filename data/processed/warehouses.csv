@@ -1,0 +1,7 @@
+Warehouse_ID,Warehouse_Name,City,State,Region,Capacity_Units,Monthly_Fixed_Cost
+WH01,Delhi NCR Hub (Gurugram),Gurugram,Haryana,North,30000,3800000
+WH02,Mumbai Hub (Bhiwandi),Bhiwandi,Maharashtra,West,21000,4500000
+WH03,Bengaluru Hub (Hoskote),Bengaluru,Karnataka,South,31000,3200000
+WH04,Kolkata Hub (Dankuni),Kolkata,West Bengal,East,41000,2400000
+WH05,Hyderabad Hub (Shamshabad),Hyderabad,Telangana,South,35000,2700000
+WH06,Chennai Hub (Sriperumbudur),Chennai,Tamil Nadu,South,38000,2600000

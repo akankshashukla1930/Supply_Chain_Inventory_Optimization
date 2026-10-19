@@ -1,0 +1,628 @@
+/// All report measures live here, grouped in display folders.
+table _Measures
+	lineageTag: f6e381d9-1ee6-5548-be1f-7a0490ed3166
+
+	/// Annual inventory carrying cost as % of stock value. Default 20% = capital 10% + storage/handling 5% + obsolescence/shrinkage 5% (assumption); change it with the 'Holding Cost Rate' what-if slider
+	measure 'Holding Cost %' = [Holding Cost Rate Value]
+		formatString: 0%
+		displayFolder: 00 Settings & Metadata
+		lineageTag: bc0996a7-083f-5790-b93e-c5f17a8a31eb
+
+	/// Stock above this many days of demand is treated as excess
+	measure 'Overstock Threshold Days' = 90
+		formatString: 0
+		displayFolder: 00 Settings & Metadata
+		lineageTag: 1f53f8af-19d6-5f4f-85ba-a648dcdf7631
+
+	/// No sale for this many days = dead stock
+	measure 'Dead Stock Days' = 180
+		formatString: 0
+		displayFolder: 00 Settings & Metadata
+		lineageTag: d67d3cd5-0da2-592a-a8a7-fb811275824e
+
+	/// Planning horizon added to lead time when sizing a reorder
+	measure 'Review Period Days' = 30
+		formatString: 0
+		displayFolder: 00 Settings & Metadata
+		lineageTag: a86959ec-9449-505c-83ea-dcbe15bd6118
+
+	/// Latest inventory snapshot in the model, ignoring all filters
+	measure 'Data As Of' = CALCULATE ( MAX ( Inventory[Snapshot Date] ), REMOVEFILTERS () )
+		formatString: dd mmm yyyy
+		displayFolder: 00 Settings & Metadata
+		lineageTag: f787b5ee-91be-5617-a5d6-a5223124b5fc
+
+	/// Last order date in the data (ignores filters) - used to blank future periods in the Time Intelligence calc group
+	measure 'Latest Sales Date' = CALCULATE ( MAX ( Sales[Order Date] ), REMOVEFILTERS () )
+		formatString: dd mmm yyyy
+		displayFolder: 00 Settings & Metadata
+		lineageTag: 454c5050-a7ae-4e44-81d5-e93a4ed28d11
+
+	/// Latest weekly snapshot inside the current filter context - drives all closing-stock measures
+	measure 'Last Snapshot Date' = MAX ( Inventory[Snapshot Date] )
+		formatString: dd mmm yyyy
+		displayFolder: 00 Settings & Metadata
+		lineageTag: 5ed34ca5-ef54-5a9d-8171-b4062532b21e
+
+	/// Number of days with data in the selected period (used to annualise)
+	measure 'Days In Period' =
+			VAR mind = CALCULATE ( MIN ( Sales[Order Date] ), REMOVEFILTERS () )
+			VAR maxd = CALCULATE ( MAX ( Sales[Order Date] ), REMOVEFILTERS () )
+			RETURN COUNTROWS ( FILTER ( VALUES ( 'Date'[Date] ), 'Date'[Date] >= mind && 'Date'[Date] <= maxd ) )
+		formatString: #,0
+		displayFolder: 00 Settings & Metadata
+		lineageTag: 363d27bf-2781-5663-8416-3f8a24aef1cd
+
+	/// Closing stock units at the latest snapshot in context (semi-additive)
+	measure 'Stock Units' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Stock Quantity] ), Inventory[Snapshot Date] = d ) )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: aa520b2f-ace6-5456-b415-e1a5ebef2f45
+
+	/// Closing stock minus reserved units
+	measure 'Available Units' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Available Qty] ), Inventory[Snapshot Date] = d ) )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: d5165a39-3ab8-5650-95af-8b8178b332f9
+
+	measure 'Reserved Units' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Reserved Qty] ), Inventory[Snapshot Date] = d ) )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: afd3f39a-a8e2-5a5b-ac56-3909b84004a2
+
+	/// Closing stock valued at unit cost (INR)
+	measure 'Stock Value' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ),
+			    CALCULATE ( SUMX ( Inventory, Inventory[Stock Quantity] * RELATED ( 'Product'[Unit Cost] ) ), Inventory[Snapshot Date] = d ) )
+		formatString: ₹#,0
+		displayFolder: 01 Inventory
+		lineageTag: 7ec92436-44c6-5a30-b304-83fc64401b07
+
+	/// Average of weekly stock values in the period
+	measure 'Avg Stock Value' =
+			AVERAGEX ( VALUES ( Inventory[Snapshot Date] ),
+			    CALCULATE ( SUMX ( Inventory, Inventory[Stock Quantity] * RELATED ( 'Product'[Unit Cost] ) ) ) )
+		formatString: ₹#,0
+		displayFolder: 01 Inventory
+		lineageTag: 9f99e888-1cfb-5292-8124-bc542aa701c9
+
+	measure 'Capacity Units' = SUM ( Warehouse[Capacity Units] )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: 11a53177-a043-58ec-8d87-11a8310356f7
+
+	/// Closing stock units / warehouse capacity
+	measure 'Capacity Utilisation %' = DIVIDE ( [Stock Units], [Capacity Units] )
+		formatString: 0.0%
+		displayFolder: 01 Inventory
+		lineageTag: 4e299f79-a849-55e3-9b4e-5e0bee0dcfeb
+
+	/// Average units demanded per day over the 90 days up to the last snapshot
+	measure 'Avg Daily Demand (90d)' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ),
+			    DIVIDE ( CALCULATE ( SUM ( Sales[Demand Qty] ), DATESINPERIOD ( 'Date'[Date], d, -90, DAY ) ), 90 ) )
+		formatString: #,0.00
+		displayFolder: 01 Inventory
+		lineageTag: a8ff1cf0-6d22-5853-952a-be8939525a97
+
+	/// How many days the closing stock lasts at recent demand
+	measure 'Days of Cover' = DIVIDE ( [Stock Units], [Avg Daily Demand (90d)] )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: 925cebfe-aa05-5b51-8773-729cd22cad13
+
+	/// Share of product-warehouse weekly snapshots with zero stock
+	measure 'Stockout Rate %' = DIVIDE ( SUM ( Inventory[Is Stockout] ), COUNTROWS ( Inventory ) )
+		formatString: 0.0%
+		displayFolder: 01 Inventory
+		lineageTag: 6a264cd9-66ac-54cf-a509-515393064191
+
+	/// Product-warehouse combinations at zero stock in the latest snapshot
+	measure 'Stockouts (Latest)' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Is Stockout] ), Inventory[Snapshot Date] = d ) + 0 )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: a2e36729-6b43-542b-89d5-6a3d4ebdedc7
+
+	measure 'Stock Value % of Total' = DIVIDE ( [Stock Value], CALCULATE ( [Stock Value], ALLSELECTED ( Warehouse ), ALLSELECTED ( 'Product' ) ) )
+		formatString: 0.0%
+		displayFolder: 01 Inventory
+		lineageTag: 19dd2822-5661-56b2-9400-e0b6b178559f
+
+	measure 'Warehouse Stock Rank' = IF ( ISINSCOPE ( Warehouse[Warehouse Name] ), RANKX ( ALLSELECTED ( Warehouse[Warehouse Name] ), [Stock Value] ) )
+		formatString: 0
+		displayFolder: 01 Inventory
+		lineageTag: bfe41302-3d1e-5338-8c37-b4189c306c67
+
+	/// Annualised COGS / average stock value
+	measure 'Inventory Turnover' = DIVIDE ( [COGS] * DIVIDE ( 365, [Days In Period] ), [Avg Stock Value] )
+		formatString: 0.00
+		displayFolder: 01 Inventory
+		lineageTag: 52190a7b-b285-54ba-a443-e947ed809781
+
+	measure 'Days Inventory Outstanding' = DIVIDE ( 365, [Inventory Turnover] )
+		formatString: #,0
+		displayFolder: 01 Inventory
+		lineageTag: ce26233a-9533-5733-b8e7-fffd483e2dbd
+
+	/// Units sold / (units sold + closing stock)
+	measure 'Sell-Through %' = DIVIDE ( [Units Sold], [Units Sold] + [Stock Units] )
+		formatString: 0.0%
+		displayFolder: 01 Inventory
+		lineageTag: 407336b7-445b-5cea-a288-f9041318a050
+
+	/// Units above 90 days of cover, summed per product x warehouse
+	measure 'Excess Units' =
+			SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+			    VAR s = [Stock Units]
+			    VAR dd = [Avg Daily Demand (90d)]
+			    RETURN MAX ( 0, s - dd * [Overstock Threshold Days] ) )
+		formatString: #,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: 7c7ecdd7-c0c9-5805-8076-e3bf9529863d
+
+	/// Value (at cost) of stock above 90 days of cover
+	measure 'Overstock Value' =
+			SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+			    VAR s = [Stock Units]
+			    VAR dd = [Avg Daily Demand (90d)]
+			    VAR ex = MAX ( 0, s - dd * [Overstock Threshold Days] )
+			    RETURN ex * CALCULATE ( MAX ( 'Product'[Unit Cost] ) ) )
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: 235560b6-b6fe-584d-999e-c1acc3ebcd3f
+
+	measure 'Overstock % of Stock' = DIVIDE ( [Overstock Value], [Stock Value] )
+		formatString: 0.0%
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: e16e5b6b-666e-5068-84d3-1701b19a1b0d
+
+	/// Stock value of product-warehouse pairs with no sale in the last 180 days
+	measure 'Dead Stock Value' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ),
+			    SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+			        VAR sold = CALCULATE ( SUM ( Sales[Fulfilled Qty] ), DATESINPERIOD ( 'Date'[Date], d, -180, DAY ) )
+			        RETURN IF ( ISBLANK ( sold ) || sold = 0, [Stock Value] ) ) )
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: f77f211c-a838-5649-b0e8-e8985c45bda1
+
+	measure 'Dead Stock Units' =
+			VAR d = [Last Snapshot Date]
+			RETURN IF ( NOT ISBLANK ( d ),
+			    SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+			        VAR sold = CALCULATE ( SUM ( Sales[Fulfilled Qty] ), DATESINPERIOD ( 'Date'[Date], d, -180, DAY ) )
+			        RETURN IF ( ISBLANK ( sold ) || sold = 0, [Stock Units] ) ) )
+		formatString: #,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: 431e8c4f-11a9-535e-814a-ef07c69013b6
+
+	/// Estimated yearly carrying cost = average stock value x 20%
+	measure 'Annual Holding Cost' = [Avg Stock Value] * [Holding Cost %]
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: c80a33d5-e2b7-50f8-9d06-3ac0c96766c5
+
+	measure 'Holding Cost (Period)' = [Avg Stock Value] * [Holding Cost %] * DIVIDE ( [Days In Period], 365 )
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: afdffc0d-4b47-5449-bccf-ad198ee1e893
+
+	/// Yearly carrying cost tied up in excess stock - the saving if excess is cleared
+	measure 'Excess Holding Cost (Annual)' = [Overstock Value] * [Holding Cost %]
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: b1170b7c-9bfe-56f1-9da0-c358f72083af
+
+	measure 'Warehouse Fixed Cost (Annual)' = SUM ( Warehouse[Monthly Fixed Cost] ) * 12
+		formatString: ₹#,0
+		displayFolder: 02 Overstock & Holding Cost
+		lineageTag: 8f047603-1c9a-51f9-89f4-5eef34561ad3
+
+	measure 'Reorder Point (ROP)' = MAX ( 'Product'[Reorder Point] )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: e927003d-c209-5070-bc29-e24c3bc68494
+
+	/// Units on open purchase orders
+	measure 'On Order Units' = CALCULATE ( SUM ( Purchases[Open Qty] ), REMOVEFILTERS ( 'Date' ) )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: 778214d1-746f-576c-ac98-9c0a22a503b3
+
+	/// 1 when available stock is at/below the reorder point and the item still sells (single product x warehouse)
+	measure 'Needs Restock Flag' =
+			VAR a = [Available Units]
+			RETURN IF ( HASONEVALUE ( 'Product'[Product ID] ) && HASONEVALUE ( Warehouse[Warehouse ID] )
+			            && NOT ISBLANK ( a ) && a <= MAX ( 'Product'[Reorder Point] ) && [Avg Daily Demand (90d)] > 0, 1, 0 )
+		formatString: 0
+		displayFolder: 03 Restock
+		lineageTag: 97bf1556-5078-58fd-af7c-73eb9d23cc41
+
+	measure 'Needs Restock Count' = SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ), [Needs Restock Flag] )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: fcced1be-9e99-5a83-b75c-d55f26879ec1
+
+	/// Order-up-to: demand x (lead time + 30-day review) + safety stock - available - on order
+	measure 'Suggested Reorder Qty' =
+			SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+			    IF ( [Needs Restock Flag] = 1,
+			        VAR dd = [Avg Daily Demand (90d)]
+			        VAR lt = CALCULATE ( MAX ( 'Product'[Lead Time Days Std] ) )
+			        VAR ss = CALCULATE ( MAX ( 'Product'[Safety Stock] ) )
+			        RETURN MAX ( 0, ROUNDUP ( dd * ( lt + [Review Period Days] ) + ss - [Available Units] - [On Order Units], 0 ) ) ) )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: b4e58b78-5efd-5e12-8bf2-a030532848ed
+
+	measure 'Suggested Reorder Value' = SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ), [Suggested Reorder Qty] * CALCULATE ( MAX ( 'Product'[Unit Cost] ) ) )
+		formatString: ₹#,0
+		displayFolder: 03 Restock
+		lineageTag: fd503c17-80e9-53ba-86aa-2854f805ec77
+
+	measure 'Restock Priority' =
+			IF ( [Needs Restock Flag] = 1,
+			    VAR a = [Available Units]
+			    RETURN IF ( a <= 0, "1 - Urgent (stocked out)",
+			           IF ( a <= MAX ( 'Product'[Safety Stock] ), "2 - High (below safety stock)", "3 - Normal (below ROP)" ) ) )
+		displayFolder: 03 Restock
+		lineageTag: 6dbc0e71-a043-55e6-9548-249e25c5639c
+
+	/// Blank unless the row needs restocking (keeps the recommendation table short)
+	measure 'Restock Available Units' = IF ( [Needs Restock Flag] = 1, [Available Units] )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: adc308a2-7d4c-5a18-bc83-3969d38f48d2
+
+	measure 'Restock ROP' = IF ( [Needs Restock Flag] = 1, [Reorder Point (ROP)] )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: 8e20b36c-9f0e-5b96-ac49-e2bde9f6977d
+
+	measure 'Restock Daily Demand' = IF ( [Needs Restock Flag] = 1, [Avg Daily Demand (90d)] )
+		formatString: #,0.0
+		displayFolder: 03 Restock
+		lineageTag: 002840ca-a870-5a85-aa91-eb2707624767
+
+	measure 'Restock Days of Cover' = IF ( [Needs Restock Flag] = 1, [Days of Cover] )
+		formatString: #,0.0
+		displayFolder: 03 Restock
+		lineageTag: d0a830c9-837a-5b31-8d57-349fa32e8e54
+
+	measure 'Restock On Order' = IF ( [Needs Restock Flag] = 1, [On Order Units] )
+		formatString: #,0
+		displayFolder: 03 Restock
+		lineageTag: 811addae-364f-5512-b5cc-bfa617e8a09b
+
+	/// Fulfilled qty x unit price x (1 - discount)
+	measure 'Net Sales' = SUM ( Sales[Net Sales] )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 83502009-0980-5ff5-840a-bba1a7129016
+
+	measure Orders = COUNTROWS ( Sales )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 3172fb35-d885-581c-98db-d1cc5fd695a4
+
+	/// Ordered units excluding customer cancellations
+	measure 'Units Demanded' = SUM ( Sales[Demand Qty] )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 985cd573-d673-52d1-a64f-6a68c162bb9a
+
+	measure 'Units Sold' = SUM ( Sales[Fulfilled Qty] )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 8e787eed-3484-5024-9703-91100579341e
+
+	/// Demand not shipped because of stockouts
+	measure 'Lost Units' = SUM ( Sales[Lost Qty] )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 5ae83c93-a48e-5452-bb78-5544eb455c83
+
+	measure 'Lost Sales Value' = SUMX ( Sales, Sales[Lost Qty] * Sales[Unit Price] * ( 1 - Sales[Discount] ) )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 98ef8fca-1e38-54b6-b956-dbda4e6f620b
+
+	/// Units shipped / units demanded
+	measure 'Fill Rate %' = DIVIDE ( [Units Demanded] - [Lost Units], [Units Demanded] )
+		formatString: 0.0%
+		displayFolder: 04 Sales
+		lineageTag: eef04347-9d54-552a-82d9-244d058d33d8
+
+	measure 'Stockout Orders' = CALCULATE ( COUNTROWS ( Sales ), Sales[Order Status] IN { "Out of Stock", "Partially Delivered" } )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 5e4c0534-842f-5812-a128-32d2ea2c329a
+
+	measure 'Stockout Order Rate %' = DIVIDE ( [Stockout Orders], CALCULATE ( COUNTROWS ( Sales ), Sales[Order Status] <> "Cancelled" ) )
+		formatString: 0.0%
+		displayFolder: 04 Sales
+		lineageTag: 7b15c371-ad9f-54bd-a1a3-d2895df5c39c
+
+	/// Cost of goods sold at master unit cost
+	measure COGS = SUMX ( Sales, Sales[Fulfilled Qty] * RELATED ( 'Product'[Unit Cost] ) )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: c44271e5-a393-57f8-858f-9ace7e92af14
+
+	measure 'Gross Margin' = [Net Sales] - [COGS]
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 5d43e3d5-a149-5a47-b185-3756198d5d02
+
+	measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Net Sales] )
+		formatString: 0.0%
+		displayFolder: 04 Sales
+		lineageTag: 3bffbec2-9f02-50f0-b36b-933199a098d9
+
+	measure 'Avg Discount %' = AVERAGE ( Sales[Discount] )
+		formatString: 0.0%
+		displayFolder: 04 Sales
+		lineageTag: c4439e79-3b01-5ac0-9a4e-abe3b6e11677
+
+	measure 'Avg Delivery Days' = AVERAGE ( Sales[Delivery Days] )
+		formatString: 0.0
+		displayFolder: 04 Sales
+		lineageTag: 0124d60a-e15f-566d-ba41-29a1192e6e21
+
+	measure 'Net Sales PY' = CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 62b40ea8-2e39-5597-bbf9-ffb85824e846
+
+	measure 'Net Sales YoY %' =
+			VAR py = [Net Sales PY]
+			RETURN IF ( NOT ISBLANK ( [Net Sales] ) && NOT ISBLANK ( py ), DIVIDE ( [Net Sales] - py, py ) )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 04 Sales
+		lineageTag: 1d1eb9fb-524b-5982-acdd-d37f677514e0
+
+	measure 'Net Sales PM' = CALCULATE ( [Net Sales], DATEADD ( 'Date'[Date], -1, MONTH ) )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 7cc9b1f7-8474-51a1-9849-7aab09061942
+
+	measure 'Net Sales MoM %' =
+			VAR pm = [Net Sales PM]
+			RETURN IF ( NOT ISBLANK ( [Net Sales] ) && NOT ISBLANK ( pm ), DIVIDE ( [Net Sales] - pm, pm ) )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 04 Sales
+		lineageTag: 8c59e02e-00ac-5aae-be29-60dc56bb9799
+
+	measure 'Net Sales YTD' = TOTALYTD ( [Net Sales], 'Date'[Date] )
+		formatString: ₹#,0
+		displayFolder: 04 Sales
+		lineageTag: 45be49d5-e685-51c0-8f4e-e9c294a49a04
+
+	measure 'Units Sold PY' = CALCULATE ( [Units Sold], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+		formatString: #,0
+		displayFolder: 04 Sales
+		lineageTag: 711c665f-d87b-5984-bf24-8781e34c4885
+
+	measure 'Units Sold YoY %' =
+			VAR py = [Units Sold PY]
+			RETURN IF ( NOT ISBLANK ( [Units Sold] ) && NOT ISBLANK ( py ), DIVIDE ( [Units Sold] - py, py ) )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 04 Sales
+		lineageTag: e2564116-6b6c-5b3c-a145-cdd04d22735f
+
+	measure 'Net Sales % of Total' = DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], ALLSELECTED ( 'Product' ) ) )
+		formatString: 0.0%
+		displayFolder: 04 Sales
+		lineageTag: c4d97c9e-827d-5069-bf50-0a1e040b30a0
+
+	measure 'Product Demand Rank' = IF ( ISINSCOPE ( 'Product'[Product Label] ), RANKX ( ALLSELECTED ( 'Product'[Product Label] ), [Units Demanded] ) )
+		formatString: 0
+		displayFolder: 04 Sales
+		lineageTag: 089c1e5a-9d15-5b2c-93a3-55fa3f3f0364
+
+	/// Value of purchase orders raised (by PO date)
+	measure 'Purchase Value' = SUM ( Purchases[PO Value] )
+		formatString: ₹#,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 4891e3db-5623-5487-a8aa-18beb777ce16
+
+	measure 'Purchase Orders' = COUNTROWS ( Purchases )
+		formatString: #,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: f2e11090-d616-5890-9b43-b1699725015f
+
+	measure 'Units Purchased' = SUM ( Purchases[Quantity] )
+		formatString: #,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 69809d6b-bb9e-50c0-8328-e654d8360fc2
+
+	/// Units received, dated by actual delivery (inactive relationship)
+	measure 'Units Received' = CALCULATE ( SUM ( Purchases[Received Qty] ), USERELATIONSHIP ( Purchases[Actual Delivery Date], 'Date'[Date] ) )
+		formatString: #,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 0bc754d4-5a7d-5394-8b77-78a84a5671f9
+
+	measure 'Received Value' = CALCULATE ( SUM ( Purchases[Received Value] ), USERELATIONSHIP ( Purchases[Actual Delivery Date], 'Date'[Date] ) )
+		formatString: ₹#,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 89e0bb61-b0a1-5985-82c2-2ac04f2c1332
+
+	measure 'Delivered POs' = SUM ( Purchases[Is Delivered] )
+		formatString: #,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 3b43e691-6b32-5c4c-a688-519dfee8a538
+
+	/// Delivered on or before the expected date
+	measure 'Supplier On-Time %' = DIVIDE ( SUM ( Purchases[On Time Flag] ), [Delivered POs] )
+		formatString: 0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: e70159d7-ecba-5653-895e-df304cf34340
+
+	measure 'Supplier In-Full %' = DIVIDE ( SUM ( Purchases[In Full Flag] ), [Delivered POs] )
+		formatString: 0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 1090241a-6a36-544b-8cf0-10db6fc3cc23
+
+	/// On time AND in full
+	measure 'Supplier OTIF %' = DIVIDE ( SUM ( Purchases[OTIF Flag] ), [Delivered POs] )
+		formatString: 0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 16d72407-46ef-5e25-8409-5d33c93456d1
+
+	/// Delivered POs with received qty < ordered qty
+	measure 'Short-Delivery %' = DIVIDE ( SUM ( Purchases[Short Flag] ), [Delivered POs] )
+		formatString: 0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: e7e82078-421c-52eb-b187-994ae830e5e7
+
+	measure 'Short Units %' =
+			VAR o = CALCULATE ( SUM ( Purchases[Quantity] ), Purchases[Is Delivered] = 1 )
+			VAR r = CALCULATE ( SUM ( Purchases[Received Qty] ), Purchases[Is Delivered] = 1 )
+			RETURN DIVIDE ( o - r, o )
+		formatString: 0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: d1b951d6-3ebf-5ce7-abca-4aa0c5f88dd9
+
+	/// Actual delivery date - PO date
+	measure 'Avg Lead Time (Days)' = AVERAGE ( Purchases[Lead Time Days] )
+		formatString: 0.0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 206aee2f-85fb-5442-b8b8-bb7d30637725
+
+	measure 'Quoted Lead Time (Days)' = AVERAGEX ( FILTER ( Purchases, Purchases[Is Delivered] = 1 ), RELATED ( 'Product'[Lead Time Days Std] ) )
+		formatString: 0.0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 6c23b69e-b4b1-5686-b579-74ae1bbd96bd
+
+	/// Lead-time variability (sample standard deviation, days)
+	measure 'Lead Time Std Dev' = STDEV.S ( Purchases[Lead Time Days] )
+		formatString: 0.0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 5b756c83-a6bc-58d1-b283-d32b2000417c
+
+	measure 'Lead Time Variance' = VAR.S ( Purchases[Lead Time Days] )
+		formatString: 0.0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 985120b9-f281-52f0-8207-2a2b67d0c8fd
+
+	/// Actual - expected delivery date (positive = late)
+	measure 'Avg Delay Days' = AVERAGE ( Purchases[Delay Days] )
+		formatString: +0.0;-0.0;0.0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 3617fe11-8aa8-5661-84bc-9e7cca75fda1
+
+	measure 'Late POs' = CALCULATE ( SUM ( Purchases[Is Delivered] ), Purchases[On Time Flag] = 0 )
+		formatString: #,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 55fa3a75-7fea-59fb-b8ce-832a1b41c88a
+
+	/// 1 = most delayed supplier
+	measure 'Supplier Delay Rank' = IF ( ISINSCOPE ( Supplier[Supplier Name] ), RANKX ( ALLSELECTED ( Supplier[Supplier Name] ), [Avg Delay Days], , DESC ) )
+		formatString: 0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 7e1c6ef6-947d-5593-b268-b47a139c4905
+
+	measure 'Purchase Value YTD' = TOTALYTD ( [Purchase Value], 'Date'[Date] )
+		formatString: ₹#,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: f48fffcf-0194-57f0-8503-b1b8a8f2f351
+
+	measure 'Purchase Value PY' = CALCULATE ( [Purchase Value], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+		formatString: ₹#,0
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: b927b2f1-bfae-5d94-b319-e4f790cafeb4
+
+	measure 'Purchase Value YoY %' =
+			VAR py = [Purchase Value PY]
+			RETURN IF ( NOT ISBLANK ( [Purchase Value] ) && NOT ISBLANK ( py ), DIVIDE ( [Purchase Value] - py, py ) )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 05 Purchasing & Suppliers
+		lineageTag: 9482e604-23c3-5393-a62f-2497ac783501
+
+	measure 'Selected Warehouses' = IF ( ISFILTERED ( Warehouse[Warehouse] ), CONCATENATEX ( VALUES ( Warehouse[Warehouse] ), Warehouse[Warehouse], ", " ), "All warehouses" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: 1b5c3b63-0515-5dd8-bc86-6b509e10466a
+
+	measure 'Title Stock Trend' = "Closing stock value by month | " & [Selected Warehouses]
+		displayFolder: 06 Titles & Colours
+		lineageTag: 58a7aa36-c271-5f94-b9af-8b396ea793f6
+
+	measure 'Title Overview' = "Stock as of " & FORMAT ( [Last Snapshot Date], "dd mmm yyyy" ) & "  |  " & [Selected Warehouses] & "  |  synthetic data"
+		displayFolder: 06 Titles & Colours
+		lineageTag: 583f987f-772b-53f2-954a-fc4e707e1d8d
+
+	measure 'Title Product Detail' = "Product detail: " & SELECTEDVALUE ( 'Product'[Product Label], "multiple products" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: b9d86f5c-eee8-5701-b98e-d449e47cda55
+
+	measure 'Title Restock' = "Restock recommendations as of " & FORMAT ( [Data As Of], "dd mmm yyyy" ) & " (" & FORMAT ( [Needs Restock Count], "#,0" ) & " lines)"
+		displayFolder: 06 Titles & Colours
+		lineageTag: 40d0151d-dce4-5e98-967e-22701d489335
+
+	/// Red = stocked out or < 14 days, amber = > 90 days (excess), green = healthy
+	measure 'Days of Cover Colour' =
+			VAR s = [Stock Units]
+			VAR c = [Days of Cover]
+			RETURN SWITCH ( TRUE (), ISBLANK ( s ), BLANK (), s = 0, "#D1495B", ISBLANK ( c ), "#8D99AE",
+			                c < 14, "#D1495B", c > [Overstock Threshold Days], "#E9A23B", "#2A9D8F" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: 3706c46b-ce21-5bcb-9a08-c4f780ce259b
+
+	measure 'Stock Status' =
+			VAR s = [Stock Units]
+			VAR c = [Days of Cover]
+			RETURN SWITCH ( TRUE (), ISBLANK ( s ), BLANK (), s = 0, "Stocked out", ISBLANK ( c ), "No recent demand",
+			                c < 14, "Low (< 14 days)", c > [Overstock Threshold Days], "Excess (> 90 days)", "Healthy" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: 73f2f72a-a345-5753-a83f-3e0723a04d71
+
+	measure 'Fill Rate Colour' =
+			VAR f = [Fill Rate %]
+			RETURN SWITCH ( TRUE (), ISBLANK ( f ), BLANK (), f < 0.85, "#D1495B", f < 0.95, "#E9A23B", "#2A9D8F" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: c3279558-b876-5849-98dd-25da8d13e1ee
+
+	/// Red = more than 3 days late on average
+	measure 'Supplier Delay Colour' =
+			VAR d = [Avg Delay Days]
+			RETURN SWITCH ( TRUE (), ISBLANK ( d ), BLANK (), d > 3, "#D1495B", d > 0, "#E9A23B", "#2A9D8F" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: 7ad5b6f2-11e9-5f2d-b723-085e2876e095
+
+	/// Red = urgent (stocked out), amber = below safety stock, teal = below reorder point
+	measure 'Restock Priority Colour' =
+			SWITCH ( LEFT ( [Restock Priority], 1 ), "1", "#D1495B", "2", "#E9A23B", "3", "#2A9D8F" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: 1276f2b9-429f-4a2a-95b1-7d8367bd3384
+
+	measure 'Capacity Colour' =
+			VAR u = [Capacity Utilisation %]
+			RETURN SWITCH ( TRUE (), ISBLANK ( u ), BLANK (), u >= 0.85, "#D1495B", u >= 0.70, "#E9A23B", "#2A9D8F" )
+		displayFolder: 06 Titles & Colours
+		lineageTag: a72505ec-f5c3-5627-b3da-263b95627ef4
+
+	column Dummy
+		dataType: string
+		isHidden
+		lineageTag: 6ee898c2-2c71-53d6-a642-b0776b9eac91
+		summarizeBy: none
+		sourceColumn: Dummy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source = #table(type table [Dummy = text], {})
+
+	annotation PBI_ResultType = Table

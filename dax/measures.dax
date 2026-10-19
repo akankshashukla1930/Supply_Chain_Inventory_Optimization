@@ -1,0 +1,510 @@
+// =====================================================================
+// measures.dax - every DAX object in the SupplyChain semantic model
+// Regenerated from pbip/SupplyChain.SemanticModel/definition/tables/*.tmdl (the TMDL is the source of truth).
+// Sections: _Measures by display folder, calculated columns, what-if parameter, field parameter, calculation group.
+// =====================================================================
+
+
+// ---------------- 00 Settings & Metadata ----------------
+
+// Annual inventory carrying cost as % of stock value. Default 20% = capital 10% + storage/handling 5% + obsolescence/shrinkage 5% (assumption); change it with the 'Holding Cost Rate' what-if slider
+'Holding Cost %' = [Holding Cost Rate Value]
+    -- format: 0%
+
+// Stock above this many days of demand is treated as excess
+'Overstock Threshold Days' = 90
+    -- format: 0
+
+// No sale for this many days = dead stock
+'Dead Stock Days' = 180
+    -- format: 0
+
+// Planning horizon added to lead time when sizing a reorder
+'Review Period Days' = 30
+    -- format: 0
+
+// Latest inventory snapshot in the model, ignoring all filters
+'Data As Of' = CALCULATE ( MAX ( Inventory[Snapshot Date] ), REMOVEFILTERS () )
+    -- format: dd mmm yyyy
+
+// Last order date in the data (ignores filters) - used to blank future periods in the Time Intelligence calc group
+'Latest Sales Date' = CALCULATE ( MAX ( Sales[Order Date] ), REMOVEFILTERS () )
+    -- format: dd mmm yyyy
+
+// Latest weekly snapshot inside the current filter context - drives all closing-stock measures
+'Last Snapshot Date' = MAX ( Inventory[Snapshot Date] )
+    -- format: dd mmm yyyy
+
+// Number of days with data in the selected period (used to annualise)
+'Days In Period' =
+    VAR mind = CALCULATE ( MIN ( Sales[Order Date] ), REMOVEFILTERS () )
+    VAR maxd = CALCULATE ( MAX ( Sales[Order Date] ), REMOVEFILTERS () )
+    RETURN COUNTROWS ( FILTER ( VALUES ( 'Date'[Date] ), 'Date'[Date] >= mind && 'Date'[Date] <= maxd ) )
+    -- format: #,0
+
+
+// ---------------- 01 Inventory ----------------
+
+// Closing stock units at the latest snapshot in context (semi-additive)
+'Stock Units' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Stock Quantity] ), Inventory[Snapshot Date] = d ) )
+    -- format: #,0
+
+// Closing stock minus reserved units
+'Available Units' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Available Qty] ), Inventory[Snapshot Date] = d ) )
+    -- format: #,0
+
+'Reserved Units' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Reserved Qty] ), Inventory[Snapshot Date] = d ) )
+    -- format: #,0
+
+// Closing stock valued at unit cost (INR)
+'Stock Value' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ),
+        CALCULATE ( SUMX ( Inventory, Inventory[Stock Quantity] * RELATED ( 'Product'[Unit Cost] ) ), Inventory[Snapshot Date] = d ) )
+    -- format: ₹#,0
+
+// Average of weekly stock values in the period
+'Avg Stock Value' =
+    AVERAGEX ( VALUES ( Inventory[Snapshot Date] ),
+        CALCULATE ( SUMX ( Inventory, Inventory[Stock Quantity] * RELATED ( 'Product'[Unit Cost] ) ) ) )
+    -- format: ₹#,0
+
+'Capacity Units' = SUM ( Warehouse[Capacity Units] )
+    -- format: #,0
+
+// Closing stock units / warehouse capacity
+'Capacity Utilisation %' = DIVIDE ( [Stock Units], [Capacity Units] )
+    -- format: 0.0%
+
+// Average units demanded per day over the 90 days up to the last snapshot
+'Avg Daily Demand (90d)' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ),
+        DIVIDE ( CALCULATE ( SUM ( Sales[Demand Qty] ), DATESINPERIOD ( 'Date'[Date], d, -90, DAY ) ), 90 ) )
+    -- format: #,0.00
+
+// How many days the closing stock lasts at recent demand
+'Days of Cover' = DIVIDE ( [Stock Units], [Avg Daily Demand (90d)] )
+    -- format: #,0
+
+// Share of product-warehouse weekly snapshots with zero stock
+'Stockout Rate %' = DIVIDE ( SUM ( Inventory[Is Stockout] ), COUNTROWS ( Inventory ) )
+    -- format: 0.0%
+
+// Product-warehouse combinations at zero stock in the latest snapshot
+'Stockouts (Latest)' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ), CALCULATE ( SUM ( Inventory[Is Stockout] ), Inventory[Snapshot Date] = d ) + 0 )
+    -- format: #,0
+
+'Stock Value % of Total' = DIVIDE ( [Stock Value], CALCULATE ( [Stock Value], ALLSELECTED ( Warehouse ), ALLSELECTED ( 'Product' ) ) )
+    -- format: 0.0%
+
+'Warehouse Stock Rank' = IF ( ISINSCOPE ( Warehouse[Warehouse Name] ), RANKX ( ALLSELECTED ( Warehouse[Warehouse Name] ), [Stock Value] ) )
+    -- format: 0
+
+// Annualised COGS / average stock value
+'Inventory Turnover' = DIVIDE ( [COGS] * DIVIDE ( 365, [Days In Period] ), [Avg Stock Value] )
+    -- format: 0.00
+
+'Days Inventory Outstanding' = DIVIDE ( 365, [Inventory Turnover] )
+    -- format: #,0
+
+// Units sold / (units sold + closing stock)
+'Sell-Through %' = DIVIDE ( [Units Sold], [Units Sold] + [Stock Units] )
+    -- format: 0.0%
+
+
+// ---------------- 02 Overstock & Holding Cost ----------------
+
+// Units above 90 days of cover, summed per product x warehouse
+'Excess Units' =
+    SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+        VAR s = [Stock Units]
+        VAR dd = [Avg Daily Demand (90d)]
+        RETURN MAX ( 0, s - dd * [Overstock Threshold Days] ) )
+    -- format: #,0
+
+// Value (at cost) of stock above 90 days of cover
+'Overstock Value' =
+    SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+        VAR s = [Stock Units]
+        VAR dd = [Avg Daily Demand (90d)]
+        VAR ex = MAX ( 0, s - dd * [Overstock Threshold Days] )
+        RETURN ex * CALCULATE ( MAX ( 'Product'[Unit Cost] ) ) )
+    -- format: ₹#,0
+
+'Overstock % of Stock' = DIVIDE ( [Overstock Value], [Stock Value] )
+    -- format: 0.0%
+
+// Stock value of product-warehouse pairs with no sale in the last 180 days
+'Dead Stock Value' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ),
+        SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+            VAR sold = CALCULATE ( SUM ( Sales[Fulfilled Qty] ), DATESINPERIOD ( 'Date'[Date], d, -180, DAY ) )
+            RETURN IF ( ISBLANK ( sold ) || sold = 0, [Stock Value] ) ) )
+    -- format: ₹#,0
+
+'Dead Stock Units' =
+    VAR d = [Last Snapshot Date]
+    RETURN IF ( NOT ISBLANK ( d ),
+        SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+            VAR sold = CALCULATE ( SUM ( Sales[Fulfilled Qty] ), DATESINPERIOD ( 'Date'[Date], d, -180, DAY ) )
+            RETURN IF ( ISBLANK ( sold ) || sold = 0, [Stock Units] ) ) )
+    -- format: #,0
+
+// Estimated yearly carrying cost = average stock value x 20%
+'Annual Holding Cost' = [Avg Stock Value] * [Holding Cost %]
+    -- format: ₹#,0
+
+'Holding Cost (Period)' = [Avg Stock Value] * [Holding Cost %] * DIVIDE ( [Days In Period], 365 )
+    -- format: ₹#,0
+
+// Yearly carrying cost tied up in excess stock - the saving if excess is cleared
+'Excess Holding Cost (Annual)' = [Overstock Value] * [Holding Cost %]
+    -- format: ₹#,0
+
+'Warehouse Fixed Cost (Annual)' = SUM ( Warehouse[Monthly Fixed Cost] ) * 12
+    -- format: ₹#,0
+
+
+// ---------------- 03 Restock ----------------
+
+'Reorder Point (ROP)' = MAX ( 'Product'[Reorder Point] )
+    -- format: #,0
+
+// Units on open purchase orders
+'On Order Units' = CALCULATE ( SUM ( Purchases[Open Qty] ), REMOVEFILTERS ( 'Date' ) )
+    -- format: #,0
+
+// 1 when available stock is at/below the reorder point and the item still sells (single product x warehouse)
+'Needs Restock Flag' =
+    VAR a = [Available Units]
+    RETURN IF ( HASONEVALUE ( 'Product'[Product ID] ) && HASONEVALUE ( Warehouse[Warehouse ID] )
+                && NOT ISBLANK ( a ) && a <= MAX ( 'Product'[Reorder Point] ) && [Avg Daily Demand (90d)] > 0, 1, 0 )
+    -- format: 0
+
+'Needs Restock Count' = SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ), [Needs Restock Flag] )
+    -- format: #,0
+
+// Order-up-to: demand x (lead time + 30-day review) + safety stock - available - on order
+'Suggested Reorder Qty' =
+    SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ),
+        IF ( [Needs Restock Flag] = 1,
+            VAR dd = [Avg Daily Demand (90d)]
+            VAR lt = CALCULATE ( MAX ( 'Product'[Lead Time Days Std] ) )
+            VAR ss = CALCULATE ( MAX ( 'Product'[Safety Stock] ) )
+            RETURN MAX ( 0, ROUNDUP ( dd * ( lt + [Review Period Days] ) + ss - [Available Units] - [On Order Units], 0 ) ) ) )
+    -- format: #,0
+
+'Suggested Reorder Value' = SUMX ( CROSSJOIN ( VALUES ( 'Product'[Product ID] ), VALUES ( Warehouse[Warehouse ID] ) ), [Suggested Reorder Qty] * CALCULATE ( MAX ( 'Product'[Unit Cost] ) ) )
+    -- format: ₹#,0
+
+'Restock Priority' =
+    IF ( [Needs Restock Flag] = 1,
+        VAR a = [Available Units]
+        RETURN IF ( a <= 0, "1 - Urgent (stocked out)",
+               IF ( a <= MAX ( 'Product'[Safety Stock] ), "2 - High (below safety stock)", "3 - Normal (below ROP)" ) ) )
+
+// Blank unless the row needs restocking (keeps the recommendation table short)
+'Restock Available Units' = IF ( [Needs Restock Flag] = 1, [Available Units] )
+    -- format: #,0
+
+'Restock ROP' = IF ( [Needs Restock Flag] = 1, [Reorder Point (ROP)] )
+    -- format: #,0
+
+'Restock Daily Demand' = IF ( [Needs Restock Flag] = 1, [Avg Daily Demand (90d)] )
+    -- format: #,0.0
+
+'Restock Days of Cover' = IF ( [Needs Restock Flag] = 1, [Days of Cover] )
+    -- format: #,0.0
+
+'Restock On Order' = IF ( [Needs Restock Flag] = 1, [On Order Units] )
+    -- format: #,0
+
+
+// ---------------- 04 Sales ----------------
+
+// Fulfilled qty x unit price x (1 - discount)
+'Net Sales' = SUM ( Sales[Net Sales] )
+    -- format: ₹#,0
+
+Orders = COUNTROWS ( Sales )
+    -- format: #,0
+
+// Ordered units excluding customer cancellations
+'Units Demanded' = SUM ( Sales[Demand Qty] )
+    -- format: #,0
+
+'Units Sold' = SUM ( Sales[Fulfilled Qty] )
+    -- format: #,0
+
+// Demand not shipped because of stockouts
+'Lost Units' = SUM ( Sales[Lost Qty] )
+    -- format: #,0
+
+'Lost Sales Value' = SUMX ( Sales, Sales[Lost Qty] * Sales[Unit Price] * ( 1 - Sales[Discount] ) )
+    -- format: ₹#,0
+
+// Units shipped / units demanded
+'Fill Rate %' = DIVIDE ( [Units Demanded] - [Lost Units], [Units Demanded] )
+    -- format: 0.0%
+
+'Stockout Orders' = CALCULATE ( COUNTROWS ( Sales ), Sales[Order Status] IN { "Out of Stock", "Partially Delivered" } )
+    -- format: #,0
+
+'Stockout Order Rate %' = DIVIDE ( [Stockout Orders], CALCULATE ( COUNTROWS ( Sales ), Sales[Order Status] <> "Cancelled" ) )
+    -- format: 0.0%
+
+// Cost of goods sold at master unit cost
+COGS = SUMX ( Sales, Sales[Fulfilled Qty] * RELATED ( 'Product'[Unit Cost] ) )
+    -- format: ₹#,0
+
+'Gross Margin' = [Net Sales] - [COGS]
+    -- format: ₹#,0
+
+'Gross Margin %' = DIVIDE ( [Gross Margin], [Net Sales] )
+    -- format: 0.0%
+
+'Avg Discount %' = AVERAGE ( Sales[Discount] )
+    -- format: 0.0%
+
+'Avg Delivery Days' = AVERAGE ( Sales[Delivery Days] )
+    -- format: 0.0
+
+'Net Sales PY' = CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    -- format: ₹#,0
+
+'Net Sales YoY %' =
+    VAR py = [Net Sales PY]
+    RETURN IF ( NOT ISBLANK ( [Net Sales] ) && NOT ISBLANK ( py ), DIVIDE ( [Net Sales] - py, py ) )
+    -- format: +0.0%;-0.0%;0.0%
+
+'Net Sales PM' = CALCULATE ( [Net Sales], DATEADD ( 'Date'[Date], -1, MONTH ) )
+    -- format: ₹#,0
+
+'Net Sales MoM %' =
+    VAR pm = [Net Sales PM]
+    RETURN IF ( NOT ISBLANK ( [Net Sales] ) && NOT ISBLANK ( pm ), DIVIDE ( [Net Sales] - pm, pm ) )
+    -- format: +0.0%;-0.0%;0.0%
+
+'Net Sales YTD' = TOTALYTD ( [Net Sales], 'Date'[Date] )
+    -- format: ₹#,0
+
+'Units Sold PY' = CALCULATE ( [Units Sold], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    -- format: #,0
+
+'Units Sold YoY %' =
+    VAR py = [Units Sold PY]
+    RETURN IF ( NOT ISBLANK ( [Units Sold] ) && NOT ISBLANK ( py ), DIVIDE ( [Units Sold] - py, py ) )
+    -- format: +0.0%;-0.0%;0.0%
+
+'Net Sales % of Total' = DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], ALLSELECTED ( 'Product' ) ) )
+    -- format: 0.0%
+
+'Product Demand Rank' = IF ( ISINSCOPE ( 'Product'[Product Label] ), RANKX ( ALLSELECTED ( 'Product'[Product Label] ), [Units Demanded] ) )
+    -- format: 0
+
+
+// ---------------- 05 Purchasing & Suppliers ----------------
+
+// Value of purchase orders raised (by PO date)
+'Purchase Value' = SUM ( Purchases[PO Value] )
+    -- format: ₹#,0
+
+'Purchase Orders' = COUNTROWS ( Purchases )
+    -- format: #,0
+
+'Units Purchased' = SUM ( Purchases[Quantity] )
+    -- format: #,0
+
+// Units received, dated by actual delivery (inactive relationship)
+'Units Received' = CALCULATE ( SUM ( Purchases[Received Qty] ), USERELATIONSHIP ( Purchases[Actual Delivery Date], 'Date'[Date] ) )
+    -- format: #,0
+
+'Received Value' = CALCULATE ( SUM ( Purchases[Received Value] ), USERELATIONSHIP ( Purchases[Actual Delivery Date], 'Date'[Date] ) )
+    -- format: ₹#,0
+
+'Delivered POs' = SUM ( Purchases[Is Delivered] )
+    -- format: #,0
+
+// Delivered on or before the expected date
+'Supplier On-Time %' = DIVIDE ( SUM ( Purchases[On Time Flag] ), [Delivered POs] )
+    -- format: 0.0%
+
+'Supplier In-Full %' = DIVIDE ( SUM ( Purchases[In Full Flag] ), [Delivered POs] )
+    -- format: 0.0%
+
+// On time AND in full
+'Supplier OTIF %' = DIVIDE ( SUM ( Purchases[OTIF Flag] ), [Delivered POs] )
+    -- format: 0.0%
+
+// Delivered POs with received qty < ordered qty
+'Short-Delivery %' = DIVIDE ( SUM ( Purchases[Short Flag] ), [Delivered POs] )
+    -- format: 0.0%
+
+'Short Units %' =
+    VAR o = CALCULATE ( SUM ( Purchases[Quantity] ), Purchases[Is Delivered] = 1 )
+    VAR r = CALCULATE ( SUM ( Purchases[Received Qty] ), Purchases[Is Delivered] = 1 )
+    RETURN DIVIDE ( o - r, o )
+    -- format: 0.0%
+
+// Actual delivery date - PO date
+'Avg Lead Time (Days)' = AVERAGE ( Purchases[Lead Time Days] )
+    -- format: 0.0
+
+'Quoted Lead Time (Days)' = AVERAGEX ( FILTER ( Purchases, Purchases[Is Delivered] = 1 ), RELATED ( 'Product'[Lead Time Days Std] ) )
+    -- format: 0.0
+
+// Lead-time variability (sample standard deviation, days)
+'Lead Time Std Dev' = STDEV.S ( Purchases[Lead Time Days] )
+    -- format: 0.0
+
+'Lead Time Variance' = VAR.S ( Purchases[Lead Time Days] )
+    -- format: 0.0
+
+// Actual - expected delivery date (positive = late)
+'Avg Delay Days' = AVERAGE ( Purchases[Delay Days] )
+    -- format: +0.0;-0.0;0.0
+
+'Late POs' = CALCULATE ( SUM ( Purchases[Is Delivered] ), Purchases[On Time Flag] = 0 )
+    -- format: #,0
+
+// 1 = most delayed supplier
+'Supplier Delay Rank' = IF ( ISINSCOPE ( Supplier[Supplier Name] ), RANKX ( ALLSELECTED ( Supplier[Supplier Name] ), [Avg Delay Days], , DESC ) )
+    -- format: 0
+
+'Purchase Value YTD' = TOTALYTD ( [Purchase Value], 'Date'[Date] )
+    -- format: ₹#,0
+
+'Purchase Value PY' = CALCULATE ( [Purchase Value], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    -- format: ₹#,0
+
+'Purchase Value YoY %' =
+    VAR py = [Purchase Value PY]
+    RETURN IF ( NOT ISBLANK ( [Purchase Value] ) && NOT ISBLANK ( py ), DIVIDE ( [Purchase Value] - py, py ) )
+    -- format: +0.0%;-0.0%;0.0%
+
+
+// ---------------- 06 Titles & Colours ----------------
+
+'Selected Warehouses' = IF ( ISFILTERED ( Warehouse[Warehouse] ), CONCATENATEX ( VALUES ( Warehouse[Warehouse] ), Warehouse[Warehouse], ", " ), "All warehouses" )
+
+'Title Stock Trend' = "Closing stock value by month | " & [Selected Warehouses]
+
+'Title Overview' = "Stock as of " & FORMAT ( [Last Snapshot Date], "dd mmm yyyy" ) & "  |  " & [Selected Warehouses] & "  |  synthetic data"
+
+'Title Product Detail' = "Product detail: " & SELECTEDVALUE ( 'Product'[Product Label], "multiple products" )
+
+'Title Restock' = "Restock recommendations as of " & FORMAT ( [Data As Of], "dd mmm yyyy" ) & " (" & FORMAT ( [Needs Restock Count], "#,0" ) & " lines)"
+
+// Red = stocked out or < 14 days, amber = > 90 days (excess), green = healthy
+'Days of Cover Colour' =
+    VAR s = [Stock Units]
+    VAR c = [Days of Cover]
+    RETURN SWITCH ( TRUE (), ISBLANK ( s ), BLANK (), s = 0, "#D1495B", ISBLANK ( c ), "#8D99AE",
+                    c < 14, "#D1495B", c > [Overstock Threshold Days], "#E9A23B", "#2A9D8F" )
+
+'Stock Status' =
+    VAR s = [Stock Units]
+    VAR c = [Days of Cover]
+    RETURN SWITCH ( TRUE (), ISBLANK ( s ), BLANK (), s = 0, "Stocked out", ISBLANK ( c ), "No recent demand",
+                    c < 14, "Low (< 14 days)", c > [Overstock Threshold Days], "Excess (> 90 days)", "Healthy" )
+
+'Fill Rate Colour' =
+    VAR f = [Fill Rate %]
+    RETURN SWITCH ( TRUE (), ISBLANK ( f ), BLANK (), f < 0.85, "#D1495B", f < 0.95, "#E9A23B", "#2A9D8F" )
+
+// Red = more than 3 days late on average
+'Supplier Delay Colour' =
+    VAR d = [Avg Delay Days]
+    RETURN SWITCH ( TRUE (), ISBLANK ( d ), BLANK (), d > 3, "#D1495B", d > 0, "#E9A23B", "#2A9D8F" )
+
+// Red = urgent (stocked out), amber = below safety stock, teal = below reorder point
+'Restock Priority Colour' =
+    SWITCH ( LEFT ( [Restock Priority], 1 ), "1", "#D1495B", "2", "#E9A23B", "3", "#2A9D8F" )
+
+'Capacity Colour' =
+    VAR u = [Capacity Utilisation %]
+    RETURN SWITCH ( TRUE (), ISBLANK ( u ), BLANK (), u >= 0.85, "#D1495B", u >= 0.70, "#E9A23B", "#2A9D8F" )
+
+
+// ---------------- Calculated columns (table Product) ----------------
+
+'Product'[Lifetime Net Sales] = CALCULATE ( SUM ( Sales[Net Sales] ), ALLEXCEPT ( 'Product', 'Product'[Product ID] ) )
+
+'Product'[ABC Class] =
+    VAR r = 'Product'[Lifetime Net Sales]
+    VAR tot = SUM ( 'Product'[Lifetime Net Sales] )
+    VAR cum = SUMX ( FILTER ( 'Product', 'Product'[Lifetime Net Sales] >= r ), 'Product'[Lifetime Net Sales] )
+    VAR share = DIVIDE ( cum, tot )
+    RETURN IF ( share <= 0.80, "A", IF ( share <= 0.95, "B", "C" ) )
+
+
+// ---------------- What-if parameter: table 'Holding Cost Rate' (slider 10%-35%, default 20%) ----------------
+
+'Holding Cost Rate' = GENERATESERIES ( 0.10, 0.35, 0.01 )   // calculated table, column [Value] renamed to [Holding Cost Rate]
+
+
+'Holding Cost Rate''Holding Cost Rate Value' = SELECTEDVALUE ( 'Holding Cost Rate'[Holding Cost Rate], 0.20 )
+    -- format: 0%
+
+
+// ---------------- Field parameter: table 'Metric Selector' ----------------
+
+'Metric Selector' =
+    {
+        ( "Net sales (INR)", NAMEOF ( '_Measures'[Net Sales] ), 0 ),
+        ( "Units sold", NAMEOF ( '_Measures'[Units Sold] ), 1 ),
+        ( "Units demanded", NAMEOF ( '_Measures'[Units Demanded] ), 2 ),
+        ( "Lost sales value (INR)", NAMEOF ( '_Measures'[Lost Sales Value] ), 3 ),
+        ( "Fill rate %", NAMEOF ( '_Measures'[Fill Rate %] ), 4 ),
+        ( "Gross margin %", NAMEOF ( '_Measures'[Gross Margin %] ), 5 ),
+        ( "Purchase value (INR)", NAMEOF ( '_Measures'[Purchase Value] ), 6 ),
+        ( "Closing stock value (INR)", NAMEOF ( '_Measures'[Stock Value] ), 7 )
+    }
+
+
+// ---------------- Calculation group: table 'Time Intelligence', column [Time Calculation] (precedence 10) ----------------
+
+// item Current
+SELECTEDMEASURE ()
+
+// item PY
+    IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) ) )
+
+// item YoY  formatStringDefinition = SELECTEDMEASUREFORMATSTRING ()
+    VAR cur = SELECTEDMEASURE ()
+    VAR py  = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( py ), cur - py ) )
+
+// item 'YoY %'  formatStringDefinition = "0.0%"
+    VAR cur = SELECTEDMEASURE ()
+    VAR py  = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( py ), DIVIDE ( cur - py, py ) ) )
+
+// item MoM  formatStringDefinition = SELECTEDMEASUREFORMATSTRING ()
+    VAR cur = SELECTEDMEASURE ()
+    VAR pm  = CALCULATE ( SELECTEDMEASURE (), DATEADD ( 'Date'[Date], -1, MONTH ) )
+    RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( pm ), cur - pm ) )
+
+// item 'MoM %'  formatStringDefinition = "0.0%"
+    VAR cur = SELECTEDMEASURE ()
+    VAR pm  = CALCULATE ( SELECTEDMEASURE (), DATEADD ( 'Date'[Date], -1, MONTH ) )
+    RETURN IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], IF ( NOT ISBLANK ( cur ) && NOT ISBLANK ( pm ), DIVIDE ( cur - pm, pm ) ) )
+
+// item YTD
+    IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date] ) ) )
+
+// item FYTD
+    IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date], "3/31" ) ) )
+
+// item 'Rolling 3M'
+    IF ( MIN ( 'Date'[Date] ) <= [Latest Sales Date], CALCULATE ( SELECTEDMEASURE (), DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -3, MONTH ) ) )
