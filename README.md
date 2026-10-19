@@ -221,28 +221,7 @@ Wireframe: [`docs/dashboard_wireframe.md`](docs/dashboard_wireframe.md).
 4. Build festive stock from August so October demand is not met by emergency POs.
 5. Run the restock table weekly (urgent first) and track OTIF in supplier reviews.
 
-## 11. Weak points / limitations
-
-- Data is synthetic; patterns were planted, so findings are "too clean" compared with real data.
-- Inventory is a weekly snapshot — intra-week stockouts are invisible; stockout rate is "weeks out of stock".
-- Demand for stocked-out items is approximated by ordered quantity (no true lost-demand signal).
-- Holding-cost rate (20 %) and thresholds are assumptions (the what-if slider shows sensitivity).
-- Reorder logic is a simple (s, S)-style rule with 90-day average demand, no forecasting.
-- The PBIP (TMDL + PBIR) was generated and schema-validated on Linux; it has not been opened in Power BI Desktop by the
-  author — see `pbip/OPEN_ME_FIRST.md` for first-open checks.
-- The Supplier slicer only filters purchase measures (Supplier relates to Purchases only).
-
-## 12. Resume bullets
-
-- Built an end-to-end supply-chain BI solution (Python cleaning → DuckDB star schema with PK/FK → 21 SQL analyses → Power BI
-  PBIP) over 520k synthetic sales, purchase and weekly inventory records for 6 warehouses.
-- Wrote 100+ DAX measures (semi-additive stock, days of cover, OTIF, turnover, reorder quantity), a time-intelligence
-  calculation group, field parameter and what-if holding-cost parameter across a 5-page interactive dashboard with drill-through,
-  tooltips, bookmarks and synced slicers.
-- Identified INR 5.65 Cr of releasable excess stock (≈ INR 1.13 Cr/yr holding-cost saving), 339 restock actions and two
-  suppliers with < 11 % OTIF driving chronic stockouts.
-
-## 13. How to run
+## 11. How to run
 
 ### Windows
 ```bat
@@ -263,7 +242,7 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/01_EDA.ipynb
 # optional: python scripts/generate_data.py   (regenerates data/raw from seed 42)
 ```
 
-## Project structure
+## 12. Project structure
 
 ```
 data/raw, data/processed     CSV files (synthetic) + data_quality_log.csv + embedded_patterns_answer_key.csv
